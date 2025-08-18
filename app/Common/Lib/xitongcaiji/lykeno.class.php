@@ -1,0 +1,162 @@
+<?php
+namespace Lib\xitongcaiji;
+class lykeno{
+	function __construct($url){
+		$this->url    = $url;
+		$this->title    = '里约基诺彩';
+	}
+	function curl_file_get_contents($durl){
+				  $cookie_file = dirname(__FILE__)."/cookie.txt";
+				   $ch = curl_init();
+				   curl_setopt($ch, CURLOPT_URL, $durl);
+				   curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
+				   curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie_file);
+				   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+				   curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1); 
+				   $r = curl_exec($ch);
+				   curl_close($ch);
+				   return $r;
+			}
+	function getopencode(){
+		$url   = $this->url;
+		$co  = file_get_contents($url);
+		$RES = json_decode($co,true);
+		$Runm = "01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80";
+		if(!$RES["data"]){
+			return '未抓取到开奖数据：'.$url;
+		}
+		$RES["data"] = list_sort_by($RES["data"],'expect','asc');
+		foreach($RES["data"] as $k=>$v){
+			$data = [];
+			$data = $v;
+			$data['addtime'] = time();
+			$data['isdraw'] = 0;
+			$temp[] = $data;
+			foreach($data as $k=>$v){
+				if(strpos($v,'-')!==false && strpos($v,':')!==false)$data[$k] = strtotime($v);
+			}
+			if(!$kjinfo = M('kaijiang')->where("name='{$data['name']}' and expect='{$data['expect']}'")->find()){
+				$xtclirun =M('setting')->where("name='xtclirun'")->find();
+				$s = abs(substr(microtime(true),-2));
+				// 利润控制概率值
+				$jianye = $xtclirun['value'];
+				$yushe_opencode = M('yukaijiang')->where("name='{$data['name']}' and expect='{$data['expect']}'")->find();
+				if($s<$jianye && !$yushe_opencode){
+					// 控制系统开始
+					$this->title    = '系统彩控制打开,当前利润率为'.$jianye.'%,开始控制';
+					
+					$is_won = $this->opencode_check($data['expect'],$data['opencode'],$data['name']);
+					//返回1表示中奖，0表示当前号码未中奖，即返回1中奖
+					 if($is_won!=1){
+					 	// 未中奖，直接用当前随机号码
+						$_int = M('kaijiang')->data($data)->add();
+						if($_int)$ints[] = $data['expect'].':'.$data['opencode'];	
+						}else{
+							// 这里需要重新生成号码，最多生成100次，如果全部都是中奖号码，那就用随机号码作为本次开奖号码
+							$expect = $data['expect'];
+							$is_val = 0;
+							for($a = 0;$a<100;$a++){
+								$opencode = $this->rand_keys_x(20,$Runm);
+								$is_won2 = $this->opencode_check($data['expect'],$opencode,$data['name']);
+								//返回1表示中奖，0表示当前号码未中奖，即返回1中奖
+					 			if($is_won2==1){ 
+					 				$is_val++;
+					 			}else{
+					 				// 生成出不中奖的号码就加入数据库
+					 				$data['opencode'] = $opencode;
+					 				$_int = M('kaijiang')->data($data)->add();
+									if($_int)$ints[] = $data['expect'].':'.$data['opencode'];
+									break;
+					 			}
+					 			
+							}
+							// 最多生成10次，如果全部都是中奖号码，那就用随机号码作为本次开奖号码
+							
+							if($is_val >= 100){
+								$_int = M('kaijiang')->data($data)->add();
+								if($_int)$ints[] = $data['expect'].':'.$data['opencode'];
+							}
+							$this->title = '系统彩控制成功,当前用户订单中奖,重新生成开奖号码';
+						} 
+						// 控制系统结束
+
+			   	}else{
+			   		if($yushe_opencode){
+			   			$data['opencode'] = $yushe_opencode['opencode'];
+			   		}
+					$_int = M('kaijiang')->data($data)->add();
+					if($_int)$ints[] = $data['expect'].':'.$data['opencode'];	
+				}
+				
+			   
+			}
+		}
+		//dump($temp);exit;
+		if(count(array_filter($ints))>=1){
+			return '采集成功-'.implode(';',$ints);
+		}else{
+			return '最后更新-'.$kjinfo['expect'].':'.$kjinfo['opencode'];
+		}
+	}
+		function opencode_check($expect,$opencode,$cpname){
+			$playidArr = ['tmlmda','tmlmxiao','tmlmdan','tmlmshuang','tmlmdadan','tmlmdashuang','tmlmxiaodan','tmlmxiaoshuang','tmlmheda','tmlmhexiao','tmlmhedan','tmlmheshuang','tmlmweida','tmlmweixiao','tmlmjiaqin','tmlmyeshou','tmlmhongbo','tmlmlvbo','tmlmlanbo',
+			'zm1lmda','zm1lmxiao','zm1lmdan','zm1lmshuang','zm1lmdadan','zm1lmdashuang','zm1lmxiaodan','zm1lmxiaoshuang','zm1lmheda','zm1lmhexiao','zm1lmhedan','zm1lmheshuang','zm1lmweida', 'zm1lmweixiao','zm1lmjiaqin','zm1lmyeshou','zm1lmhongbo','zm1lmlvbo','zm1lmlanbo',
+			'zm2lmda','zm2lmxiao','zm2lmdan','zm2lmshuang','zm2lmdadan','zm2lmdashuang','zm2lmxiaodan','zm2lmxiaoshuang','zm2lmheda','zm2lmhexiao','zm2lmhedan','zm2lmheshuang','zm2lmweida','zm2lmweixiao','zm2lmjiaqin','zm2lmyeshou','zm2lmhongbo','zm2lmlvbo','zm2lmlanbo',
+			'zm3lmda','zm3lmxiao','zm3lmdan','zm3lmshuang','zm3lmdadan','zm3lmdashuang','zm3lmxiaodan','zm3lmxiaoshuang','zm3lmheda','zm3lmhexiao','zm3lmhedan','zm3lmheshuang','zm3lmweida','zm3lmweixiao','zm3lmjiaqin','zm3lmyeshou','zm3lmhongbo','zm3lmlvbo','zm3lmlanbo',
+			'zm4lmda','zm4lmxiao','zm4lmdan','zm4lmshuang','zm4lmdadan','zm4lmdashuang','zm4lmxiaodan','zm4lmxiaoshuang','zm4lmheda','zm4lmhexiao','zm4lmhedan','zm4lmheshuang','zm4lmweida','zm4lmweixiao','zm4lmjiaqin','zm4lmyeshou','zm4lmhongbo','zm4lmlvbo','zm4lmlanbo',
+			'zm5lmda','zm5lmxiao','zm5lmdan','zm5lmshuang','zm5lmdadan','zm5lmdashuang','zm5lmxiaodan','zm5lmxiaoshuang','zm5lmheda','zm5lmhexiao','zm5lmhedan','zm5lmheshuang','zm5lmweida','zm5lmweixiao','zm5lmjiaqin','zm5lmyeshou','zm5lmhongbo','zm5lmlvbo','zm5lmlanbo',
+			'zm6lmda','zm6lmxiao','zm6lmdan','zm6lmshuang','zm6lmdadan','zm6lmdashuang','zm6lmxiaodan','zm6lmxiaoshuang','zm6lmheda','zm6lmhexiao','zm6lmhedan','zm6lmheshuang','zm6lmweida','zm6lmweixiao','zm6lmjiaqin','zm6lmyeshou','zm6lmhongbo','zm6lmlvbo','zm6lmlanbo',
+		];
+		$memberdb    = D('member');
+		$fuddetaildb = D('fuddetail');
+		$touzhudb    = D('touzhu');
+		$DB_PREFIX = C('DB_PREFIX');
+		$sql = "select * from {$DB_PREFIX}touzhu where isdraw = '0' and expect ={$expect} and cpname = '{$cpname}' order by id desc limit 10";
+		$touzhulist = M()->query($sql);
+		$_ZJARRAY = [];
+		$iszjcount = 0;
+
+		foreach($touzhulist as $k=>$item){
+			$item['opencode'] = $opencode;
+			$_kjfile = $dir = COMMON_PATH. "Lib/kaijiang/{$item['typeid']}.class.php";
+			if($_kjfile){
+				$class = "\\Lib\\kaijiang\\{$item['typeid']}";
+				$_obj  = new $class();
+				$playid= $item['playid'];
+				$item['iszjokcount'] = 0;
+				
+					if(method_exists($_obj,$playid)){//如果类方法存在
+						$item['iszjokcount'] = $_obj->$playid($item['opencode'],$item['tzcode']);
+					}
+			
+			}
+			//处理中奖信息
+			$memint = $touzhuint = $fudint = 0;
+			$iskj = $touzhudb->where(['id'=>$item['id']])->getField('isdraw');
+			if($iskj!=0){
+				continue;
+			}
+            $iszjcount += $item['iszjokcount'];
+			
+			
+		}
+		if($iszjcount>=1){//中
+				return '1';
+			}else{//未中
+				return '0';
+			}
+	}
+	protected function rand_keys_x($len = 5,$str='01,02,03,04,05,06,07,08,09,10') {
+		$_strs = [];
+		$_strs = explode(',',$str);
+		$len   = count($_strs)>=$len?$len:count($_strs);
+		$_rands= array_rand($_strs,$len);
+		$_nrands = [];
+		foreach($_rands as $k=>$v){
+			$_nrands[$k] = $_strs[$v];
+		}
+		shuffle($_nrands);
+		return implode(',',$_nrands);
+	}
+}
+?>
