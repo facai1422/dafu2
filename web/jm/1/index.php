@@ -1,0 +1,733 @@
+<title><?=$this->settings['webName']?>-官方网站</title>
+
+<link rel="stylesheet" href="/css/nsc/home/reset.css?v=1.17.1.13">
+<link rel="stylesheet" href="/css/nsc/home/theme.css?v=1.17.1.13">
+<link href="/css/nsc/plugin/dialogUI/dialogUI.css?v=1.17.1.13" media="all" type="text/css" rel="stylesheet">
+<script>var TIP=true;</script>
+<script type="text/javascript" src="/skin/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/skin/main/onload.js"></script>
+<script type="text/javascript" src="/newskin/js/function.js"></script>
+<script type="text/javascript" src="/skin/layer/layer.js"></script>
+
+<link media="all" type="text/css" rel="stylesheet" href="/zhengdian/layui.css">
+<link media="all" type="text/css" rel="stylesheet" href="/zhengdian/zd.local.images.css">
+<link media="all" type="text/css" rel="stylesheet" href="/zhengdian/zd.public.css">
+<link id="css2" media="all" type="text/css" rel="stylesheet" href="/zhengdian/zd.skin2.css">
+
+<link media="all" type="text/css" rel="stylesheet" href="/assets/global.css">		
+<link media="all" type="text/css" rel="stylesheet" href="/assets/global-com.css">
+<link media="all" type="text/css" rel="stylesheet" href="/assets/font-awesome.css">
+<link media="all" type="text/css" rel="stylesheet" href="/assets/swiper.css">
+<link media="all" type="text/css" rel="stylesheet" href="/assets/index.css">
+<link media="all" type="text/css" rel="stylesheet" href="/assets/flipclock.css">
+
+<link rel="stylesheet" href="/css/nsc/home/reset.css?v=1.16.11.5">
+<link rel="stylesheet" href="/css/nsc/home/theme.css?v=1.16.11.5">
+<link href="/css/nsc/plugin/dialogUI/dialogUI.css?v=1.16.11.5" media="all" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="/js/nsc/dialogUI/jquery.dialogUI.js?v=1.16.11.5"></script>
+
+
+<script type='text/javascript'>
+function zxkf(){
+	 <?php if($this->settings['kefuStatus']){ ?>
+	layer.open({
+	  type: 2,
+	  area: ['800px', '550px'],
+	  zIndex:1999,
+	  //fixed: false, //不固定
+	  title:'在线客服',
+	  scrollbar: false,//屏蔽滚动条
+	  //maxmin: true,
+	  content:'<?=$this->settings['kefuGG']?>'
+	});
+	<?php }else{?>
+	$.alert("客服系统维护中");
+	<?php }?>
+	return false;
+}
+function qqkf(){
+	<?php if($this->settings['qqkefuStatus']){ ?>
+	layer.open({
+	  type: 2,
+	  area: ['800px', '550px'],
+	  zIndex:1999,
+	  //fixed: false, //不固定
+	  title:'在线客服',
+	  scrollbar: false,//屏蔽滚动条
+	  //maxmin: true,
+	  content:'http://wpa.qq.com/msgrd?uin=<?=$this->settings['qqkefuGG']?>'
+	});
+	<?php }else{?>
+	$.alert("客服系统维护中");
+	<?php }?>
+	return false;
+}
+</script>
+</head>
+<style type="text/css">
+body {background-image: url(assets/bg1.jpg);}
+</style>
+<style type="text/css">
+	.header-row{
+		height: 38px;
+	}
+</style>
+<script src="/js/slide.js" type="text/javascript" charset="utf-8"></script>
+
+<body id="bg">
+
+
+    	<div class="header-row">
+		<div class="header-row-inner">
+			<div class="topbar">
+				<div class="content">
+                <a datatype="json" call="indexSign" target="ajax" href="/index.php/display/sign">&nbsp;签到有奖</a>
+					<div class="fr">
+						 <div class="fbottom">
+			                <div class="money-left">
+			                    <span>账户余额：</span>
+			                    <span class="t_money rounded" title="可用余额：<?=$this->user['coin']?>">
+			                        <span class="show-money">￥<span id="refff"><?=$this->user['coin']?></span>元&nbsp;</span>
+			                        <span class="hide-money">￥<span><b>*****</b>元</span></span>
+			                    </span>
+			                </div>
+			                <a href="javascript:void(0);" class="shuaxin" id="refreshmoney" title="刷新余额">
+			                    <i class="ic-refresh"></i>
+			                </a>
+
+			                <a href="javascript:;" title="隐藏余额">
+			                    <i class="ic-unlook"></i>
+			                </a>
+			                <a href="javascript:void(0);" onclick="czpay();" class="">在线充值</a><em>|</em><a href="javascript:void(0);" onclick="topay();" class="">在线提款</a><em>|</em><a href="javascript:void(0)" onclick="zxkf();" title="在线客服" class="">
+			                   <span>在线客服</span></a>
+							<em>|</em>
+
+							<a href="javascript:loginout()" class="logout ui_logout">安全退出</a>
+
+			            </div>
+					</div>
+
+					<div class="fl user_info">
+					
+						<div class="fl">账号等级：</div>
+						<div class="fl">VIP<?=htmlspecialchars($this->user['grade'])?>，<?=$this->user['nickname']?></div>
+						<div class="fl">
+							
+		                </div>
+						 | </span><span id="timeShow"></span> | <!--公共样式全局，头部美工时钟显示样式，默认时间，北京，香港-->	
+                         
+
+					</div>
+				</div>
+			</div>
+
+
+
+			
+
+
+			
+
+
+
+
+
+
+		</div>
+    </div>
+
+     
+</script><!--头部导航-->
+        <div class="container">
+            <ul class="home-center">
+                <li class="center-activity">
+                        <div class="home-ad">
+                            <a href="javascript:void(0);">
+                                <img class="home-ad-img" src="/zhengdian/ag.png">
+                                <div class="home-ad-caption">
+                                    <p class="home-ad-hover">进入游戏</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                        <li class="center-activity">
+                        <div class="home-ad">
+                            <a href="javascript:void(0);">
+                                <img class="home-ad-img" src="/zhengdian/mg.png">
+                                <div class="home-ad-caption">
+                                    <p class="home-ad-hover">进入游戏</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="center-activity">
+                        <div class="home-ad">
+                            <a href="javascript:void(0);" class="home-ad-caption_a">
+                                <img class="home-ad-img" src="/zhengdian/by.png">
+                                <div class="home-ad-caption">
+                                    <p class="home-ad-hover">进入游戏</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="center-activity">
+                        <div class="home-ad">
+                            <a href="javascript:void(0);" class="home-ad-caption_a">
+                                <img class="home-ad-img" src="/zhengdian/aggj.png">
+                                <div class="home-ad-caption">
+                                    <p class="home-ad-hover">进入游戏</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                 </ul>
+		</div>
+</div>
+    <div class="part-body">
+        <div class="container">
+            <div class="part-body-left">
+                <ul class="part-body-notice">
+                    <li>
+                    <h2 class="home-notice-tit"><span>最新中奖榜单</span></h2>
+                    </li>
+                    <li>
+                        <div class="up-turn">
+                                <ul id="leftBox">
+                                        <li class="problem4ul">[04***d5]
+                                            在重庆时时彩
+                                            游戏中赢得4535元
+                                        </li>
+                                        <li class="problem4ul">[sk***8w]
+                                            在澳门时时彩
+                                            游戏中赢得2657元
+                                        </li>
+                                        <li class="problem4ul">[sk***8w]
+                                            在北京PK10
+                                            游戏中赢得1031元
+                                        </li>
+                                        <li class="problem4ul">[14***0k]
+                                            在重庆时时彩
+                                            游戏中赢得6809元
+                                        </li>
+                                        <li class="problem4ul">[a8***69]
+                                            在腾讯分分彩
+                                            游戏中赢得1818元
+                                        </li>
+                                        <li class="problem4ul">[n0***rw]
+                                            在澳门时时彩
+                                            游戏中赢得7236元
+                                        </li>
+                                        <li class="problem4ul">[22***bl]
+                                            在重庆时时彩
+                                            游戏中赢得4010元
+                                        </li>
+                                        <li class="problem4ul">[j9***ol]
+                                            在新疆时时彩
+                                            游戏中赢得23791元
+                                        </li>
+										<li class="problem4ul">[sk***8w]
+                                            在韩国快乐8
+                                            游戏中赢得2657元
+                                        </li>
+                                        <li class="problem4ul">[sk***8w]
+                                            在广东11选5
+                                            游戏中赢得1031元
+                                        </li>
+                                        <li class="problem4ul">[14***0k]
+                                            在台湾PK10
+                                            游戏中赢得6809元
+                                        </li>
+                                        <li class="problem4ul">[a8***69]
+                                            在澳门时时彩
+                                            游戏中赢得1818元
+                                        </li>
+                                        <li class="problem4ul">[n0***rw]
+                                            在QQ分分彩
+                                            游戏中赢得7236元
+                                        </li>
+                                        <li class="problem4ul">[22***bl]
+                                            在江苏快3
+                                            游戏中赢得4010元
+                                        </li>
+                                        <li class="problem4ul">[j9***ol]
+                                            在天津时时彩
+                                            游戏中赢得23791元
+                                        </li>
+                                    </ul>
+                            </div>
+                    </li>
+                </ul>
+                <ul class="part-body-lottery">
+                    
+                </ul>
+            </div>
+
+            <div class="part-body-right">
+                <div class="hot">
+                   <div class="tab-playGame home-tab-playGame">
+                    <button id="js-lmpGames" class="  " >热门彩票<a class="hotgame-icon"></a></button>
+                    </div>
+                    <div class="hot-type gfc-wraper " style="display:  block "  >
+                    	<a href="/index.php/index/game/1/2/12/">重庆时时彩<span class="icon-hzn icon-hot"></span></a>
+                    	<a href="/index.php/index/game/80/59/193/">腾讯分分彩<span class="icon-hzn icon-hot"></span></a>
+                        <a href="/index.php/index/game/12/2/12/">新疆时时彩<span class="icon-hzn icon-zd"></span></a>
+                        <a href="/index.php/index/game/60/2/12/">天津时时彩</a>
+                        <a href="/index.php/index/game/61/59/193/">澳门时时彩<span class="icon-hzn icon-hot"></span></a>
+                        <a href="/index.php/index/game/62/59/193/">台湾时时彩<span class="icon-hzn icon-zd"></span></a>
+                        <a href="/index.php/index/game/14/59/193/">河内五分彩<span class="icon-hzn icon-zd"></span></a>
+                        <a href="/index.php/index/game/26/59/193/">河内两分彩<span class="icon-hzn icon-zd"></span></a>
+                       <br>
+                         <a href="/index.php/index/game/5/59/193/">QQ分分彩<span class="icon-hzn icon-hot"></span></a>
+                        <a href="/index.php/index/game/75/59/193/">巴西快乐彩<span class="icon-hzn icon-hot"></span></a>
+                        <a href="/index.php/index/game/76/59/193/">巴西1.5分彩<span class="icon-hzn icon-new"></span></a>
+                        <a href="/index.php/index/game/6/">广东11选5<span class="icon-hzn icon-new"></span></a>
+                        <a href="/index.php/index/game/15/">上海11选5<span class="icon-hzn icon-new"></span></a>
+                        <a href="/index.php/index/game/7/">山东11选5<span class="icon-hzn icon-hot"></span></a>
+                        <a href="/index.php/index/game/16/">江西11选5<span class="icon-hzn icon-zd"></span></a>
+                        <a href="/index.php/index/game/68/">台湾11选5<span class="icon-hzn icon-new"></span></a>
+                       <br>
+                       	<a href="/index.php/index/game/67/">澳门11选5<span class="icon-hzn icon-zd"></span></a>
+                        <a href="/index.php/index/game/79/">江苏快3<span class="icon-hzn icon-hot"></span></a>
+                        <a href="/index.php/index/game/34/">香港六合彩<span class="icon-hzn icon-new"></span></a>
+                        <a href="/index.php/index/game/78/">北京快乐8<span class="icon-hzn icon-zd"></span></a>
+                        <a href="/index.php/index/game/74/">韩国快乐8</a>
+                        <a href="/index.php/index/game/65/27/">澳门PK10<span class="icon-hzn icon-zd"></span></a>
+                        <a href="/index.php/index/game/66/27/">台湾PK10<span class="icon-hzn icon-new"></span></a>
+                        <a href="/index.php/index/game/9/">福彩3D<span class="icon-hzn icon-new"></span></a>
+                    </div>
+                </div>
+                <ul class="games-type">
+                    <div class="container">
+                        <ul class="home-center Thirdparty">
+                                                            <li class="center-activity">
+                                    <div class="img_word">
+                                        <span class="tit">电玩城</span>
+                                        <span class="describe">人气爆棚，激情无限</span>
+                                    </div>
+                                    <div class="home-ad">
+                                        <span class="title"> </span>
+                                        <a href="javascript:void(0)">
+                                            <img class="home-ad-img" src="/zhengdian/GHAG.jpg"
+                                                 alt="">
+                                        </a>
+                                        <div class="home-ad-caption">
+                                            <a href="javascript:void(0)"></a>
+                                            <p class="home-ad-hover">
+                                                <a href="javascript:void(0)">
+                                                    <span>电玩城</span>
+                                                    <span>人气爆棚，激情无限</span>
+                                                </a>
+                                                <a class="gogame isopen"
+                                                   href="javascript:void(0)">进入游戏</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="center-activity">
+                                    <div class="img_word">
+                                        <span class="tit">MG电子</span>
+                                        <span class="describe">神秘刺激，淘金之旅</span>
+                                    </div>
+                                    <div class="home-ad">
+                                        <span class="title"></span>
+                                        <a href="javascript:void(0)" class="home-ad-caption_a">
+                                            <img class="home-ad-img" src="/zhengdian/ghbanner2.jpg">
+                                        </a>
+                                        <div class="home-ad-caption">
+                                            <a href="javascript:void(0)" class="home-ad-caption_a"></a>
+                                            <p class="home-ad-hover">
+                                                <a href="javascript:void(0)" class="home-ad-caption_a">
+                                                    <span>MG电子</span>
+                                                    <span>神秘刺激 淘金之旅</span>
+                                                </a>
+                                                <a class="gogame isopen"
+                                                   href="javascript:void(0)">进入游戏</a>
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="center-activity">
+                                    <div class="img_word">
+                                        <span class="tit">PT电子</span>
+                                        <span class="describe">最劲爆的奖池现金大奖</span>
+                                    </div>
+                                    <div class="home-ad">
+                                        <span class="title"></span>
+                                        <a href="javascript:void(0)" class="home-ad-caption_a">
+                                            <img class="home-ad-img"
+                                                 src="/zhengdian/GHfishing.jpg"
+                                                 alt="Image 01">
+                                        </a>
+                                        <div class="home-ad-caption"><a href="javascript:void(0)"
+                                                                        class="home-ad-caption_a">
+                                            </a>
+                                            <p class="home-ad-hover"><a href="javascript:void(0)"
+                                                                        class="home-ad-caption_a">
+                                                    <span>PT电子</span>
+                                                    <span>最劲爆的奖池现金大奖</span>
+                                                </a><a class="gogame isopen"
+                                                       href="javascript:void(0)">进入游戏</a>
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="center-activity">
+                                    <div class="img_word">
+                                        <span class="tit">AG视讯</span>
+                                        <span class="describe">现场美女，视讯直播</span>
+                                    </div>
+                                    <div class="home-ad">
+                                        <span class="title"></span>
+                                        <a href="javascript:void(0)">
+                                            <img class="home-ad-img"
+                                                 src="/zhengdian/GHSB.jpg"
+                                                 alt="Image 01">
+                                        </a>
+                                        <div class="home-ad-caption"><a href="javascript:void(0)">
+                                            </a>
+                                            <p class="home-ad-hover"><a href="javascript:void(0)">
+                                                    <span>AG视讯</span>
+                                                    <span>现场美女&nbsp;&nbsp;视讯直播</span>
+                                                </a>
+                                                <a class="gogame isopen"
+                                                   href="javascript:void(0)">进入游戏</a>
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="center-activity">
+                                    <div class="img_word">
+                                        <span class="tit">AG捕鱼王</span>
+                                        <span class="describe">畅玩无阻，想玩就玩</span>
+                                    </div>
+                                    <div class="home-ad">
+                                        <span class="title"></span>
+                                        <a href="javascript:void(0)" class="home-ad-caption_a">
+                                            <img class="home-ad-img"
+                                                 src="/zhengdian/GHBJL.jpg"
+                                                 alt="Image 01">
+                                        </a>
+                                        <div class="home-ad-caption"><a href="javascript:void(0)"
+                                                                        class="home-ad-caption_a"> </a>
+                                            <p class="home-ad-hover"><a href="javascript:void(0)"
+                                                                        class="home-ad-caption_a">
+                                                    <span>AG捕鱼王</span>
+                                                    <span>畅玩无阻&nbsp;想玩就玩 </span>
+                                                </a> <a class="gogame isopen"
+                                                        href="javascript:void(0)">进入游戏</a>
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="center-activity">
+                                    <div class="img_word">
+                                        <span class="tit">沙巴体育</span>
+                                        <span class="describe">精彩赛事，不容错过</span>
+                                    </div>
+                                    <div class="home-ad">
+                                        <span class="title"></span>
+                                        <a href="javascript:void(0);" class="home-ad-caption_a">
+                                            <img class="home-ad-img" src="/zhengdian/GHPT.jpg">
+                                        </a>
+                                        <div class="home-ad-caption"><a href="javascript:void(0);"
+                                                                        class="home-ad-caption_a">
+                                            </a>
+                                            <p class="home-ad-hover"><a href="javascript:void(0);"
+                                                                        class="home-ad-caption_a">
+                                                    <span>沙巴体育</span>
+
+                                                    <span>精彩赛事&nbsp;不容错过 </span>
+                                                </a> <a class="gogame isopen"
+                                                        href="javascript:void(0)">进入游戏</a>
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+                                </li>
+                           </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+<span class="global-close"></span>
+<script type="text/javascript" src="/js/nsc/velocity.min.js?v=1.17.1.13"></script>
+<script src="/js/nsc/zr-script.js?v=1.17.1.13" charset="utf-8"></script>
+
+<script type="text/javascript" src="/js/nsc/jquery-slides.js?v=1.17.1.13"></script>
+<script type="text/javascript" src="/js/nsc/dialogUI/jquery.dialogUI.js?v=1.17.1.13"></script>
+<script type="text/javascript" src="/js/nsc/main.js?v=1.17.1.13"></script>
+
+<script type="text/javascript">
+            $(function(){
+                var $content = $(".xc_menu");
+                var i = 5;  //已知显示的li元素的个数
+                var m = 5;  //用于计算的变量
+                var count = $content.find("li").length;//总共的li元素的个数
+                $(".xc_next").click(function(){
+                    if( !$content.is(":animated")){
+                        if(m<count){  //判断 i 是否小于总的个数
+                          m++;
+                          $content.animate({left: "-=186px"}, 600);
+                        }
+                    }
+                });
+
+                $(".xc_prev").click(function(){
+                    if( !$content.is(":animated")){
+                        if(m>i){ //判断 i 是否小于总的个数
+                            m--;
+                            $content.animate({left: "+=186px"}, 600);
+                        }
+                    }
+                });
+            });
+</script>
+<script>
+        layui.use('carousel', function () {
+            var carousel = layui.carousel;
+            //常规轮播
+            carousel.render({
+                elem: '#div-banner'
+                , arrow: 'always'
+                , width: '100%'
+                , height: '100%'
+            });
+
+        });
+</script>
+</body>
+</html>
+<script src="/zhengdian/zd.public.js"></script>
+<script src="/zhengdian/zd.password.js"></script>
+</script>
+</body>
+<script src="/zhengdian/zd.password.js"></script>
+<script type="text/javascript"
+src="/www.zd555.net/security?dt=1550861989&app=ZD"></script>
+<script type="text/javascript">
+        var intDiff = parseInt(200); //倒计时总秒数量
+
+
+        function timer(intDiff) {
+            var flipCard = function (dom, number) {
+                var dom = $(dom),
+                    numDoms = dom.find('.inner');
+                numDoms.eq(0).text(number);
+                numDoms.eq(1).text(number);
+                dom.addClass('min-left-anim');
+                setTimeout(function () {
+                    numDoms.eq(2).text(number);
+                    numDoms.eq(3).text(number);
+                    dom.removeClass('min-left-anim');
+                }, 800);
+            };
+            var
+                timeDoms = $('#J-deadline-panel').children('em'),
+                h = 0,
+                m = 0,
+                s = 0,
+                oldTimeNumber = [],
+                oldTimeNumberData = [],
+                timeStrArr = [],
+                indexArr = [],
+                timeStr = '',
+                buttonTimeDom = $('#J-button-btn-time');
+            window.setInterval(function () {
+                    var day = 0,
+                        hour = 0,
+                        minute = 0,
+                        second = 0; //时间默认值
+                    if (intDiff > 0) {
+                        day = Math.floor(intDiff / (60 * 60 * 24)); //天
+                        hour = Math.floor(intDiff / (60 * 60)) - (day * 24); //时
+                        minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60); //分
+                        second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60); //秒
+                    }
+                    //倒计时
+//
+                    h = Math.floor(intDiff / 3600);
+                    m = Math.floor(intDiff % 3600 / 60);
+                    s = intDiff % 3600 % 60;
+
+
+                    h = h < 10 ? '0' + h : '' + h;
+                    m = m < 10 ? '0' + m : '' + m;
+                    s = s < 10 ? '0' + s : '' + s;
+                    timeStr = '' + h + m + s;
+                    timeStrArr = timeStr.split('');
+
+
+                    for (i = 0, len = timeStrArr.length; i < len; i++) {
+                        if (timeStrArr[i] != oldTimeNumber[i]) {
+                            indexArr.push(i);
+                        }
+                    }
+
+                    oldTimeNumber = timeStr.split('');
+
+                    for (i = 0, len = indexArr.length; i < len; i++) {
+                        if (document.all) {
+
+                            timeDoms[indexArr[i]].innerHTML = oldTimeNumber[indexArr[i]];
+                        } else {
+//                               	console.log('2222');
+                            flipCard(timeDoms[indexArr[i]], oldTimeNumber[indexArr[i]]);
+                        }
+                    }
+                    //倒计时
+
+                    intDiff--;
+                    indexArr = [];
+
+                    if (intDiff == 0) {
+
+                        var sscNumber = $("#sscNumber").html();
+                        $.ajax({
+                            url: 'https://www.zd555.net/get-current-issue/24',
+                            type: 'get',
+                            dataType: 'json',
+                            success: function (data) {
+                                console.log('倒计时调试');
+                                console.log(data);
+//                              console.log("data['isSuccess']:" + data['issue']);
+//                              console.log('$("#sscNumber").html():' + $("#sscNumber").html());
+//                              console.log("data['data']['issue']:" + data['issue'])
+//                              console.log("data['end_time']:"+data['end_time']);
+                                if (data['issue'] && $("#sscNumber").html() != data['issue']) {
+                                    $("#sscNumber").html(data['issue']);
+                                    intDiff = data['end_time'];
+//                                  console.log(data);
+//                                  console.log('倒计时');
+//                                  console.log(intDiff);
+                                } else if ($("#sscNumber").html() == data['issue']) {
+                                    intDiff = 1
+                                }
+
+                            },
+                            error: function (err, textStatus) {
+//                            console.log(':');
+//                            console.log(err);
+                            }
+                        });
+                    }
+                },
+                1000);
+        }
+
+        $(function () {
+            timer(intDiff);
+                    });
+</script>
+<script type="text/javascript" src="/js/nsc/soundBox.js?v=1.17.1.13"></script>
+<div class="footer">
+    <div class="foot">
+        <p><img src="/assets/footer.png?v=1.18.8.9"></p>
+        
+		<p>菲律宾政府 PAGCOR 博彩牌照认证</p>
+        <p>Copyright © 2019  All Rights Reserved. | 版权所有</p>
+		<p>郑重提示：购买彩票有风险，投注需谨慎，禁止向未满18周岁青少年出售彩票</p>
+    
+</div>
+<style>
+	.vip_info_content{
+		background-color: #f8f8f8
+	}
+	.footer_img{
+		
+	}
+	.footer {
+		width: 100%;
+    background-image: url(assets/footer1.jpg);
+    overflow: hidden;
+}
+
+
+/*底部*/
+.foot{width: 1200px; margin: 0 auto; padding: 30px 0 20px; text-align: center;}
+.browser a{ color: #9E9E9E; font-size: 15px; margin-left: 10px; margin-right: 10px}
+.browser a:hover{color:#cdbbd1 }
+.browser a:hover .ic-chrome{background-position: -79px -119px; }
+.browser a:hover .ic-ie{background-position: -38px -117px; }
+.browser a:hover .ic-firefox{background-position: 0 -119px; }
+.browser b{ color: #a181a2; font-size: 20px; }
+.foot p{ color: #9E9E9E; line-height: 24px; font-size: 13px;}
+</style>
+
+
+
+<script type='text/javascript'>
+function zxkf(){
+	 <?php if($this->settings['kefuStatus']){ ?>
+	layer.open({
+	  type: 2,
+	  area: ['800px', '550px'],
+	  zIndex:1999,
+	  //fixed: false, //不固定
+	  title:'在线客服',
+	  scrollbar: false,//屏蔽滚动条
+	  //maxmin: true,
+	  content:'<?=$this->settings['kefuGG']?>'
+	});
+	<?php }else{?>
+	$.alert("客服系统维护中");
+	<?php }?>
+	return false;
+}
+function qqkf(){
+	<?php if($this->settings['qqkefuStatus']){ ?>
+	layer.open({
+	  type: 2,
+	  area: ['800px', '550px'],
+	  zIndex:1999,
+	  //fixed: false, //不固定
+	  title:'在线客服',
+	  scrollbar: false,//屏蔽滚动条
+	  //maxmin: true,
+	  content:'http://wpa.qq.com/msgrd?uin=<?=$this->settings['qqkefuGG']?>'
+	});
+	<?php }else{?>
+	$.alert("客服系统维护中");
+	<?php }?>
+	return false;
+}
+</script>
+<!--侧边栏-->
+<script src="/js/nsc/velocity.min.js?v=1.16.11.5" charset="utf-8"></script>
+<script src="/js/nsc/zr-script.js?v=1.16.11.5" charset="utf-8"></script>
+<div class="sidebar" id="sidebar">
+	
+</div>
+
+
+<link rel="stylesheet" type="text/css" href="/css/nsc/guide.css?v=1.16.11.5">
+
+<div id="wanjinDialog"></div>
+</body>
+<script type="text/javascript">
+var t = null;
+function time(){
+ dt = new Date();
+ var y=dt.getFullYear();
+ var month=dt.getMonth() + 1;
+ var day=dt.getDate();
+ var h=dt.getHours();
+ var m=dt.getMinutes();
+ var s=dt.getSeconds();
+ document.getElementById("timeShow").innerHTML=""+y+"年"+month+"月"+day+"日"+h+"时"+m+"分"+s+"秒";
+ t = setTimeout(time,1000);    
+} 
+window.onload=function(){time()}
+</script>
+</html>

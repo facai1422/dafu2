@@ -1,0 +1,76 @@
+﻿
+/*个人中心表格样式*/
+.mbr-table { background: #fff; border: solid 1px #ececec; box-shadow: 0 1px 2px #eee; margin: 10px 0; }
+.mbr-table th, .mbr-table td { padding: 8px; border: none; border-bottom: 1px solid #ddd; }
+.mbr-table tr.title { border-bottom: 2px solid #ddd; }
+.btn-def { color: #333; background-color: #fff; border-color: #ccc; display: inline-block; padding: 6px 12px; font-size: 14px; font-weight: 400;
+line-height: 1.42857143;  white-space: nowrap; -ms-touch-action: manipulation; touch-action: manipulation; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
+user-select: none; background-image: none; border: 1px solid #ccc; border-radius: 4px; text-align: center; cursor: pointer; vertical-align: middle; }
+.btn-def:hover { background: #e6e6e6; }
+.btn-def:active {color: #333; background-color: #d4d4d4; border-color: #8c8c8c; box-shadow: 0 3px 5px 0 #b9b9b9 inset; }
+.btn-blue { color: #fff; background-color: #25aae1; border-color: #0e86b8; display: inline-block; padding: 8px 45px; font-size: 14px; font-weight: 400; border: none; border-radius: 4px; text-align: center; cursor: pointer; vertical-align: middle; }
+.btn-blue:hover { background: #0e86b8; }
+.mbr-table .num { font-size: 22px; color: #ff7800; }
+.mbr-table .mt-l { border-right: 1px solid #ddd; }
+.mbr-table .an a:hover { color: #f00; }
+
+
+/*个人中心*/
+.user-box { height: auto; width: auto; padding: 20px 12px 30px; overflow: hidden; }
+.user-box a { color: #333; }
+.user-box .hd { width: 100%; height: 36px; line-height: 36px; background: #333; color: #fff; text-indent: 2em; }
+.user-wrap { height: auto; background: #f7f7f7; color: #333; font-size: 14px; min-height: 300px; margin-top: 30px; overflow: hidden; }
+.user-nav { width: 100%; height: 54px; line-height: 54px; background: #5e87b0; }
+.user-nav ul li { width: auto; height: 54px; float: left; padding: 0 15px; border-right: 1px solid #507aa4; }
+.user-nav ul li:hover { background: #6f94b8; }
+.user-nav ul li.cur { background: #80a0c1; }
+.user-nav ul li a { font-size: 16px; }
+.sub-nav { width: 100%; height: 36px; line-height: 36px; background: #fff; border-bottom: 1px solid #e7e7e7; box-shadow: 0 1px 2px #eee; }
+.sub-nav ul { width: auto; padding-left: 30px; }
+.sub-nav ul li { margin: 0 15px; float: left; background: url('/Public/Images/user_icon.png') -10px 0; padding-left: 8px; }
+.sub-nav ul li:hover, .sub-nav ul li.cur { background: url('/Public/Images/user_icon.png') -10px -36px; }
+.sub-nav ul li.cur a { color: #507aa4; }
+.sub-nav ul li a { color: #333; }
+
+/*线上存款确认*/
+.depInfo { height: auto; width: 100%; margin-bottom: 10px; overflow: hidden; }
+.depInfo .payee, .depInfo .payer { height: 220px; width: 45%; border: 1px dashed #999; padding: 8px 10px; margin-top: 10px; background: #fff; }
+.depInfo .payee { margin-left: 10px; float: left; }
+.depInfo .payer { margin-right: 10px; float: right; }
+.depInfo li { width: 330px; display: block; height: 24px; margin-bottom: 2px; }
+.depInfo span.dpt { text-align: right; width: 80px; float: left; padding-right: 10px; }
+.val-Info { height: auto; width: 100%; padding-top: 15px; padding-bottom: 15px; text-align: center; }
+.val-Info input { padding: 5px; margin: 10px; }
+
+/*存款提款*/
+.boxshadow { width: 64%; border-bottom: 1px solid #ddd; float: left; margin: 0; height: 130px; box-sizing: border-box; padding: 30px; line-height: 25px; }
+.finance_deposit1, .finance_deposit2, .finance_deposit3 { width: 35%; height: 130px; float: left; margin: 0; }
+.finance_deposit1 { background: url(/Public/Images/deposit.jpg) 0 0 no-repeat #f8c255; }
+.finance_deposit2 { background: url(/Public/Images/deposit.jpg) 0 -130px no-repeat #bfe79e; }
+.finance_deposit3 { background: url(/Public/Images/deposit.jpg) 0 -260px no-repeat #7dd5c9; }
+
+/*额度转换*/
+.money-left { width: 230px; float: left; }
+.money-left table { background: #fff; border: solid 1px #ececec; box-shadow: 0 1px 2px #eee; margin: 10px 0; }
+.money-left table th, .money-left table td { padding: 4px; border: none; border-bottom: 1px solid #ddd;word-break:break-all }
+.money-left table tr.title { background: #333; }
+.money-left table tr.title td { color: #fff; padding: 8px; }
+.money-left table tr.main-account { background: #f1f1f1; }
+.money-left table tr.all { background: #6a6b65; color: #fff; }
+.money-left table td>i.ico { width: 7px; height: 18px; border-radius: 2px; display: block; }
+.money-left table td>i.gray { background: #d9d9d9; }
+.money-left table td>i.blue { background: #98e1f3; }
+.money-left table td>i.green { background: #93dd92; }
+.money-left table td>i.red { background: #fca7a0; }
+.money-left table td>i.yellew { background: #ffe993; }
+.money-left .ml-btn { width: 136px; height: 32px; color: #fff; font-size: 14px; display: block; width: 121px; padding: 8px; cursor: pointer; border: 0 none; border-radius:3px; display: block; margin-bottom: 5px; }
+.money-left .sos-btn { background: #8fc714;}
+.money-left .sos-btn:hover { background: #7bae0a; }
+.money-left .ct-btn { background: #25aae1; }
+.money-left .ct-btn:hover { background: #0e86b8; }
+.soshd { width: 752px; height: 36px; line-height: 36px; background: #333; color: #fff; text-indent: 2em; float: right; margin-bottom: -10px; margin-top: 11px; }
+.money-right { width: 720px; float: right; background: #fff; border: solid 1px #ececec; box-shadow: 0 1px 2px #eee; margin-top: 10px; padding: 15px; }
+.money-right table.tran td { padding: 8px; }
+.money-right .yh { width: 90%; margin: 20px auto; background: #f1f1f1; padding: 15px; }
+.money-right .info { font-size: 12px; font-weight: bold; }
+.sos-record { width: 750px; height: auto; float: right; padding-top: 15px; padding-bottom: 15px; }

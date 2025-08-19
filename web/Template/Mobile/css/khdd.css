@@ -1,0 +1,52 @@
+html, body, div, canvas, a {
+	margin: 0 auto;
+	padding: 0px;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	background-color: #313131;
+}
+#container {
+    text-align: center;
+    /* width: 40%; */
+    /* height: 100%; */
+    /* margin: 0px auto; */
+    overflow: hidden;
+}
+#clockBoard {
+    /* width: 4rem; */
+    height: 750px;
+    /* margin: 0px auto; */
+    /* margin-top: 14%; */
+    /* margin-bottom: 0px; */
+    background: linear-gradient(#0e83f5, #20bcf5);
+    margin-left: -.7rem;
+}
+#pointer {
+	position: relative;
+	top: -560px;
+}
+#value {
+	position: relative;
+	z-index: 10;
+	top: -500px;
+	left: 210px;
+	border-radius: 5px;
+	line-height: 20px;
+}
+#run {
+	position: relative;
+	z-index: 10;
+	top: -450px;
+	left: 105px;
+	padding: 5px;
+	border-radius: 5px;
+	background: #40ccf5;
+	border: 1px solid #40bce5;
+	width: 70px;
+	height: 30px;
+	line-height: 20px;
+	color: #fff;
+	font: 20px bold;
+}

@@ -1,0 +1,1 @@
+function nTabs(d,e){if(d.className=="active"){return}var b=d.parentNode.id;var a=document.getElementById(b).getElementsByTagName("li");for(var c=0;c<a.length;c++){if(c===e){d.className="active";document.getElementById(b+"_Content"+c).style.display="block"}else{a[c].className="normal";document.getElementById(b+"_Content"+c).style.display="none"}}};

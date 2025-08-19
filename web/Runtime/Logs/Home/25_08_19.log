@@ -1,0 +1,409 @@
+[ 2025-08-19T06:24:09+08:00 ] 43.157.20.63 /Game.ssc.code.hnssc.do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002833s ]
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 60 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 13 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined index: h5.amjs.xyz /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 32 行.
+NOTIC: [8] Undefined index: m.amjs.xyz /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 36 行.
+NOTIC: [8] Undefined index: m2.amjs.xyz /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 40 行.
+NOTIC: [8] Undefined index: m.amjs.xyz /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 44 行.
+
+[ 2025-08-19T06:25:31+08:00 ] 57.141.2.2 /Public.splash.do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 60 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 13 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 47 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 48 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [2] file_put_contents(./app/Common/Conf/webconfig.php): failed to open stream: Permission denied /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 63 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 47 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 48 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+ERR: 非法操作:splash
+
+[ 2025-08-19T06:31:00+08:00 ] 49.51.52.250 /Game.ssc.code.xjpssc.do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 60 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 13 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined index: h5.amjs.xyz /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 32 行.
+NOTIC: [8] Undefined index: m.amjs.xyz /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 36 行.
+NOTIC: [8] Undefined index: m2.amjs.xyz /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 40 行.
+NOTIC: [8] Undefined index: m.amjs.xyz /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 44 行.
+
+[ 2025-08-19T06:32:07+08:00 ] 104.28.224.94 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 60 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 13 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 47 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 48 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [2] file_put_contents(./app/Common/Conf/webconfig.php): failed to open stream: Permission denied /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 63 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 47 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 48 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+
+[ 2025-08-19T06:32:08+08:00 ] 104.28.224.94 /Public.login.do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 60 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 13 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 47 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 48 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [2] file_put_contents(./app/Common/Conf/webconfig.php): failed to open stream: Permission denied /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 63 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/PublicController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000707s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001104s ]
+
+[ 2025-08-19T06:33:24+08:00 ] 104.28.224.94 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 60 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 13 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 47 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 48 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [2] file_put_contents(./app/Common/Conf/webconfig.php): failed to open stream: Permission denied /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 63 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+
+[ 2025-08-19T06:33:25+08:00 ] 104.28.224.94 /Public.login.do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 60 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 13 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 47 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 48 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [2] file_put_contents(./app/Common/Conf/webconfig.php): failed to open stream: Permission denied /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 63 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/PublicController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000122s ]
+
+[ 2025-08-19T06:43:00+08:00 ] 217.182.194.45 /Game.dpc?code=fc3d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 60 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 13 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+
+[ 2025-08-19T06:43:03+08:00 ] 217.182.194.45 /Public.login.do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000251s ]
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 60 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 13 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/PublicController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000132s ]
+
+[ 2025-08-19T06:43:05+08:00 ] 217.182.194.45 /Game.x5?code=df11x5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 60 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 13 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+
+[ 2025-08-19T06:43:08+08:00 ] 217.182.194.45 /Public.login.do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 60 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 13 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/PublicController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000125s ]
+
+[ 2025-08-19T06:43:10+08:00 ] 217.182.194.45 /Game.x5?code=js11x5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 60 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 13 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+
+[ 2025-08-19T06:43:13+08:00 ] 217.182.194.45 /Public.login.do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000256s ]
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 60 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 13 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/PublicController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000119s ]
+
+[ 2025-08-19T06:45:02+08:00 ] 51.68.107.142 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 60 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 13 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 47 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 48 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [2] file_put_contents(./app/Common/Conf/webconfig.php): failed to open stream: Permission denied /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 63 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+
+[ 2025-08-19T06:45:03+08:00 ] 51.68.107.142 /Public.login.do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000251s ]
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 60 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 13 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 47 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 48 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [2] file_put_contents(./app/Common/Conf/webconfig.php): failed to open stream: Permission denied /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 63 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/PublicController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000308s ]
+
+[ 2025-08-19T07:04:32+08:00 ] 46.228.199.158 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 60 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 13 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 47 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 48 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [2] file_put_contents(./app/Common/Conf/webconfig.php): failed to open stream: Permission denied /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 63 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 47 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 48 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+
+[ 2025-08-19T07:04:32+08:00 ] 46.228.199.158 /Public.login.do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 57 行.
+NOTIC: [8] Trying to get property of non-object /www/wwwroot/cai/web/app/Home/Common/function.php 第 60 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 13 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 47 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 48 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [2] file_put_contents(./app/Common/Conf/webconfig.php): failed to open stream: Permission denied /www/wwwroot/cai/web/app/Home/Controller/CommonController.class.php 第 63 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Home/Controller/PublicController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000124s ]
+

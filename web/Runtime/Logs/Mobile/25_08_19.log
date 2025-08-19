@@ -1,0 +1,114 @@
+[ 2025-08-19T06:42:43+08:00 ] 43.166.239.145 /Game.x5.code.hn11x5.do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Mobile/Controller/CommonController.class.php 第 6 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 47 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 48 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [8] Undefined index: expect /www/wwwroot/cai/web/app/Mobile/Controller/CommonController.class.php 第 77 行.
+NOTIC: [8] Undefined index: opencode /www/wwwroot/cai/web/app/Mobile/Controller/CommonController.class.php 第 78 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+
+[ 2025-08-19T06:42:48+08:00 ] 43.166.239.145 /Public.login.do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Mobile/Controller/CommonController.class.php 第 6 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined index: expect /www/wwwroot/cai/web/app/Mobile/Controller/CommonController.class.php 第 77 行.
+NOTIC: [8] Undefined index: opencode /www/wwwroot/cai/web/app/Mobile/Controller/CommonController.class.php 第 78 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Mobile/Controller/PublicController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000173s ]
+
+[ 2025-08-19T06:53:29+08:00 ] 43.164.197.209 /Game.k3.code.xyk3.do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Mobile/Controller/CommonController.class.php 第 6 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 47 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 48 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [2] file_put_contents(./app/Common/Conf/webconfig.php): failed to open stream: Permission denied /www/wwwroot/cai/web/app/Mobile/Controller/CommonController.class.php 第 44 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 47 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 48 行.
+NOTIC: [8] Undefined index: expect /www/wwwroot/cai/web/app/Mobile/Controller/CommonController.class.php 第 77 行.
+NOTIC: [8] Undefined index: opencode /www/wwwroot/cai/web/app/Mobile/Controller/CommonController.class.php 第 78 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+
+[ 2025-08-19T06:53:31+08:00 ] 43.164.197.209 /Public.login.do
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Mobile/Controller/CommonController.class.php 第 6 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 47 行.
+NOTIC: [8] Undefined variable: apiurl /www/wwwroot/cai/web/app/Common/Lib/api.class.php 第 48 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [2] file_put_contents(./app/Common/Conf/webconfig.php): failed to open stream: Permission denied /www/wwwroot/cai/web/app/Mobile/Controller/CommonController.class.php 第 44 行.
+NOTIC: [8] Undefined index: expect /www/wwwroot/cai/web/app/Mobile/Controller/CommonController.class.php 第 77 行.
+NOTIC: [8] Undefined index: opencode /www/wwwroot/cai/web/app/Mobile/Controller/CommonController.class.php 第 78 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 43 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/Core/Library/Think/Controller.class.php 第 44 行.
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Mobile/Controller/PublicController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000145s ]
+
+[ 2025-08-19T07:04:30+08:00 ] 46.228.199.158 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+NOTIC: [8] Undefined index: userinfo /www/wwwroot/cai/web/app/Mobile/Controller/CommonController.class.php 第 6 行.
+NOTIC: [2] Creating default object from empty value /www/wwwroot/cai/web/app/Common/Common/function.php 第 502 行.
+NOTIC: [8] Undefined index: amjs.xyz /www/wwwroot/cai/web/app/Mobile/Controller/CommonController.class.php 第 22 行.
+

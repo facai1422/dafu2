@@ -1,0 +1,35 @@
+﻿html{color:#fff;margin:0;padding:0;}
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,img,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0;vertical-align:middle}
+body,button,input,select,textarea{font:14px/1.5 "Microsoft YaHei","Helvetica neue",Helvetica,Tahoma,Arial,"\5FAE\8F6F\96C5\9ED1","\5B8B\4F53",sans-serif}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0;display:block}
+audio,canvas,video{display:inline-block}
+audio:not([controls]) {display:none;height:0}
+[hidden] {display:none}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+mark{background:none;padding:3px;color:#EEE}
+img{border:0 none;max-width:100%;height:auto}
+table{border-collapse:collapse;border-spacing:0}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em,i{font-style:normal}
+ol,ul{list-style:none}
+button{cursor:pointer;border:0 none}
+a{text-decoration:none;outline:0;hide-focus:expression(this.hideFocus=true)}
+a:link,a:visited{text-decoration:none}
+a:active,a:hover{text-decoration:none}
+*html .clearfix {zoom:1} /* IE6 */
+*:first-child+html .clearfix {zoom:1} /* IE7 */
+.clearfix:after,.clearfix:before{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.overflow {display:block; white-space:nowrap; word-wrap:normal; word-break:break-all; overflow:hidden; text-overflow:ellipsis; max-width:100%; _width:100%}
+.fl,.left{float:left}
+.fr,.right{float:right}
+.cb{clear:both}
+.abs{position: absolute}
+.rel{position: relative}
+.wrapper{width:100%}
+.wrap{width:1020px;margin:0 auto}
+.aui_buttons button::-moz-focus-inner { border: 0px none; padding: 0px; margin: 0px; }
+body,html{min-width: 1020px;}
+
+.hd_png{background: url(/static/images/png_hd.png?v=1.0) no-repeat scroll 0 0 transparent;}
+.f_bd li {line-height: 22px;}

@@ -1,0 +1,93 @@
+﻿.layui-layer[type=dialog] {
+    min-width: 540px;
+    background: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+.layui-layer-msg[type=dialog] {
+    min-width: 200px;
+    background: #ffffff;
+}
+
+.layui-layer .layui-layer-setwin {
+    top: 20px;
+}
+
+.layui-layer .layui-layer-title {
+    height: 58px;
+    line-height: 52px;
+    padding: 0 20px;
+    color: #ff600a;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    background: #ffffff;
+    border-top: 6px solid #ff600a;
+    border-bottom: 1px dashed #f1f1f1;
+    border-radius: 0;
+}
+
+.layui-layer .layui-layer-content .layui-layer-ico {
+    top: 24px;
+    left: 50%;
+    height: 56px;
+    width: 56px;
+    margin-left: -28px;
+}
+
+.layui-layer .layui-layer-ico0 {
+    background: url("../images/default.png") 0 0;
+}
+
+.layui-layer .layui-layer-ico1 {
+    background: url("../images/default.png") -56px 0;
+}
+
+.layui-layer .layui-layer-ico2 {
+    background: url("../images/default.png") -112px 0;
+}
+
+.layui-layer .layui-layer-ico3 {
+    background: url("../images/default.png") -168px 0;
+}
+
+.layui-layer .layui-layer-content {
+    color: #444444;
+    font-size: 16px;
+    text-align: center;
+}
+
+.layui-layer .layui-layer-padding {
+    padding: 108px 96px 24px 96px;
+}
+
+.layui-layer .layui-layer-btn {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.layui-layer .layui-layer-btn a {
+    min-width: 140px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 20px;
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    background: #ff600a;
+    border: 1px solid #ff600a;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.layui-layer .layui-layer-btn .layui-layer-btn0 {
+    background: #ff600a;
+}
+
+.layui-layer .layui-layer-btn .layui-layer-btn1 {
+    color: #404a58;
+    background: #ffffff;
+    border: 1px solid #c0c4cd;
+    border-radius: 3px;
+}

@@ -1,0 +1,363 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: rgb(241, 241, 241);
+}
+span {
+	vertical-align: middle; display: inline-block;
+}
+a {
+	vertical-align: middle; display: inline-block;
+}
+img {
+	vertical-align: middle; display: inline-block;
+}
+#html5zoo-1 {
+	overflow: hidden;
+}
+.html5zoo-wrapper-0 {
+	margin: 0px auto; padding-top: 29.17%; max-width: 1920px;
+}
+.html5zoo-slider-0 {
+	position: absolute !important;
+}
+.html5zoo-slides {
+	padding-top: 29.17%; position: relative;
+}
+.html5zoo-slides li {
+	position: absolute;
+}
+.html5zoo-nav-0 {
+	left: 50% !important; width: auto !important; margin-top: -65px !important; transform: translateX(-50%); -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -o-transform: translateX(-50%);
+}
+.jack-main {
+	color: rgb(241, 241, 241); margin-top: -60px; margin-bottom: 0px;
+}
+.jack-notice {
+	background: rgba(0, 0, 0, 0.15); font-size: 12px; margin-bottom: 30px;
+}
+.jack-notice .notice-l {
+	width: 50px; height: 38px; line-height: 38px; padding-left: 20px; float: left;
+}
+.jack-notice .notice-r {
+	padding: 3px 10px 3px 30px; width: 295px; height: 38px; text-align: center; float: right; background-size: cover;
+}
+.jack-notice .notice-r .notice-img {
+	margin-right: 2px;
+}
+.jack-notice .notice-r .numberRun3 {
+	color: rgb(192, 40, 40);
+}
+.jack-notice .notice-m {
+	height: 38px; overflow: hidden; margin-left: 55px;
+}
+.jack-notice .notice-m .marquee {
+	color: rgb(255, 255, 255); line-height: 38px; font-size: 13px; white-space: nowrap;
+}
+.jack-notice .notice-m .marquee * {
+	display: inline-block;
+}
+.jack-notice .notice-m a {
+	color: rgb(255, 255, 255);
+}
+.jack-table {
+	width: 100%; height: 440px; margin-bottom: 40px;
+}
+.jack-cell-l {
+	background: rgb(35, 42, 56); width: 455px; margin-right: 15px; vertical-align: top; float: left;
+}
+.main-play .play-li {
+	width: 227.5px; float: left; position: relative;
+}
+.main-play .no-link::after {
+	left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute; content: "";
+}
+.main-link {
+	width: 100%; height: 230px; color: rgb(255, 255, 255); overflow: hidden; float: left; position: relative;
+}
+.main-link .play-pic {
+	transition:0.3s ease-in; width: 100%; min-height: 100%; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in;
+}
+.main-link .play-bg {
+	background: rgb(0, 0, 0); transition:0.3s ease-in; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; opacity: 0.35; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in;
+}
+.count-down-canvas {
+	background: linear-gradient(rgba(0, 150, 136, 0), rgba(0, 150, 136, 0)); width: 100%; height: 120px; bottom: 0px; position: absolute;
+}
+.deadline {
+	background: rgb(98, 90, 72); padding: 5px 0px 5px 3px; left: 3px; width: 223px; bottom: 50px; white-space: nowrap; position: absolute;
+}
+.count-down {
+	left: 38px; width: 150px; height: 40px; bottom: 20px; padding-left: 6px; position: absolute;
+}
+.count-down span {
+	font-size: 26px; float: left;
+}
+.count-down .clock-mi {
+	background: rgb(255, 255, 255); width: 20px; color: rgb(255, 86, 86);
+}
+.count-down .divider {
+	width: 10px; text-align: center;
+}
+.count-down .num-left {
+	text-align: left; padding-left: 5px; border-top-left-radius: 6px; border-bottom-left-radius: 6px;
+}
+.count-down .num-right {
+	text-align: right; padding-right: 5px; border-top-right-radius: 6px; border-bottom-right-radius: 6px;
+}
+.main-link .play-text {
+	left: 0px; width: 100%; text-align: center; margin-top: 20px; position: absolute;
+}
+.main-link .play-text .play-span {
+	color: rgb(255, 255, 255); font-size: 20px;
+}
+.main-link .play-text .expect {
+	font-size: 14px;
+}
+.main-link:hover .play-pic {
+	transform: scale(1.1); -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1);
+}
+.main-link:hover .play-bg {
+	opacity: 0.6;
+}
+.main-link:hover {
+	color: rgb(255, 255, 255);
+}
+.main-sort {
+	padding: 24px 0px 0px 24px;
+}
+.number-lottery :first-child.number-con {
+	padding-left: 0px;
+}
+.play-link.no-link {
+	cursor: default; opacity: 0.3;
+}
+.play-link.no-link:hover {
+	background: none; color: rgb(255, 255, 255); opacity: 0.3;
+}
+.number-lottery .number-con {
+	width: 100%; padding-left: 0px;
+}
+.jack-cell-r {
+	background: rgb(255, 255, 255); padding: 3px; width: 360px; height: 460px; color: rgb(69, 69, 69); float: left; box-shadow: 0px 3px 10px rgba(68,68,68,0.38);
+}
+.jack-cell-r .lottery-canvas {
+	width: 100%; height: 40px; line-height: 40px; margin-bottom: 3px; display: inline-block;
+}
+.jack-cell-r .lottery-canvas .game-name {
+	width: 100px; height: 40px; text-align: left; line-height: 40px; padding-left: 10px; font-family: "microsoft yahei", Helvetica, Arial, sans-serif, STHeiTi; font-size: 14px; float: left; display: inline-block;
+}
+.jack-cell-r .lottery-canvas .lottery-data {
+	list-style: none; position: relative;
+}
+.jack-cell-r .lottery-canvas .lottery-data .ball {
+	background: linear-gradient(0deg, rgb(255, 255, 255) 2%, rgb(231, 231, 231) 100%); border-radius: 50%; border: 1px solid rgb(214, 214, 214); border-image: none; width: 28px; height: 28px; text-align: center; color: rgb(255, 86, 86); line-height: 28px; font-size: 14px; font-weight: 500; margin-top: 5px; margin-right: 5px; float: left; display: inline-block;
+}
+.jack-cell-r a {
+	color: rgb(255, 255, 255) !important;
+}
+.jack-cell-r .lottery-canvas .more-btn {
+	background: rgb(255, 86, 86); padding: 0px 5px; transition:0.3s; width: 50px; height: 30px; text-align: center; color: rgb(255, 255, 255) !important; line-height: 30px; margin-top: 5px; float: right; display: inline-block; cursor: pointer;
+}
+.jack-cell-r .lottery-canvas .more-btn:hover {
+	box-shadow: 2px 2px 3px #ccc;
+}
+.jack-cell-r .download-img {
+	background: url("app-download-s.jpg") no-repeat 0% 0% / cover; width: 100%; height: 458px; margin-top: -2px; position: relative;
+}
+.jack-cell-r .download-img .app-download-btn {
+	left: 120px; top: 200px; width: 120px; height: 30px; position: absolute;
+}
+.jack-cell-r .download-img .app-download-btn .btn {
+	background: #FF5722; width: 120px; height: 30px; text-align: center; color: rgb(255, 255, 255); line-height: 30px; font-size: 16px; display: inline-block;
+}
+.jack-cell-r .download-img .app-download-btn .btn:hover {
+	transition:0.5s; box-shadow: 2px 3px 5px #454545;
+}
+.game-menu {
+	background: rgb(255, 255, 255); padding: 10px; width: 360px; height: 460px; margin-right: 10px; float: left; box-shadow: 0px 3px 10px rgba(68,68,68,0.38);
+}
+.game-menu .play-sort {
+	padding-left: 10px;
+}
+.game-menu .play-sort li {
+	width: 100px;
+}
+.game-menu .play-sort li:hover {
+	
+}
+.play-link {
+	padding: 0px 10px; border-radius: 8px;
+}
+.play-link:hover {
+	background: rgb(255, 86, 86); color: rgb(255, 255, 255);
+}
+.lottery-title {
+	height: 60px; margin-bottom: 20px;
+}
+.lottery-title .span {
+	width: 100%; height: 60px; text-align: center; color: rgb(255, 86, 86); line-height: 60px; font-family: "Microsoft YaHei"; font-size: 26px; display: inline-block;
+}
+.return-point {
+	text-align: center; line-height: 1.4;
+}
+.return-point .span-1 {
+	font-size: 48px; margin-right: 6px;
+}
+.return-point .span-2 {
+	font-size: 24px;
+}
+.happy-keno {
+	padding: 0px 5px; font-size: 0px;
+}
+.happy-keno .keno-btn {
+	background: rgb(77, 0, 1); border-radius: 3px; width: 49.5%; height: 36px; text-align: center; color: rgb(255, 255, 255); line-height: 36px; font-size: 14px; margin-bottom: 2px; cursor: default; opacity: 0.7;
+}
+.happy-keno :nth-child(2n).keno-btn {
+	margin-left: 1%;
+}
+.today-bet {
+	padding-top: 12px; padding-bottom: 8px; margin-top: 16px; border-top-color: rgb(169, 130, 72); border-top-width: 1px; border-top-style: dashed;
+}
+.today-bet .today-icon {
+	background: url("remind.png") no-repeat; width: 19px; height: 18px;
+}
+.today-bet .span {
+	font-size: 13px;
+}
+.fixed-bet {
+	background: url("win.jpg") no-repeat center; height: 240px; position: relative;
+}
+.fixed-bet .fixed-text {
+	background: rgba(76, 57, 152, 0.7); left: 50%; top: 50%; width: 170px; height: 80px; text-align: center; color: rgb(255, 255, 255); padding-top: 26px; font-size: 20px; margin-top: -40px; margin-left: -85px; position: absolute; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.lottery-title .yellow {
+	color: rgb(255, 216, 154);
+}
+.jack-activity {
+	background: 0% 0% / cover rgb(255, 255, 255); padding: 45px 0px; margin-top: 40px; margin-bottom: 20px; box-shadow: 0px 3px 10px rgba(68,68,68,0.38);
+}
+.activity-wrap {
+	padding: 0px 28px;
+}
+.pic-list .pic-a {
+	display: block;
+}
+.pic-list .pic-wrap {
+	height: 106px; overflow: hidden; position: relative;
+}
+.pic-list .pic-wrap img {
+	width: 100%; min-height: 106px;
+}
+.pic-list .pic-bg {
+	background: rgba(0, 0, 0, 0.4); transition:0.2s; left: 0px; top: -100%; width: 100%; height: 100%; position: absolute; -webkit-transition: all .2s; -moz-transition: all .2s; -o-transition: all .2s;
+}
+.pic-list .pic-bg span {
+	padding: 0px 22px; left: 0px; top: 50%; width: 100%; color: rgb(255, 255, 255); font-size: 13px; position: absolute; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -o-transform: translateY(-50%);
+}
+.pic-list .pic-text {
+	transition:0.2s; text-align: center; color: rgb(196, 161, 124); line-height: 1; font-size: 16px; margin-top: 10px; -webkit-transition: all .2s; -moz-transition: all .2s; -o-transition: all .2s;
+}
+.pic-list li:hover .pic-bg {
+	top: 0px;
+}
+.pic-list li:hover .pic-text {
+	color: rgb(255, 216, 154);
+}
+.swiper-button-prev {
+	background-position: center; transition:0.3s; width: 50px; height: 50px; text-align: center; margin-top: -40px; opacity: 0.7; background-repeat: no-repeat; background-size: 11px 18px; background-color: rgb(255, 86, 86); -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s;
+}
+.swiper-button-next {
+	background-position: center; transition:0.3s; width: 50px; height: 50px; text-align: center; margin-top: -40px; opacity: 0.7; background-repeat: no-repeat; background-size: 11px 18px; background-color: rgb(255, 86, 86); -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s;
+}
+.swiper-button-prev {
+	left: 0px; background-image: url("slide-arrow-l.png");
+}
+.swiper-button-next {
+	right: 0px; background-image: url("slide-arrow-r.png");
+}
+.swiper-button-prev:hover {
+	opacity: 1;
+}
+.swiper-button-next:hover {
+	opacity: 1;
+}
+.jack-recreation {
+	background: url("recreation-bg.jpg") no-repeat bottom rgb(237, 237, 237); padding: 45px 0px;
+}
+.jack-recreation .recreation {
+	background: rgb(35, 42, 56); padding: 15px 6px;
+}
+.recreation-li {
+	padding: 0px 9px; width: 25%; float: left;
+}
+.recreation-con {
+	transition:0.3s; position: relative; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s;
+}
+.recreation-con:hover {
+	background: rgb(24, 30, 41);
+}
+.recreation-bg::after {
+	background: rgba(0, 0, 0, 0.6); left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute; content: "";
+}
+.recreation-pic {
+	background-position: center; height: 100px; padding-top: 43px; padding-left: 12px; display: block; background-repeat: no-repeat;
+}
+.recreation-bjl {
+	background-image: url("recreation-1.jpg");
+}
+.recreation-lhd {
+	background-image: url("recreation-2.jpg");
+}
+.recreation-zbyl {
+	background-image: url("recreation-3.jpg");
+}
+.recreation-se {
+	background-image: url("recreation-4.jpg");
+}
+.recreation-pic .text-1 {
+	color: rgb(255, 255, 255); font-size: 22px; text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+}
+.recreation-pic .text-2 {
+	color: rgb(255, 255, 255); font-size: 14px; text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+}
+.recreation-dl {
+	margin-top: 20px;
+}
+.recreation-dt {
+	padding-left: 10px; margin-bottom: 8px;
+}
+.recreation-dt .text-1 {
+	color: rgb(255, 255, 255); font-size: 18px;
+}
+.recreation-dt .text-2 {
+	color: rgb(220, 185, 118); font-size: 14px; margin-left: 4px; vertical-align: bottom;
+}
+.recreation-dd {
+	background: rgb(48, 56, 72); font-size: 0px;
+}
+.recreation-a {
+	width: 33.33%; text-align: center; color: rgb(255, 255, 255); line-height: 32px; font-size: 12px; border-right-color: rgb(74, 74, 74); border-right-width: 1px; border-right-style: solid;
+}
+.recreation-21 {
+	width: 100%;
+}
+:last-child.recreation-a {
+	border-right-color: transparent; border-right-width: 1px; border-right-style: solid;
+}
+.recreation-a:hover {
+	background: rgb(46, 34, 93); color: rgb(255, 255, 255); border-right-color: rgb(76, 57, 152); border-right-width: 1px; border-right-style: solid;
+}
+@media all and (max-width:1280px)
+{
+.jack-cell-r {
+	display: none;
+}
+.jack-cell-l {
+	margin-right: 35px;
+}
+.game-menu {
+	width: 500px; margin-right: 0px;
+}
+}

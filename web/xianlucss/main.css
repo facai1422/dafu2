@@ -1,0 +1,277 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url(/image/bg.jpg) repeat-y center center;
+    background-size: cover;
+}
+
+.logo-canvas {
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    color: #FAFAFA;
+    font-weight: 600;
+}
+
+.logo-lab {
+    font-size: 16px;
+}
+
+.sign-btn {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #ffa200;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: default;
+    transition: all 0.3s;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.serve-btn {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #FF5656;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: default;
+    transition: all 0.3s;
+    font-size: 12px;
+}
+
+.serve-btn:hover {
+    box-shadow: 0px 0px 10px #FF5656;
+}
+
+.serve-lab,
+.serve-lab:hover {
+    color: #FFF;
+}
+
+.center-vertical {
+    background-color: rgba(250, 250, 250, 0.45);
+    box-shadow: 5px 0px 50px #263238;
+    border-radius: 18px;
+    padding: 0 0px;
+}
+
+.row-infor-canvas {
+    padding: 30px 30px;
+    border-bottom: 2px solid rgba(220, 220, 220, 0);
+    font-size: 12px;
+    text-align: center;
+}
+
+.tip-img {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin: 0px 3px;
+}
+
+.tip {
+    background: url('/image/tip.png') no-repeat center center;
+    background-size: contain;
+    top: 2px;
+}
+
+.ip {
+    background: url('/image/ip.png') no-repeat center center;
+    background-size: contain;
+    top: 2px;
+}
+
+.location {
+    background: url('/image/location.png') no-repeat center center;
+    background-size: contain;
+    top: 2px;
+}
+
+.domain-list-canvas {
+    padding: 20px 30px;
+}
+
+.domain-canvas {
+    text-align: center;
+}
+
+.domain-speed {
+    height: 20px;
+    line-height: 20px;
+}
+
+.speed-logo {
+    display: inline-block;
+    position: absolute;
+    margin-left: -25px;
+    width: 20px;
+    height: 20px;
+    background: url('/image/speed.png') no-repeat center center;
+    background-size: contain;
+}
+
+.speed-lab {
+    display: inline-block;
+    padding: 0 3px;
+    color: #FF5656;
+    font-weight: 600;
+}
+
+.domain-url {
+    height: 0px;
+    line-height: 40px;
+    background-color: #FFF;
+    border-radius: 5px;
+    margin: 20px 0px;
+    font-weight: 600;
+}
+
+.domain-enter {
+    height: 40px;
+    line-height: 40px;
+    background-color: #FF9800;
+    border-radius: 10px;
+    margin: 20px 0px;
+    color: #FFF;
+    cursor: default;
+    transition: all 0.3s;
+}
+
+.domain-enter:hover {
+    box-shadow: 0px 0px 20px #FF5656;
+}
+
+.domain-enter:hover .domain-link {
+    transition: all 0.3s;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px #424242;
+}
+
+.domain-link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.row-recheck-canvas {
+    padding: 30px 15px;
+    border-top: 2px solid rgba(233, 30, 99, 0);
+}
+
+.btn-canvas {
+    margin: 0 auto;
+}
+
+.recheck-btn {
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffa200;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.recheck-btn:hover {
+    box-shadow: 0px 0px 20px #ffa200;
+    text-shadow: 2px 2px 5px #424242;
+}
+
+.tips-lab-canvas {
+    margin-bottom: 40px;
+}
+
+.tips-lab {
+    margin: 10px 0px;
+    padding: 0px 30px;
+}
+
+.dns-help {
+    color: #000;
+}
+
+.dns-help:hover {
+    color: #ff5656;
+}
+
+.app-download {
+    position: fixed;
+    top: 50%;
+    right: 5px;
+    margin-top: -150px;
+}
+
+.app-canvas {
+    background: #FFF;
+    width: 80px;
+    height: 100px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 5px #CCC;
+}
+
+.app-canvas:hover {
+    transition: all 0.3s;
+    box-shadow: 0px 3px 5px #FF5656;
+}
+
+.app-link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.app-scan {
+    width: 80px;
+    height: 80px;
+}
+
+.app-ios {
+    background: url('/image/ios-app.png') no-repeat center center;
+    background-size: contain;
+}
+
+.app-android {
+    background: url('/image/android-app.png') no-repeat center center;
+    background-size: contain;
+}
+
+.app-lab {
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    cursor: default;
+}
+
+.app-canvas:hover .app-lab {
+    color: #FF5656;
+}

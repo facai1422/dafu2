@@ -1,0 +1,1172 @@
+@font-face {
+    font-family: agency fb;
+    src: url(../font/AGENCYB.TTF), url(../font/AGENCYB.eot);
+}
+
+
+
+
+
+/*优惠活动activity.css*/
+
+
+/*正点品牌brand.css*/
+
+
+/*独页面indep.css*/
+
+.skin {
+    background: url('/zhengdian/skin_bg.png') no-repeat;
+}
+
+
+
+
+
+/*侧边栏in-side*/
+
+.icon-side {
+    background: url('/zhengdian/sider.png') no-repeat;
+}
+
+#b1 {
+    background: #585568 url('/zhengdian/select.png');
+}
+
+.nav-top-icon {
+    background: url('/v1/images/userCenter_img/icon-set.png');
+}
+
+.online-server>a>div {
+    background: url('/zhengdian/online_bg.jpg') no-repeat center center;
+}
+
+.in-side-toogle {
+    background: url('/zhengdian/side_hide.png') no-repeat center center;
+}
+
+.in-side .in-side-toogle {
+    background: url('/zhengdian/game_bg.png') no-repeat center center;
+}
+
+.voice-icon {
+    background: url('/zhengdian/game_bg.png') no-repeat;
+}
+
+.voice-close {
+    background: url('/zhengdian/game_bg.png') no-repeat;
+}
+
+
+
+
+
+/*顶部top*/
+
+.icon-email {
+    background: url('/zhengdian/top_img.png') no-repeat;
+    vertical-align: sub;
+}
+
+.user-face {
+    background: url('/zhengdian/top_img.png') no-repeat;
+}
+
+.icon-refresh {
+    background: url('/zhengdian/game_bg.png') no-repeat;
+}
+
+.kind-left i {
+    background: url('/zhengdian/type.png') no-repeat;
+}
+
+.game-item>span.new {
+    background: url('/zhengdian/game_bg.png') no-repeat 0 -265px;
+}
+
+
+
+
+
+/*头部 header*/
+
+.nav-head {
+    background: url('/zhengdian/bjtop2.jpg');
+}
+
+.menu-icon {
+    background: url('/zhengdian/st.png');
+}
+
+.menu-icon6 {
+    background: url('/zhengdian/game_bg.png') no-repeat;
+}
+
+
+
+
+
+/*首页home*/
+
+.icon-hot {
+    background: url('/zhengdian/st1.gif');
+}
+
+.icon-zd {
+    background: url('/zhengdian/st2.gif');
+}
+
+.icon-new {
+    background: url('/zhengdian/st3.gif');
+}
+
+.icon-wallet {
+    background: url('/zhengdian/game_bg.png') no-repeat;
+}
+
+.header-body {
+    background: url('/zhengdian/b1.jpg') center top no-repeat;
+}
+
+.addtot .tkyhkas {
+    background: url('/zhengdian/addcard.png');
+}
+
+.part-body-lottery {
+    background: #f8f8f8 url('/zhengdian/GHPK10.jpg') no-repeat;
+}
+
+.part-body-num {
+    background: url('/zhengdian/game_bg.png') no-repeat;
+}
+
+.hot>h5>i {
+    background: url('/zhengdian/game_bg.png') no-repeat;
+}
+
+.games-type span.new {
+    background: url('/zhengdian/game_bg.png') no-repeat 0 -324px;
+}
+
+.game-item>.game-bg {
+    background: url('/zhengdian/game_bg.png') no-repeat 0 0;
+}
+
+.games-type span.new {
+    background: url('/zhengdian/game_bg.png') no-repeat 0 -324px;
+}
+
+.game-item .item-left,
+.games-type .item-left {
+    background: url('/zhengdian/game_bg.png') no-repeat 0 0;
+}
+
+
+
+
+
+/*优惠活动activity.css*/
+
+body,
+#mian-body {
+    background: url('/zhengdian/bfoj.jpg') repeat;
+}
+
+.small-icon {
+    background-image: url('/v1/images/activity/icon-activity.png');
+}
+
+.icon-aytime {
+    background: url('/v1/images/activity/icon-time.png');
+}
+
+.icon-rule {
+    background: url('/v1/images/activity/icon-th.png');
+}
+
+.icon-clause {
+    background: url('/v1/images/activity/icon-su.png');
+}
+
+.activity-ul li a:hover i,
+.activity-ul li a.on i {
+    background-image: url('/v1/images/activity/icon-activity2.png');
+}
+
+.activity-mian {
+    background-image: url('/v1/images/activity/a_zdyx.png');
+}
+
+.main-draw-ul .draw-ul-li {
+    background: url('/v1/images/activity/kk.png');
+}
+
+.main-draw-ul .draw-li-active:before {
+    background: url('/v1/images/activity/lq.png') no-repeat bottom right;
+}
+
+.main-draw-ul .draw-li-active {
+    background-image: url('/v1/images/activity/kk_hui.jpg');
+}
+
+.main-sign-ul .sign-li-active .sign-li-circle {
+    background: url('/v1/images/activity/ac_yc.png');
+}
+
+.circle-icon {
+    background: url('/v1/images/activity/a_dlb.png') no-repeat center;
+}
+
+.main-new-li {
+    background: url('/v1/images/activity/ac_xq.png');
+}
+
+.reel-box {
+    background: url('/v1/images/activity/a_sc.png') -1px 0;
+}
+
+.end {
+    background: url('/v1/images/activity/a_sc1.png') -1px 0;
+}
+
+.img-ssc {
+    background: url('/v1/images/activity/sptite.png') no-repeat 0px -96px;
+}
+
+.img-yu {
+    background: url('/v1/images/activity/sptite.png') no-repeat 0px -136px;
+}
+
+.img-game {
+    background: url('/v1/images/activity/sptite.png') no-repeat 0px -176px;
+}
+
+.img-sport {
+    background: url('/v1/images/activity/sptite.png') no-repeat 0px -256px;
+}
+
+.img-tab {
+    background: url('/v1/images/activity/sptite.png') no-repeat 0px -214px;
+}
+
+.img-ssc-game {
+    background: url('/v1/images/activity/sptite.png') no-repeat -54px -130px;
+}
+
+.act-top {
+    background: url('/v1/images/activity/sptite.png');
+}
+
+
+
+
+
+/*优惠活动结束*/
+
+
+/*正点品牌brand.css*/
+
+.brand_banner {
+    background: url('/v1/images/brand_img/banner_bg.jpg') no-repeat center center;
+}
+
+.brand_main .title h1 p {
+    background: url('/v1/images/brand_img/tit_bg.png') no-repeat left center;
+}
+
+.screen1_ul li>a>strong {
+    background: url('/v1/images/brand_img/add.png') no-repeat left center;
+}
+
+.screen2 {
+    background: url('/v1/images/brand_img/22_bg.jpg') no-repeat center center;
+}
+
+.screen2_left {
+    background: url('/v1/images/brand_img/2_left.jpg') no-repeat center center;
+}
+
+.arrow {
+    background: url('/v1/images/brand_img/5_arr.png') no-repeat -46px center;
+}
+
+.arrow-next {
+    background: url('/v1/images/brand_img/5_arr.png') no-repeat -71px center;
+}
+
+.screen4 {
+    background: url('/v1/images/brand_img/4_bg.jpg');
+}
+
+.screen5_arr>span {
+    background: url('/v1/images/brand_img/5_arr.png') no-repeat left top;
+}
+
+
+
+
+
+/*正点品牌brand.css结束*/
+
+
+/*独页面indep.css*/
+
+#download {
+    background: url('/v1/images/indep_img/bg.jpg') fixed center center;
+}
+
+.help_left ul li>a>.help_arr {
+    background: url(/v1/images/help_img/help_arr.png) no-repeat left -24px;
+}
+
+.kefu {
+    background: url('/v1/images/indep_img/kefu.png') no-repeat left center;
+}
+
+.menu_in dd {
+    background: url('/v1/images/indep_img/sprite.png') no-repeat 0 0;
+}
+
+.quick_right a p {
+    background: url('/v1/images/indep_img/download.png') no-repeat 15px 9px;
+}
+
+.con .con_left .scan_code {
+    background: url('/v1/images/indep_img/ewm.png') no-repeat;
+}
+
+.dns_banner {
+    background: #1c2633 url('/v1/images/indep_img/dns_banner_bg.jpg') no-repeat center center;
+}
+
+
+
+
+
+/*独页面indep.css结束*/
+
+
+/*提现页面*/
+
+.icon-info {
+    background: url('/v1/images/userCenter_img/tshi.png') no-repeat;
+}
+
+.attention_tip {
+    background: url('/v1/images/userCenter_img/tip.png') no-repeat;
+}
+
+.certificate-select {
+    background: url('/v1/images/userCenter_img/h_img1.png') no-repeat center right 5px, linear-gradient(to bottom, #fff 0%, rgba(0, 0, 0, 0.05) 100%);
+}
+
+.drop-down-box {
+    background: url('/v1/images/userCenter_img/h_img1.png') no-repeat center right 5px, linear-gradient(to bottom, #fff 0%, rgba(0, 0, 0, 0.05) 100%);
+}
+
+.W-ICBC .bank-cart-logo {
+    background: url('/v1/images/userCenter_img/ICBC.png') no-repeat;
+}
+
+.W-CCB .bank-cart-logo {
+    background: url('/v1/images/userCenter_img/CCB.png') no-repeat;
+}
+
+.W-ABC .bank-cart-logo {
+    background: url('/v1/images/userCenter_img/ABC.png') no-repeat;
+}
+
+.W-BOC .bank-cart-logo {
+    background: url('/v1/images/userCenter_img/BOC.png') no-repeat;
+}
+
+.W-CMB .bank-cart-logo {
+    background: url('/v1/images/userCenter_img/CMB.png') no-repeat;
+}
+
+.W-BOCOM .bank-cart-logo {
+    background: url('/v1/images/userCenter_img/BOCOM.png') no-repeat;
+}
+
+.W-CMBC .bank-cart-logo {
+    background: url('/v1/images/userCenter_img/CMBC.png') no-repeat;
+}
+
+.W-CITIC .bank-cart-logo {
+    background: url('/v1/images/userCenter_img/CITIC.png') no-repeat;
+}
+
+.W-SPDB .bank-cart-logo {
+    background: url('/v1/images/userCenter_img/SPDB.png') no-repeat;
+}
+
+.W-GDB .bank-cart-logo {
+    background: url('/v1/images/userCenter_img/GDB.png') no-repeat;
+}
+
+.W-PAB .bank-cart-logo {
+    background: url('/v1/images/userCenter_img/PAB.png') no-repeat;
+}
+
+.W-CIB .bank-cart-logo {
+    background: url('/v1/images/userCenter_img/CIB.png') no-repeat;
+}
+
+.W-HXB .bank-cart-logo {
+    background: url('/v1/images/userCenter_img/HXB.png') no-repeat;
+}
+
+.W-CEB .bank-cart-logo {
+    background: url('/v1/images/userCenter_img/CEB.png') no-repeat;
+}
+
+.W-PSBC .bank-cart-logo {
+    background: url('/v1/images/userCenter_img/PSBC.png') no-repeat;
+}
+
+.key-logo {
+    background: url('/v1/images/userCenter_img/keyboard-off.png') no-repeat;
+}
+
+.withdrawals-mes .bank-cart-tapered {
+    background: url('/v1/images/userCenter_img/lock.png') no-repeat;
+}
+
+
+
+
+
+/*提现页面结束*/
+
+
+/*充值页面*/
+
+.icon-recharge {
+    background: url('/v1/images/userCenter_img/ui-bank-4.png') no-repeat;
+}
+
+.select-banks-icon {
+    background: url('/v1/images/userCenter_img/ui-bank.png') no-repeat;
+}
+
+.Alipay,.RXWAPALIALIPAY,.RXALIALIPAY {
+    background: url('/v1/images/userCenter_img/A-CMB.png') no-repeat;
+}
+
+/* .DDBWXWX {
+    background: url('/v1/images/userCenter_img/bank-weixinpay.jpg') no-repeat;
+}
+
+.ZFTECNETTENCENT {
+    background: url('/v1/images/userCenter_img/PC-QQpay.jpg') no-repeat;
+}
+
+.DDBWXWX {
+    background-image: url('/v1/images/userCenter_img/bank-weixinpay.jpg');
+}
+
+.LYWXWX {
+    background-image: url('/v1/images/userCenter_img/bank-weixinpay.jpg');
+}
+
+.THHBWXWEIXIN {
+    background-image: url('/v1/images/userCenter_img/bank-weixinpay.jpg');
+}
+
+.GFBWXWX {
+    background-image: url('/v1/images/userCenter_img/bank-weixinpay.jpg');
+}
+
+.MBWXWX {
+    background-image: url('/v1/images/userCenter_img/bank-weixinpay.jpg');
+}
+
+.ZFWXWX {
+    background-image: url('/v1/images/userCenter_img/bank-weixinpay.jpg');
+} */
+
+/* .XBEI100040 {
+    background-image: url('/v1/images/userCenter_img/bank-weixinpay.jpg');
+} */
+
+/* .HUICXWXWX {
+    background-image: url('/v1/images/userCenter_img/bank-weixinpay.jpg');
+}
+
+.WFTWXWX {
+    background-image: url('/v1/images/userCenter_img/bank-weixinpay.jpg');
+} */
+
+.MBALIPAYALI,.DDBALIPAYALI,.GFBZFBALI,.HUICXALIPAYALI,.WFTALIPAYALI{
+    background-image: url('/v1/images/userCenter_img/B-CMB.png');
+}
+
+.ZFTECNETTENCENT {
+    background-image: url('/v1/images/userCenter_img/PC-QQpay.jpg');
+}
+
+.XBEI100068 {
+    background-image: url('/v1/images/userCenter_img/PC-QQpay.jpg');
+}
+
+.MBQQTENPAY {
+    background-image: url('/v1/images/userCenter_img/PC-QQpay.jpg');
+}
+
+.MBQQTENPAY {
+    background-image: url('/v1/images/userCenter_img/PC-QQpay.jpg');
+}
+
+.HUICXTENCENTTENPAY,.RXWAPQQQQ {
+    background-image: url('/v1/images/userCenter_img/PC-QQpay.jpg');
+}
+
+.DDBJDJD,.RXWAPJDJD {
+    background-image: url('/v1/images/userCenter_img/PC-JD.jpg');
+}
+
+.DDBUNIONUNION {
+    background-image: url('/v1/images/userCenter_img/PC-union.jpg');
+}
+
+.XBEIUNION,.UNIONPAYWAPUNIONPAY {
+    background-image: url('/v1/images/userCenter_img/PC-union.jpg');
+}
+
+.WeChat-bank,.RXWAPWXWX {
+    background: url('/v1/images/userCenter_img/WeChat.png') no-repeat;
+}
+
+.icon-recharge-tip {
+    background: url('/v1/images/userCenter_img/tip-bg.gif');
+}
+
+.bank-cart-shadow {
+    background: url('/v1/images/userCenter_img/bankcheck.png') no-repeat;
+}
+
+.icon-hint {
+    background: url('/v1/images/userCenter_img/tshi.png');
+}
+
+.return-back {
+    background: url('/v1/images/userCenter_img/3.png') no-repeat;
+}
+
+.aisle-item.new_on,
+.selected-bank-item label {
+    background: url('/v1/images/userCenter_img/bank-selected.png') no-repeat right bottom;
+}
+.FCT{
+    background: url('/v1/images/userCenter_img/bank-code.png') no-repeat center center;
+}
+.AQT{
+    background: url('/v1/images/userCenter_img/bank-code.png') no-repeat center center;
+}
+
+.RXQQQQ  {
+    background-image: url('/v1/images/userCenter_img/PC-QQpay.jpg');
+}
+.HBQQQQ   {
+    background-image: url('/v1/images/userCenter_img/PC-QQpay.jpg');
+}
+
+.RXYLUNION  {
+    background-image: url('/v1/images/userCenter_img/PC-union.jpg');
+}
+
+/* .RXWXWEIXIN,.RXWAPWXWX {
+    background-image: url('/v1/images/userCenter_img/bank-weixinpay.jpg');
+} */
+/* .HBWXWX {
+    background-image: url('/v1/images/userCenter_img/bank-weixinpay.jpg');
+} */
+.RXJDJD {
+    background-image: url('/v1/images/userCenter_img/PC-JD.jpg');
+}
+/* .RXALIALIPAY {
+    background-image: url('/v1/images/userCenter_img/B-CMB.png');
+} */
+.DYBQQJDPAY  {
+    background-image: url('/v1/images/userCenter_img/PC-JD.jpg');
+}
+.DYBJDJDPAY  {
+    background-image: url('/v1/images/userCenter_img/PC-JD.jpg');
+}
+.DYBUNIONUNIONQRPAY{
+    background-image: url('/v1/images/userCenter_img/PC-union.jpg');
+}
+.DYBQQQQPAY{
+    background-image: url('/v1/images/userCenter_img/PC-QQpay.jpg');
+}
+
+
+/*充值页面结束*/
+
+
+/* 内页的侧边导航 */
+
+.icon-set {
+    background: url("/v1/images/userCenter_img/icon-set.png");
+}
+
+.nav-control-icon {
+    background: url("/v1/images/userCenter_img/nav-icon-four.png") no-repeat;
+}
+
+.nav-icon-five {
+    background: url("/v1/images/userCenter_img/xx55.png");
+}
+
+
+
+
+
+/* 内页的侧边导航结束 */
+
+
+/* 游戏记录,资金明细，代理中心的开始 */
+
+.time {
+    background: #fff url('/v1/images/userCenter_img/h_img1.png') no-repeat center right 5px;
+}
+
+.j-ui-datepicker .control .choose-model i {
+    background: url('/v1/images/userCenter_img/j-ui-datepicker-select-sj.gif') center center no-repeat;
+}
+
+.j-ui-datepicker .control .pre,
+.j-ui-datepicker .control .next {
+    background: url('/v1/images/userCenter_img/j-ui-button-left.gif') no-repeat;
+}
+
+.j-ui-datepicker .control .next {
+    background-image: url('/v1/images/userCenter_img/j-ui-button-right.gif');
+}
+
+.question-input {
+    background: url('/v1/images/userCenter_img/h_img1.png') no-repeat center right 5px, linear-gradient(to bottom, #fff 0%, rgba(0, 0, 0, 0.05) 100%);
+}
+
+#usernameRight {
+    background: url('/v1/images/userCenter_img/ico-right.gif');
+}
+
+
+
+
+
+/* 游戏记录,资金明细，代理中心的结束 */
+
+
+/*账户管理*/
+
+.key-logo {
+    background: url("/v1/images/userCenter_img/keybo.png");
+}
+
+.icon_dox {
+    background: url("/v1/images/userCenter_img/sa_dow.png");
+}
+
+.issue-bag {
+    background: url("/v1/images/userCenter_img/sa_dow.png") no-repeat center right 25px, linear-gradient(to bottom, #fff 0%, rgba(0, 0, 0, 0.05) 100%);
+}
+
+
+
+
+
+/*账户管理结束*/
+
+
+/*游戏详情*/
+
+
+/*1、骰宝*/
+
+.award-number .item-dice-1 {
+    background: url('/v1/images/userCenter_img/dice-1.png') no-repeat;
+}
+
+.award-number .item-dice-2 {
+    background: url('/v1/images/userCenter_img/dice-2.png') no-repeat;
+}
+
+.award-number .item-dice-3 {
+    background: url('/v1/images/userCenter_img/dice-3.png') no-repeat;
+}
+
+.award-number .item-dice-4 {
+    background: url('/v1/images/userCenter_img/dice-4.png') no-repeat;
+}
+
+.award-number .item-dice-5 {
+    background: url('/v1/images/userCenter_img/dice-5.png') no-repeat;
+}
+
+.award-number .item-dice-6 {
+    background: url('/v1/images/userCenter_img/dice-6.png') no-repeat;
+}
+
+
+
+
+
+/*2、龙虎斗*/
+
+.track-detials-main .award-number .item-lhd {
+    background: url('/v1/images/poker/wd.png') no-repeat;
+}
+
+.track-detials-main .award-number .item-lhd-1 {
+    background: url('/v1/images/poker/1.png');
+}
+
+.track-detials-main .award-number .item-lhd-2 {
+    background: url('/v1/images/poker/2.png');
+}
+
+.track-detials-main .award-number .item-lhd-3 {
+    background: url('/v1/images/poker/3.png');
+}
+
+.track-detials-main .award-number .item-lhd-4 {
+    background: url('/v1/images/poker/4.png');
+}
+
+.track-detials-main .award-number .item-lhd-5 {
+    background: url('/v1/images/poker/5.png');
+}
+
+.track-detials-main .award-number .item-lhd-6 {
+    background: url('/v1/images/poker/6.png');
+}
+
+.track-detials-main .award-number .item-lhd-7 {
+    background: url('/v1/images/poker/7.png');
+}
+
+.track-detials-main .award-number .item-lhd-8 {
+    background: url('/v1/images/poker/8.png');
+}
+
+.track-detials-main .award-number .item-lhd-9 {
+    background: url('/v1/images/poker/9.png');
+}
+
+.track-detials-main .award-number .item-lhd-10 {
+    background: url('/v1/images/poker/10.png');
+}
+
+.track-detials-main .award-number .item-lhd-11 {
+    background: url('/v1/images/poker/11.png');
+}
+
+.track-detials-main .award-number .item-lhd-12 {
+    background: url('/v1/images/poker/12.png');
+}
+
+.track-detials-main .award-number .item-lhd-13 {
+    background: url('/v1/images/poker/13.png');
+}
+
+.track-detials-main .award-number .item-lhd-14 {
+    background: url('/v1/images/poker/14.png');
+}
+
+.track-detials-main .award-number .item-lhd-15 {
+    background: url('/v1/images/poker/15.png');
+}
+
+.track-detials-main .award-number .item-lhd-16 {
+    background: url('/v1/images/poker/16.png');
+}
+
+.track-detials-main .award-number .item-lhd-17 {
+    background: url('/v1/images/poker/17.png');
+}
+
+.track-detials-main .award-number .item-lhd-18 {
+    background: url('/v1/images/poker/18.png');
+}
+
+.track-detials-main .award-number .item-lhd-19 {
+    background: url('/v1/images/poker/19.png');
+}
+
+.track-detials-main .award-number .item-lhd-20 {
+    background: url('/v1/images/poker/20.png');
+}
+
+.track-detials-main .award-number .item-lhd-21 {
+    background: url('/v1/images/poker/21.png');
+}
+
+.track-detials-main .award-number .item-lhd-22 {
+    background: url('/v1/images/poker/22.png');
+}
+
+.track-detials-main .award-number .item-lhd-23 {
+    background: url('/v1/images/poker/23.png');
+}
+
+.track-detials-main .award-number .item-lhd-24 {
+    background: url('/v1/images/poker/24.png');
+}
+
+.track-detials-main .award-number .item-lhd-25 {
+    background: url('/v1/images/poker/25.png');
+}
+
+.track-detials-main .award-number .item-lhd-26 {
+    background: url('/v1/images/poker/26.png');
+}
+
+.track-detials-main .award-number .item-lhd-27 {
+    background: url('/v1/images/poker/27.png');
+}
+
+.track-detials-main .award-number .item-lhd-28 {
+    background: url('/v1/images/poker/28.png');
+}
+
+.track-detials-main .award-number .item-lhd-29 {
+    background: url('/v1/images/poker/29.png');
+}
+
+.track-detials-main .award-number .item-lhd-30 {
+    background: url('/v1/images/poker/30.png');
+}
+
+.track-detials-main .award-number .item-lhd-31 {
+    background: url('/v1/images/poker/31.png');
+}
+
+.track-detials-main .award-number .item-lhd-32 {
+    background: url('/v1/images/poker/32.png');
+}
+
+.track-detials-main .award-number .item-lhd-33 {
+    background: url('/v1/images/poker/33.png');
+}
+
+.track-detials-main .award-number .item-lhd-34 {
+    background: url('/v1/images/poker/34.png');
+}
+
+.track-detials-main .award-number .item-lhd-35 {
+    background: url('/v1/images/poker/35.png');
+}
+
+.track-detials-main .award-number .item-lhd-36 {
+    background: url('/v1/images/poker/36.png');
+}
+
+.track-detials-main .award-number .item-lhd-37 {
+    background: url('/v1/images/poker/37.png');
+}
+
+.track-detials-main .award-number .item-lhd-38 {
+    background: url('/v1/images/poker/38.png');
+}
+
+.track-detials-main .award-number .item-lhd-39 {
+    background: url('/v1/images/poker/39.png');
+}
+
+.track-detials-main .award-number .item-lhd-40 {
+    background: url('/v1/images/poker/40.png');
+}
+
+.track-detials-main .award-number .item-lhd-41 {
+    background: url('/v1/images/poker/41.png');
+}
+
+.track-detials-main .award-number .item-lhd-42 {
+    background: url('/v1/images/poker/42.png');
+}
+
+.track-detials-main .award-number .item-lhd-43 {
+    background: url('/v1/images/poker/43.png');
+}
+
+.track-detials-main .award-number .item-lhd-44 {
+    background: url('/v1/images/poker/44.png');
+}
+
+.track-detials-main .award-number .item-lhd-45 {
+    background: url('/v1/images/poker/45.png');
+}
+
+.track-detials-main .award-number .item-lhd-46 {
+    background: url('/v1/images/poker/46.png');
+}
+
+.track-detials-main .award-number .item-lhd-47 {
+    background: url('/v1/images/poker/47.png');
+}
+
+.track-detials-main .award-number .item-lhd-48 {
+    background: url('/v1/images/poker/48.png');
+}
+
+.track-detials-main .award-number .item-lhd-49 {
+    background: url('/v1/images/poker/49.png');
+}
+
+.track-detials-main .award-number .item-lhd-50 {
+    background: url('/v1/images/poker/50.png');
+}
+
+.track-detials-main .award-number .item-lhd-51 {
+    background: url('/v1/images/poker/51.png');
+}
+
+.track-detials-main .award-number .item-lhd-52 {
+    background: url('/v1/images/poker/52.png');
+}
+
+
+
+
+
+/*3、百家乐*/
+
+.track-detials-main .award-number .item-bjl {
+    background: url('/v1/images/poker/wd.png') no-repeat;
+}
+
+.track-detials-main .award-number .item-bjl-0 {
+    background: url('/v1/images/poker/bjl-vs.png');
+}
+
+.track-detials-main .award-number .item-bjl-1 {
+    background: url('/v1/images/poker/1.png');
+}
+
+.track-detials-main .award-number .item-bjl-2 {
+    background: url('/v1/images/poker/2.png');
+}
+
+.track-detials-main .award-number .item-bjl-3 {
+    background: url('/v1/images/poker/3.png');
+}
+
+.track-detials-main .award-number .item-bjl-4 {
+    background: url('/v1/images/poker/4.png');
+}
+
+.track-detials-main .award-number .item-bjl-5 {
+    background: url('/v1/images/poker/5.png');
+}
+
+.track-detials-main .award-number .item-bjl-6 {
+    background: url('/v1/images/poker/6.png');
+}
+
+.track-detials-main .award-number .item-bjl-7 {
+    background: url('/v1/images/poker/7.png');
+}
+
+.track-detials-main .award-number .item-bjl-8 {
+    background: url('/v1/images/poker/8.png');
+}
+
+.track-detials-main .award-number .item-bjl-9 {
+    background: url('/v1/images/poker/9.png');
+}
+
+.track-detials-main .award-number .item-bjl-10 {
+    background: url('/v1/images/poker/10.png');
+}
+
+.track-detials-main .award-number .item-bjl-11 {
+    background: url('/v1/images/poker/11.png');
+}
+
+.track-detials-main .award-number .item-bjl-12 {
+    background: url('/v1/images/poker/12.png');
+}
+
+.track-detials-main .award-number .item-bjl-13 {
+    background: url('/v1/images/poker/13.png');
+}
+
+.track-detials-main .award-number .item-bjl-14 {
+    background: url('/v1/images/poker/14.png');
+}
+
+.track-detials-main .award-number .item-bjl-15 {
+    background: url('/v1/images/poker/15.png');
+}
+
+.track-detials-main .award-number .item-bjl-16 {
+    background: url('/v1/images/poker/16.png');
+}
+
+.track-detials-main .award-number .item-bjl-17 {
+    background: url('/v1/images/poker/17.png');
+}
+
+.track-detials-main .award-number .item-bjl-18 {
+    background: url('/v1/images/poker/18.png');
+}
+
+.track-detials-main .award-number .item-bjl-19 {
+    background: url('/v1/images/poker/19.png');
+}
+
+.track-detials-main .award-number .item-bjl-20 {
+    background: url('/v1/images/poker/20.png');
+}
+
+.track-detials-main .award-number .item-bjl-21 {
+    background: url('/v1/images/poker/21.png');
+}
+
+.track-detials-main .award-number .item-bjl-22 {
+    background: url('/v1/images/poker/22.png');
+}
+
+.track-detials-main .award-number .item-bjl-23 {
+    background: url('/v1/images/poker/23.png');
+}
+
+.track-detials-main .award-number .item-bjl-24 {
+    background: url('/v1/images/poker/24.png');
+}
+
+.track-detials-main .award-number .item-bjl-25 {
+    background: url('/v1/images/poker/25.png');
+}
+
+.track-detials-main .award-number .item-bjl-26 {
+    background: url('/v1/images/poker/26.png');
+}
+
+.track-detials-main .award-number .item-bjl-27 {
+    background: url('/v1/images/poker/27.png');
+}
+
+.track-detials-main .award-number .item-bjl-28 {
+    background: url('/v1/images/poker/28.png');
+}
+
+.track-detials-main .award-number .item-bjl-29 {
+    background: url('/v1/images/poker/29.png');
+}
+
+.track-detials-main .award-number .item-bjl-30 {
+    background: url('/v1/images/poker/30.png');
+}
+
+.track-detials-main .award-number .item-bjl-31 {
+    background: url('/v1/images/poker/31.png');
+}
+
+.track-detials-main .award-number .item-bjl-32 {
+    background: url('/v1/images/poker/32.png');
+}
+
+.track-detials-main .award-number .item-bjl-33 {
+    background: url('/v1/images/poker/33.png');
+}
+
+.track-detials-main .award-number .item-bjl-34 {
+    background: url('/v1/images/poker/34.png');
+}
+
+.track-detials-main .award-number .item-bjl-35 {
+    background: url('/v1/images/poker/35.png');
+}
+
+.track-detials-main .award-number .item-bjl-36 {
+    background: url('/v1/images/poker/36.png');
+}
+
+.track-detials-main .award-number .item-bjl-37 {
+    background: url('/v1/images/poker/37.png');
+}
+
+.track-detials-main .award-number .item-bjl-38 {
+    background: url('/v1/images/poker/38.png');
+}
+
+.track-detials-main .award-number .item-bjl-39 {
+    background: url('/v1/images/poker/39.png');
+}
+
+.track-detials-main .award-number .item-bjl-40 {
+    background: url('/v1/images/poker/40.png');
+}
+
+.track-detials-main .award-number .item-bjl-41 {
+    background: url('/v1/images/poker/41.png');
+}
+
+.track-detials-main .award-number .item-bjl-42 {
+    background: url('/v1/images/poker/42.png');
+}
+
+.track-detials-main .award-number .item-bjl-43 {
+    background: url('/v1/images/poker/43.png');
+}
+
+.track-detials-main .award-number .item-bjl-44 {
+    background: url('/v1/images/poker/44.png');
+}
+
+.track-detials-main .award-number .item-bjl-45 {
+    background: url('/v1/images/poker/45.png');
+}
+
+.track-detials-main .award-number .item-bjl-46 {
+    background: url('/v1/images/poker/46.png');
+}
+
+.track-detials-main .award-number .item-bjl-47 {
+    background: url('/v1/images/poker/47.png');
+}
+
+.track-detials-main .award-number .item-bjl-48 {
+    background: url('/v1/images/poker/48.png');
+}
+
+.track-detials-main .award-number .item-bjl-49 {
+    background: url('/v1/images/poker/49.png');
+}
+
+.track-detials-main .award-number .item-bjl-50 {
+    background: url('/v1/images/poker/50.png');
+}
+
+.track-detials-main .award-number .item-bjl-51 {
+    background: url('/v1/images/poker/51.png');
+}
+
+.track-detials-main .award-number .item-bjl-52 {
+    background: url('/v1/images/poker/52.png');
+}
+
+
+
+
+
+/*游戏详情结束*/
+.send-info .search button{
+    background: url('/v1/images/userCenter_img/search.png') no-repeat center center;
+}
+
+.chat-face.right{
+    background: #959595 url('/v1/images/indep_img/chat_me.png') no-repeat center center;
+}
+
+.chat-face.left{
+    background: #ffa944 url('/v1/images/indep_img/chat_other.png') no-repeat center center;
+}
+
+
+.recharge-main .aisle-item:after ,.main-content .recharge-nav a:after{
+    background: url('/v1/images/userCenter_img/return.png') no-repeat;
+}

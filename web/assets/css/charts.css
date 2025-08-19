@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    line-height: 150%;
+    background: url(../images/login/bg_0.jpg) center top fixed #000;
+    font-family: 'Microsoft Yahei';
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: rgba(153, 153, 153, .3)
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .5);
+    border-radius: 6px
+}
+
+.layui-layer-loading .layui-layer-loading2 {
+    background-image: url(/assets/images/common/loading.gif) !important;
+    background-size: 100% !important
+}
+
+.header {
+    color: #fff;
+    background: #e5a033;
+    background: rgba(255, 255, 255, .1)
+}
+
+.container {
+    margin: 0 auto;
+    width: 1680px
+}
+
+.logo-box {
+    margin-right: 30px;
+    padding: 5px 0 0;
+    font-size: 26px;
+    outline: 0;
+    float: left
+}
+
+.logo-box * {
+    outline: 0
+}
+
+.tools label {
+    margin-right: 20px;
+    height: 80px;
+    line-height: 80px
+}
+
+.tools .checkbox {
+    margin: 0 3px 3px 0;
+    vertical-align: middle
+}
+
+.tools .link {
+    margin: 0 10px;
+    width: 90px;
+    height: 24px;
+    line-height: 24px;
+    background: #d9534f;
+    border: 1px solid #d43f3a;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer
+}
+
+.tools .link.active, .tools .link:active, .tools .link:hover {
+    background-color: #c9302c;
+    border-color: #ac2925
+}
+
+.relative {
+    position: relative;
+    margin: 10px 0;
+    border: 5px solid #181e26;
+    border-radius: 2px
+}
+
+.canvasBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none
+}
+
+.canvasBox canvas {
+    position: absolute
+}
+
+.chartsTable {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    border-spacing: 1px;
+    border-collapse: inherit;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei'
+}
+
+.chartsTable caption {
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    background: #181e26;
+    background: rgba(24, 30, 38, .5)
+}
+
+.chartsTable tfoot, .chartsTable thead {
+    color: #fff;
+    background: #000;
+    background: rgba(0, 0, 0, .5)
+}
+
+.chartsTable tbody {
+    color: rgba(255, 255, 255, .8);
+    background: 0 0
+}
+
+.chartsTable td, .chartsTable th {
+    padding: 2px;
+    min-width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap
+}
+
+.chartsTable td {
+    cursor: default
+}
+
+.chartsTable tbody td {
+    background: #333;
+    background: rgba(51, 51, 51, .8)
+}
+
+.chartsTable tbody td.active, .chartsTable tbody tr:not(.total):hover td {
+    background: 0 0
+}
+
+.chartsTable .td0, .chartsTable .td2, .chartsTable .td4 {
+    background: #000;
+    background: rgba(0, 0, 0, .75)
+}
+
+.chartsTable .td1, .chartsTable .td3 {
+    background: #333;
+    background: rgba(51, 51, 51, .75)
+}
+
+.chartsTable .total td {
+    background: #606060;
+    background: rgba(102, 102, 102, .5)
+}
+
+.chartsTable .total .lazyShow {
+    background: url(/assets/images/common/loading.gif) center no-repeat;
+    background-size: 50%
+}
+
+.chartsTable .total .lazyShow span {
+    display: none
+}
+
+.chartsTable.hideSpan td.normal span {
+    visibility: hidden
+}
+
+.chartsTable .ball {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    display: inline-block
+}
+
+.chartsTable .td0 .ball, .chartsTable .td2 .ball, .chartsTable .td4 .ball {
+    color: #fff;
+    background: #69f
+}
+
+.chartsTable .td1 .ball, .chartsTable .td3 .ball {
+    color: #fff;
+    background: #f66
+}
+
+.chartsTable.small {
+    font-size: 12px
+}
+
+.chartsTable.small td, .chartsTable.small th {
+    padding: 1px;
+    min-width: 20px;
+    height: 20px;
+    line-height: 20px
+}
+
+.chartsTable.small .ball {
+    width: 18px;
+    height: 18px;
+    line-height: 18px
+}

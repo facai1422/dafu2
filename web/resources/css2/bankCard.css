@@ -1,0 +1,20 @@
+@charset 'utf-8';
+
+.bankCard_main{
+	padding:24px;
+}
+.bankCard_main .add_bankCard{
+	width:500px;
+	height:150px;
+	border:2px dashed #F44336;
+	border-radius:10px;
+	display:inline-block;
+	line-height:150px;
+	text-align:center;
+	font-size:30px;
+	color:#F44336;
+}
+.bankCard_main .add_bankCard:hover{
+	border-style:solid;
+	border-color:#c9c9c9;
+}

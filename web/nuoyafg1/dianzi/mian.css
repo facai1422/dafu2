@@ -1,0 +1,790 @@
+/*头尾公共样式*/
+@font-face {
+    font-family: 'iconfont';
+    src: url('../../font/iconfont.eot');
+    src: url('../../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../../font/iconfont.woff') format('woff'),
+    url('../../font/iconfont.ttf') format('truetype'),
+    url('../../font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-down-trangle:before {
+    content: "\e501";
+}
+
+.login-input-div {
+    position: relative
+}
+
+.login-input-div input {
+    padding-left: 50px
+}
+
+.login-input-div .icon {
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    display: inline-block;
+    top: 1px;
+    left: 1px;
+    border-radius: 3px 0 0 3px
+}
+
+.login-input-div .icon.person {
+    background: #c2c2c2 url(//image.beike188.com/AMH/images/yonghu.6df23f8.png);
+    background-size: 20px 16px;
+    background-repeat: no-repeat;
+    background-position: 50%
+}
+
+.login-input-div .icon.password {
+    background: #c2c2c2 url(//image.beike188.com/AMH/images/mima.5f7a7c4.png);
+    background-size: 20px 16px;
+    background-repeat: no-repeat;
+    background-position: 50%
+}
+
+.userLogin {
+    height: 22px;
+    background: #1c171d;
+    color: #fff;
+    overflow: hidden
+}
+
+.userLogin .txt {
+    width: 1200px;
+    margin: auto;
+    line-height: 22px;
+    font-size: 12px
+}
+
+.userLogin .address {
+    width: 100px;
+    display: inline-block
+}
+
+.userLogin .address, .userLogin .high {
+    color: #c8a675;
+    padding: 0 5px
+}
+
+.userLogin .high:hover {
+    color: #f4c88a
+}
+
+.header, .header-div {
+    /* background-image: linear-gradient(to right, #0E0D0B, #545142, black); */
+}
+
+.header {
+    width: 1200px;
+    margin: auto
+}
+
+.header .header-menu {
+    height: 78px;
+    position: relative;
+    width: 1200px;
+}
+
+.header .header-menu .logo {
+    width: 232px;
+    height: 65px;
+    margin-top: 5px;
+    display: inline-block;
+    background: url(//image.beike188.com/AMH/images/logo.94293f3.png) no-repeat;
+    /* background-image: url(//image.beike188.com/AMH/images/logo.6adfb94.svg); */
+    background-size: auto 100%;
+    float: left
+}
+
+.header .header-menu .menu-div {
+    display: inline-block;
+    float: left;
+    padding-left: 40px;
+}
+
+.header .header-menu .menu-div .menu-item {
+    font-size: 17px;
+    vertical-align: middle;
+    line-height: 78px;
+    /*width: 70px;*/
+    margin-left: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.header .header-menu .menu-div .menu-item a {
+    color: #fff;
+    cursor: pointer
+}
+
+.header .header-menu .menu-div .menu-item.active a {
+    color: #c8a675;
+    border-bottom: 2px solid #c8a675;
+    padding-bottom: 10px
+}
+
+.header .login-info {
+    line-height: 78px;
+    position: absolute;
+    right: -5px;
+}
+
+.header .login-info .register-login {
+    margin-left: 20px;
+    border: 1px solid #c8a675;
+    max-width: 160px;
+    height: 25px;
+    display: inline-block;
+    line-height: 24px;
+    border-radius: 5px
+}
+
+.header .login-info .register-login .login-btn, .header .login-info .register-login .register-btn {
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    height: 23px;
+    color: #fff;
+    cursor: pointer
+}
+
+.header .login-info .active {
+    color: #000 !important;
+    cursor: pointer !important;
+    width: 50px !important;
+    height: 23px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px
+}
+
+.header .login-info .logined {
+    margin-left: 20px;
+    border: 1px solid #c8a675;
+    max-width: 156px;
+    height: 25px;
+    display: inline-block;
+    line-height: 25px;
+    border-radius: 5px
+}
+
+.header .login-info .logined .amount {
+    min-width: 50px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    max-width: 100px;
+    white-space: normal
+}
+
+.header .login-info .logined .active {
+    width: 50px
+}
+
+.header .login-info .user-oper {
+    display: inline-block;
+    margin-left: 5px
+}
+
+.header .login-info .user-oper .icon-user {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url(//image.beike188.com/AMH/images/icon.08e5910.png) no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    margin-top: -4px;
+    border-radius: 50%
+}
+
+.header .login-info .user-oper .ivu-dropdown-rel {
+    height: 60px
+}
+
+.header .login-info .user-oper .ivu-select-dropdown {
+    border: 1px solid #c8a675;
+    top: 57px;
+    left: -46px;
+    overflow: visible;
+    display: none;
+}
+
+.header .login-info .user-oper .ivu-select-dropdown .ivu-dropdown-item {
+    font-size: 14px !important;
+    padding: 7px 32px;
+    color: #6c6c6c;
+    text-align: center
+}
+
+.header .login-info .user-oper .ivu-select-dropdown .ivu-dropdown-item:hover {
+    color: #c8a675;
+    background: #fbf6f0
+}
+
+.header .login-info .user-oper .ivu-select-dropdown:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 5px solid transparent;
+    border-bottom-color: #fff;
+    z-index: 1
+}
+
+.header .login-info .user-oper .ivu-select-dropdown:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -12px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 6px solid transparent;
+    border-bottom-color: #c8a675
+}
+
+.services-left .girl li {
+    margin-top: -2px;
+}
+
+.services-right .girl li {
+    margin-top: -2px;
+}
+
+.footer {
+    width: 100%;
+    min-width: 1200px;
+    height: 144px;
+    background: #1c171d;
+    margin-top: 32px
+}
+
+.footer.member {
+    background: #ddd;
+    margin-top: -1px;
+    z-index: 1;
+    position: relative
+}
+
+.footer.member .footer-content .txt, .footer.member .footer-content .txt a {
+    color: #6c6c6c
+}
+
+.footer .footer-content {
+    width: 1200px;
+    margin: auto;
+    height: 100%;
+    position: relative
+}
+
+.footer .footer-content .footer-logo {
+    width: 160px;
+    height: 97px;
+    float: left;
+    margin-top: 24px;
+    background: url(//image.beike188.com/AMH/images/logo_di.3763bed.png) no-repeat;
+    background-size: cover
+}
+
+.footer .footer-content .footer-icon {
+    width: 230px;
+    height: 144px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 44px
+}
+
+.footer .footer-content .footer-icon .txt6 {
+    color: #fff;
+    margin-top: 10px
+}
+
+.footer .footer-content .txt {
+  margin-left: 157px;
+  margin-top: 73px;
+  float: left;
+  text-align: center;
+    color: #fff
+}
+
+.footer .footer-content .txt a {
+    cursor: pointer;
+    color: #fff
+}
+
+.footer .footer-content .txt .txt3 {
+    margin-right: 3px;
+    margin-left: 8px
+}
+
+.footer .footer-content .txt .txt2 {
+    margin-top: 20px
+}
+
+.footer .footer-content .txt4 {
+    width: 107px;
+    height: 44px;
+    display: inline-block;
+    /*background: url(//image.beike188.com/AMH/images/dibu_01.408d2ef.png) no-repeat;*/
+    background-size: cover;
+    margin-right: 16px
+}
+
+.footer .footer-content .txt5 {
+    width: 97px;
+    height: 27px;
+    display: inline-block;
+    background: url(//image.beike188.com/AMH/images/dibu_02.b01a815.png) no-repeat;
+    background-size: cover
+}
+
+.floatWindow {
+    position: fixed;
+    left: 50%;
+    margin-left: 616px;
+    bottom: 150px;
+    z-index: 2;
+}
+
+.floatWindow dl {
+    text-align: center;
+    margin: 8px 0;
+}
+
+.floatWindow dl dd a {
+    font-size: 16px;
+    color: #4d4d4d;
+    text-decoration: none
+}
+
+.floatWindow .item {
+    width: 60px;
+    height: 60px;
+    background: url(//image.beike188.com/AMH/images/index/ce_icon.png) no-repeat;
+}
+
+.floatWindow dt {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding-top: 1px;
+    padding-left: 1px;
+}
+
+.floatWindow dd {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    margin-left: 4px;
+    display: none;
+}
+
+.floatWindow dt .txt {
+    width: 60px;
+    height: 60px;
+    margin-left: 3px;
+    margin-top: 2px;
+    display: none;
+}
+
+.floatWindow dd .txt {
+    width: 50px;
+    height: 46px;
+    margin-left: 2px;
+    margin-top: 2px;
+    display: none;
+}
+
+.kefufufu {
+    width: 50px;
+    margin-left: 0;
+}
+
+.kefufufu .ceshi {
+    margin-left: 0;
+}
+
+.kefufufu:hover {
+    width: 160px;
+    margin-left: -110px;
+}
+
+.kefufufu:hover .ceshi {
+    margin-left: 110px
+}
+
+.kefufufu:hover dd {
+    display: block;
+}
+
+.floatWindow .oper:hover .item {
+    /*background: none;*/
+}
+
+.floatWindow .oper:hover .txt {
+    /*display: block;*/
+}
+
+/* .kou_k,.you_k{
+  display: none
+} */
+
+/* .floatWindow .oper:hover .kefu,.floatWindow .oper:hover .tel,.floatWindow .oper:hover .top {
+    background-image: inherit
+} */
+
+.floatWindow .kefu {
+    background-position: -31px -6px;
+}
+
+.floatWindow .kefu:hover{
+    background-position: -31px -87px;
+}
+
+.floatWindow .wxdownload {
+    background-position: -292px -6px;
+}
+
+.floatWindow .wxdownload:hover {
+    background-position: -292px -87px;
+}
+
+.floatWindow .download {
+    background-position: -124px -6px;
+}
+
+.floatWindow .download:hover {
+    background-position: -124px -87px;
+}
+
+.floatWindow .download_qr {
+    position: relative;
+    width: 174px;
+    height: 174px;
+    background-color: #fff;
+    z-index: 999;
+    top: -160px;
+    left: -178px;
+    padding: 5px;
+}
+
+/* hover效果 */
+.change_app, .change_kefu, .change_up, .change_wxkf {
+    background: url(//image.beike188.com/AMH/images/float.1f37b3b.png) no-repeat;
+}
+
+.change_wxkf {
+    background-position: 0px -194px;
+}
+
+.change_app {
+    background-position: 0px -106px;
+}
+
+.change_kefu {
+    background-position: 0px -17px;
+}
+
+.change_help {
+    background: url(//image.beike188.com/AMH/images/index/float_mail_01.png) no-repeat;
+    background-position: 0px -1px;
+}
+
+.change_help2 {
+    background: url(//image.beike188.com/YH/images/index/float_ios_01.png);
+}
+
+.change_up {
+    background-position: 0px -374px;
+}
+
+/* ie生成二维码没高度 */
+.floatWindow table {
+    width: 164px;
+    height: 164px;
+    margin: 0 !important;
+}
+
+.floatWindow .phone {
+    background-position: 0 -125px;
+}
+
+.floatWindow .tel {
+    background: url(//image.beike188.com/AMH/images/index/float_mail.png);
+    background-position: 3px -0px;
+}
+
+.floatWindow .tell {
+    background: url(//image.beike188.com/YH/images/index/float_ios.png);
+    background-position: 3px -0px;
+}
+
+.floatWindow .top {
+    background-position: 3px -371px;
+}
+
+/* 新增 */
+.floatWindow .shiwan {
+    background-position: -208px -6px;
+}
+
+.floatWindow .shiwan:hover {
+    background-position: -208px -87px;
+}
+
+.floatWindow .shiwan:hover > .floatWindow dt .txt{
+    display: block!important;
+}
+
+/* 试玩图片修改 */
+.floatWindow .change_shiwan {
+    background: url(//image.beike188.com/AMH/images/index/float_qq_01.png) no-repeat;
+    background-position: 0px -2px;
+}
+
+.floatWindow .koukou {
+    background: url(//image.beike188.com/AMH/images/index/float_qq.png) no-repeat;
+    background-position: 3px 2px;
+    /*margin-top: 4px;*/
+    /*height: 32px;*/
+    /*width: 32px;*/
+    padding-top: 2px;
+    padding-left: 1px;
+}
+
+.floatWindow .change_koukou {
+    background: url(//image.beike188.com/AMH/images/index/float_qq_01.png) no-repeat;
+    background-position: 0px -2px;
+}
+
+.floatWindow .youxiang {
+    background: url(//image.beike188.com/AMH/images/index/float_mail.png) no-repeat;
+    background-position: 2px 2px;
+    padding-top: 2px;
+    padding-left: 1px;
+}
+
+.floatWindow .change_youxiang {
+    background: url(//image.beike188.com/AMH/images/index/float_mail_01.png) no-repeat;
+    background-position: 0px -2px;
+}
+
+.floatWindow .h5_k {
+    background: url(//image.beike188.com/AMH/images/float.2f0a23f.png) no-repeat;
+    background-position: 3px -285px;
+    margin-top: 2px;
+
+}
+
+.floatWindow .change_h5_k {
+    background: url(//image.beike188.com/AMH/images/float.1f37b3b.png) no-repeat;
+    background-position: 0px -285px;
+    margin-top: 4px;
+
+}
+
+/*.help_center{
+	width:50px;
+	height:50px;
+	position:relative;
+	background: url(//image.beike188.com/AMH/images/index/float.2f0a23f.png) no-repeat;
+	background-position: 3px -3px;
+  	margin-top: 4px;
+}
+.help_center_word{
+	width:50px;
+	height:50px;
+	position:absolute;
+	background: url(//image.beike188.com/AMH/images/index/float.1f37b3b.png) no-repeat;
+	background-position: 3px -3px;
+  	margin-top: 4px;
+}*/
+
+/* .floatWindow .oper:hover .shiwan,.floatWindow .oper:hover .koukou,.floatWindow .oper:hover .youxiang {
+    background-image: inherit
+} */
+
+.floatWindow .kfyx {
+    position: relative;
+    width: 280px;
+    height: 42px;
+    line-height: 50px;
+    border-radius: 4px;
+    background-color: #c8a675;
+    z-index: 999;
+    top: 1px;
+    left: -279px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.turn-span {
+    width: 240px !important;
+    vertical-align: middle;
+    line-height: 35px !important;
+    text-align: left;
+    margin-left: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    cursor: default !important
+}
+
+@media screen and (max-width: 1440px) {
+    body {
+        min-width: 1000px
+    }
+
+    #tabs li .tab-item {
+        padding: 0 13px;
+    }
+
+    .header {
+        width: 1000px
+    }
+
+    .header .header-menu .menu-div {
+        padding-left: 1px;
+    }
+
+    .header .header-menu .menu-div .menu-item {
+        /*width: 61px;*/
+        /*font-size: 15px;*/
+        text-align: center;
+    }
+
+    .header .login-info .register-login {
+        /* width: 100px; */
+        margin-right: -40px;
+    }
+
+    .header .login-info .register-login .login-btn, .header .login-info .register-login .register-btn {
+        width: 48px
+    }
+
+    .header .login-info .register-login .active {
+        width: 46px !important
+    }
+
+    .header .login-info .logined .amount {
+        display: none
+    }
+
+    .floatWindow {
+        margin-left: 516px
+    }
+
+    .footer .footer-content {
+        width: 1000px
+    }
+
+    .footer .footer-content .footer-logo {
+        width: 140px;
+        height: 83px
+    }
+
+    .footer .footer-content .txt {
+        margin-left: 15px;
+        margin-top: 50px
+    }
+
+    .footer .footer-content .txt .txt2 {
+        margin-top: 15px
+    }
+
+    .footer .footer-content .footer-icon {
+        width: 250px
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .floatWindow {
+        margin-left: 0;
+        right: 0;
+        left: inherit
+    }
+}
+
+.right-menu{
+    position: fixed;
+    left: 50%;
+    margin-left: 665px;
+    bottom: 67px;
+    z-index: 99;
+
+}
+.right-menu a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 8px auto;
+    background: url("//image.beike188.com/AMH/images/index/ce_icon.png");
+}
+
+.right-menu .service{
+    background-position: -31px -6px;
+}
+
+.right-menu .service:hover{
+    background-position: -31px -87px;
+}
+
+.right-menu .download{
+    background-position: -124px -6px;
+}
+
+.right-menu .download:hover{
+    background-position: -124px -87px;
+}
+
+.right-menu .qq{
+    background-position: -208px -6px;
+}
+
+.right-menu .qq:hover{
+    background-position: -208px -87px;
+}
+
+.right-menu .wechat{
+    background-position: -292px -6px;
+}
+
+.right-menu .wechat:hover{
+    background-position: -292px -87px;
+}
+
+.right-menu .wechat-qr{
+    position: fixed;
+    display: none;
+    left: 53%;
+    bottom: 76px;
+    width: 180px;
+    margin-left: 418px;
+    border: solid 5px #fff;
+}
+
+.right-menu .wechat:hover + img{
+    display: block!important;
+}

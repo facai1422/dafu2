@@ -1,0 +1,249 @@
+.deep-color{background-color: #222f38;border-color: #1d252b;}
+.light-color{background-color: #275673;border-color: #275673;}
+
+
+/*侧边栏in-side*/
+#b1{background:#585568;}
+#b2{background:#222f38 url(/v1/images/common_img/select.png);}
+#b3{background:#00b599;}
+#b4{background:#5d473a;}
+#b5{background:#E4332D;}
+
+/*顶部top*/
+/* .top-link a{background: #1a252b;} */
+.top-link a:hover{background:#50626c;transition:all .3s ease;}
+.top-nav-left .left-item a:hover {background-color: #213c4d;color: #fff;border-color: #213c4d;}
+.top-nav-left li>a{border-color: #344049;}
+.user-face{background-position-x: -2px;}
+.top-nav .user, .top-balance, .top-nav .hide{color: #fff;}
+.info_num{border-color:#383346;transition:all .3s ease;}
+
+
+/*头部 header*/
+.nav-head{background:url(/v1/images/common_img/bjtop2.jpg);background-size: 100% 105px;}
+.menu-sub li:hover{background-color:#50626c;}
+
+/*首页home*/
+.header-body{background: url(/v1/images/home_img/b2.jpg) center top no-repeat;background-size: 100% 609px;}
+.hot-type >a:hover,.games-type .item-right a:hover{background-color: #50626c;border-color: #50626c;}
+.part-body {background: url(/v1/images/home_img/bfoj.jpg);}
+
+/*内页皮肤*/
+input[type="submit"],input[type="button"] {
+	cursor: pointer;
+	background: #275673;
+}
+.search-time a:hover{background:#275673;}
+.tow_a{background:#275673;}
+.tow_a a.tow_on, .tow_a a:hover{color:#275673;}
+.submit,.set-up-password a,.bankCard-success-message a,.un-bound-bank a,.next-button, .bank_card_return{background:#275673;}
+.bank-card-deeepCorol span{border-left-color:#275673;}
+.query_d1 a.query_d1on, .query_d1 a:hover,.ydu{background:#275673;border-color:#275673;}
+/*.recharge-nav a.new_on, .recharge-nav a:hover{border-top: 4px solid #275673;}*/
+
+.details-table thead th,.adjustment_tit{background:#dbe9f1;border-bottom:2px solid #8cb0c5;}
+.details-table .pay_report th{background:#dbe9f1;}
+.details-table tbody tr{background-color: #f7f7f7;}
+.details-table tbody tr:nth-of-type(odd){background: #fff;}
+.details-table tbody tr:hover{background:#dbe9f1;}
+.details-table tfoot td,.n_10row_mode,.fhtbody tr:nth-child(odd),.table-all2 tbody tr:nth-child(even) td{background:#dbe9f1;}
+.details-table tbody .x_hrtd:hover{background:#dbe9f1;}
+.platform-information-ul li:nth-child(even){background: #ebf6fc;}
+.x_underline{background:#84aac1;}
+.x_xfx_ul li:nth-child(even){background: #ebf6fc;}
+.x_xfx_ul li:hover{background: #d5e5ee;}
+.page a,.details-page a,.page-bottom .delete-record{background:#cfdbe2;border-color:transparent;}
+.page a.pageCurrent,.details-page a.pageCurrent{background: #658493;color: #fff;}
+.page a:hover,.page-bottom .delete-record:hover{background:#426170;color:#fff}
+.bank_card-qp1 span { border-left-color: #222f38;}
+.recharge-nav a.new_on,.recharge-nav a:hover,.main-content-nav a.new-on, .main-content-nav a:hover,.main-content-nav a.nav-active,.main-content-nav a:hover{border-top:4px solid #275673;}
+.platform-information-ul li:hover{
+    background: #275673;
+}
+.management-a,.management-2 a{background-color: #275673;}
+.reward-topic {
+	background: #dbe9f1;
+	border-bottom:2px solid #8cb0c5;
+}
+.setting-row {
+	background: #dbe9f1;
+}  
+.field-type-switch {
+	background: #a9c4d4;
+}
+.field-type-switch li.current a {
+	border-bottom: 1px solid #6493af;
+}	
+.details-page a:hover {
+	background: #275673;
+}
+.link-table .light-color,.table-button {
+    background: #658493;
+}
+.link-table .light-color:hover,.table-button:hover{
+    background: #426170;
+}
+
+
+/*投注页面换肤*/
+.x_ti1 {
+    background: url(/v1/images/games/skin/skin2/x_ti11.png);
+}
+.lottery-text {
+    color: #213c4d;
+}
+.skin2 .lottery-link a:hover {
+    background: #4a606e;
+}
+.numbox p {
+    color: #1f3b49;
+    border-color: #b0b8bd;
+}
+.lottery-link a {
+    background: #71828b;
+}
+.skin2 .lottery-link a:hover {
+    background: #4a606e;
+}
+.play-select,.gametypes-menu-panel.gametypes-menu-k3,.pk10home .play-select .play-select-title{background: #213c4d;}
+.play-select-title li.current .title,.play-select-title li:hover .title{
+	border-color: #213c4d;
+}
+.gametypes-menu-panel .types-item-current:before, .gametypes-menu-panel .types-item:hover::before{
+    background-color: #213c4d;
+}
+.gametypes-menu-panel .types-item-current, .gametypes-menu-panel .types-item:hover{
+	background: #213c4d;
+    color: #fff;
+}
+.ball-number,.ball-control a{
+	background: url(/v1/images/games/skin/skin2/ball-bg2.png) 0 0 no-repeat
+}
+.ball-number-current, .ball-number-current:hover {
+    background-position: 0 -80px;
+    color: #fff;
+}
+.ball-number-long {
+    background-image: none;
+    line-height: 32px;
+    width: 90px;
+}
+.ball-number-long:hover, .ball-content-long .ball-number-current {
+    background-color: #234353;
+    background-image: none;
+    color: #fff;
+    border-color: #234353;
+}
+.bet-table-trend th span {
+    background: #d9e4eb;
+    color: #213c4d;
+}
+.list-historys .inner {
+    border: 1px solid #d9e4eb;
+}
+.bet-table-trend td {
+    border-bottom: 1px dotted #e3dbe7;
+    color: #70939e;
+}
+.bet-table-trend .first .balls i.curr {
+    background: #355b72;
+    color: #fff;
+}
+.bet-table-trend .balls i.curr {
+    background: #d9e4eb;
+    color: #355b72;
+}
+.bet-statics-multiple-reduce, .bet-statics-multiple-add {
+    background: url(/v1/images/games/skin/skin2/xk_1.png);
+    color: #fff;
+}
+.select-game-statics-multiple {
+    background: #d9e4eb;
+    color:#59493f;
+}
+a.btn-bet-allin-disable, a.btn-bet-allin-disable:hover, a.btn-bet-allin-disable:active {
+    background: #71828b;
+}
+.choose-btn1 input.disable,.choose-btn input.disable{
+    background: #d9e4eb;
+    color: #576c7a;
+}
+.choose-btn1 input.disable:hover,.choose-btn input.disable:hover{
+    color: #fff;
+}
+.choose-btn1 input.disable:hover, .choose-btn1 input {
+    background: url(/v1/images/games/skin/skin2/btn11.png);
+}
+.choose-btn input.disable:hover, .choose-btn input {
+    background: url(/v1/images/games/skin/skin2/btn22.png);
+}
+.pannel-title {
+    color: #5f4961;
+}
+.pannel-title .close {
+    background: #A9B6BD;
+    color: #fff;
+}
+.panel-select-title, .panel-select-title .name {
+    background: #dde7ed;
+}
+.chase-tab-title {
+    border-color: #d4dade;
+    background: #d9e4eb;
+}
+.chase-tab-title li.current, .chase-tab-title li:hover {
+    border-top: 4px solid #234353;
+}
+.trace-title-param .btn:hover, .panel-trace .trace-info-panel .trace-button-clear-trace, .trace-title-param .btn, .panel-trace .trace-info-panel .trace-button-clear-trace:hover {
+    background: #6f818a;
+}
+.btn-bet {
+    background-image: url(/v1/images/games/skin/skin2/button-submit-save.png);
+    background-repeat: no-repeat;
+}
+.btn-bet-disable {
+    background-position: 0 0;
+}
+/*.btn-bet:hover {
+    background-image: url(/v1/images/games/skin/skin2/button-submit-save.png);
+    background-repeat: no-repeat;
+    background-position: 0 -56px;
+}*/
+.list-full-history .title li.current, .list-full-history .title li:hover, .list-full-history .title li.current a {
+    border-top-color: #234353;
+    color: #234353;
+}
+.balls-float-panel .ball-section-pk10-liangmianpan-dragonwithtiger .ball-number-current,.ball-section-pk10-liangmianpan-dragonwithtiger .ball-number:hover{
+    background: url(/v1/images/games/skin/skin2/btn11.png);
+    background-repeat: repeat-x;
+}
+.ball-section-pk10-liangmianpan-dragonwithtiger .ball-number-space:hover {
+    background: none;
+}
+.choose-number>div,.details-slider .num_slider{
+    background: #275673;
+}
+/*投注页面换结束*/
+
+
+/*活动页面左侧*/
+.act-top{
+    background-position: 0 -290px;
+}
+.activity-tit{
+    color: #9fb6c6;
+}
+.active-left .title,.active-left .ul-one,.active-left .in-process,.active-left{
+    background: #415461;
+}
+.active-left .ul-one ul li{
+    color: #a6b5c0;
+}
+.active-left .title-all >.title:nth-child(even){
+    background: #566c7b;
+}
+/*活动页面左侧结束*/
+
+.layui-layer-tips{
+    background: #f00;
+}

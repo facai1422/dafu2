@@ -1,0 +1,2718 @@
+body {
+	margin: 0px; padding: 0px;
+}
+dl {
+	margin: 0px; padding: 0px;
+}
+dt {
+	margin: 0px; padding: 0px;
+}
+dd {
+	margin: 0px; padding: 0px;
+}
+ul {
+	margin: 0px; padding: 0px;
+}
+ol {
+	margin: 0px; padding: 0px;
+}
+li {
+	margin: 0px; padding: 0px;
+}
+h1 {
+	margin: 0px; padding: 0px;
+}
+h2 {
+	margin: 0px; padding: 0px;
+}
+h3 {
+	margin: 0px; padding: 0px;
+}
+h4 {
+	margin: 0px; padding: 0px;
+}
+h5 {
+	margin: 0px; padding: 0px;
+}
+h6 {
+	margin: 0px; padding: 0px;
+}
+pre {
+	margin: 0px; padding: 0px;
+}
+code {
+	margin: 0px; padding: 0px;
+}
+form {
+	margin: 0px; padding: 0px;
+}
+fieldset {
+	margin: 0px; padding: 0px;
+}
+legend {
+	margin: 0px; padding: 0px;
+}
+input {
+	margin: 0px; padding: 0px;
+}
+button {
+	margin: 0px; padding: 0px;
+}
+textarea {
+	margin: 0px; padding: 0px;
+}
+p {
+	margin: 0px; padding: 0px;
+}
+blockquote {
+	margin: 0px; padding: 0px;
+}
+th {
+	margin: 0px; padding: 0px;
+}
+td {
+	margin: 0px; padding: 0px;
+}
+a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+button {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+textarea {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+select {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:focus {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:active {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.vertical {
+	vertical-align: baseline;
+}
+a {
+	transition:0.3s; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s;
+}
+button {
+	transition:0.3s; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s;
+}
+table {
+	border-collapse: collapse; border-spacing: 0;
+}
+fieldset {
+	border: currentColor; border-image: none;
+}
+img {
+	border: currentColor; border-image: none;
+}
+address {
+	font-style: normal; font-weight: normal;
+}
+caption {
+	font-style: normal; font-weight: normal;
+}
+cite {
+	font-style: normal; font-weight: normal;
+}
+code {
+	font-style: normal; font-weight: normal;
+}
+dfn {
+	font-style: normal; font-weight: normal;
+}
+em {
+	font-style: normal; font-weight: normal;
+}
+i {
+	font-style: normal; font-weight: normal;
+}
+th {
+	font-style: normal; font-weight: normal;
+}
+var {
+	font-style: normal; font-weight: normal;
+}
+li {
+	list-style: none;
+}
+caption {
+	text-align: left;
+}
+th {
+	text-align: left;
+}
+h1 {
+	font-size: 100%;
+}
+h2 {
+	font-size: 100%;
+}
+h3 {
+	font-size: 100%;
+}
+h4 {
+	font-size: 100%;
+}
+h5 {
+	font-size: 100%;
+}
+h6 {
+	font-size: 100%;
+}
+h1 {
+	font-size: 18px;
+}
+h2 {
+	font-size: 16px;
+}
+h3 {
+	font-size: 14px;
+}
+q::before {
+	content: "";
+}
+q::after {
+	content: "";
+}
+abbr {
+	border: currentColor; border-image: none; font-variant: normal;
+}
+acronym {
+	border: currentColor; border-image: none; font-variant: normal;
+}
+sup {
+	vertical-align: text-top;
+}
+sub {
+	vertical-align: text-bottom;
+}
+input {
+	font-family: inherit; font-size: inherit; font-weight: inherit;
+}
+button {
+	font-family: inherit; font-size: inherit; font-weight: inherit;
+}
+textarea {
+	font-family: inherit; font-size: inherit; font-weight: inherit;
+}
+select {
+	font-family: inherit; font-size: inherit; font-weight: inherit;
+}
+input {
+	font: 100%/normal Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Hiragino Sans GB W3, Microsoft YaHei, WenQuanYi Micro Hei, Tahoma, Arial, sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+button {
+	font: 100%/normal Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Hiragino Sans GB W3, Microsoft YaHei, WenQuanYi Micro Hei, Tahoma, Arial, sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+textarea {
+	font: 100%/normal Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Hiragino Sans GB W3, Microsoft YaHei, WenQuanYi Micro Hei, Tahoma, Arial, sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+select {
+	font: 100%/normal Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Hiragino Sans GB W3, Microsoft YaHei, WenQuanYi Micro Hei, Tahoma, Arial, sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+input {
+	font: 100%/normal Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Hiragino Sans GB W3, Microsoft YaHei, WenQuanYi Micro Hei, Tahoma, Arial, sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+button {
+	font: 100%/normal Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Hiragino Sans GB W3, Microsoft YaHei, WenQuanYi Micro Hei, Tahoma, Arial, sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+textarea {
+	font: 100%/normal Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Hiragino Sans GB W3, Microsoft YaHei, WenQuanYi Micro Hei, Tahoma, Arial, sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+table {
+	font-size: inherit;
+}
+pre {
+	font-family: "Courier New", Courier, monospace;
+}
+code {
+	font-family: "Courier New", Courier, monospace;
+}
+kbd {
+	font-family: "Courier New", Courier, monospace;
+}
+samp {
+	font-family: "Courier New", Courier, monospace;
+}
+tt {
+	font-family: "Courier New", Courier, monospace;
+}
+small {
+	font-size: 100%;
+}
+abbr {
+	border-bottom-color: currentColor; border-bottom-width: 1px; border-bottom-style: dotted; cursor: help;
+}
+acronym {
+	border-bottom-color: currentColor; border-bottom-width: 1px; border-bottom-style: dotted; cursor: help;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+hr {
+	border: currentColor; border-image: none; height: 1px; color: rgb(209, 215, 220); background-color: rgb(209, 215, 220);
+}
+html {
+	height: 100%;
+}
+body {
+	height: 0%; color: rgb(69, 69, 69); line-height: 1.; font-family: Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Hiragino Sans GB W3, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif; font-size: 12px; position: relative; min-width: 1008px; background-color: rgb(255, 255, 255);
+}
+a {
+	color: #FF5722; text-decoration: none;
+}
+a:hover {
+	color: rgb(255, 86, 86);
+}
+a.disable {
+	color: rgb(153, 153, 153);
+}
+a.disable:hover {
+	text-decoration: none; cursor: default;
+}
+.clearfix::after {
+	height: 0px; clear: both; display: block; content: "";
+}
+.g_main {
+	width: 1240px; clear: both; margin-right: auto; margin-left: auto;
+}
+.g_main::after {
+	height: 0px; clear: both; display: block; visibility: hidden; content: " ";
+}
+.g_1 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_2 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_3 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_4 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_5 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_6 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_7 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_8 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_9 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_10 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_11 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_12 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_13 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_14 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_15 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_16 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_17 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_18 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_19 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_20 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_21 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_22 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_23 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_24 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_25 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_26 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_27 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_28 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_29 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_30 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_31 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_32 {
+	margin-right: 10px; float: left; display: inline;
+}
+.g_1 {
+	width: 20px;
+}
+.g_2 {
+	width: 50px;
+}
+.g_3 {
+	width: 80px;
+}
+.g_4 {
+	width: 110px;
+}
+.g_5 {
+	width: 140px;
+}
+.g_6 {
+	width: 170px;
+}
+.g_7 {
+	width: 200px;
+}
+.g_8 {
+	width: 230px;
+}
+.g_9 {
+	width: 260px;
+}
+.g_10 {
+	width: 290px;
+}
+.g_11 {
+	width: 320px;
+}
+.g_12 {
+	width: 350px;
+}
+.g_13 {
+	width: 380px;
+}
+.g_14 {
+	width: 410px;
+}
+.g_15 {
+	width: 440px;
+}
+.g_16 {
+	width: 470px;
+}
+.g_17 {
+	width: 500px;
+}
+.g_18 {
+	width: 530px;
+}
+.g_19 {
+	width: 560px;
+}
+.g_20 {
+	width: 590px;
+}
+.g_21 {
+	width: 620px;
+}
+.g_22 {
+	width: 650px;
+}
+.g_23 {
+	width: 680px;
+}
+.g_24 {
+	width: 710px;
+}
+.g_25 {
+	width: 740px;
+}
+.g_26 {
+	width: 770px;
+}
+.g_27 {
+	width: 800px;
+}
+.g_28 {
+	width: 830px;
+}
+.g_29 {
+	width: 860px;
+}
+.g_30 {
+	width: 890px;
+}
+.g_31 {
+	width: 920px;
+}
+.g_32 {
+	width: 950px;
+}
+.g_33 {
+	width: 980px; clear: both; margin-right: auto; margin-left: auto;
+}
+.g_33::after {
+	height: 0px; clear: both; display: block; visibility: hidden; content: " ";
+}
+.g_last {
+	margin-right: 0px;
+}
+.g_33 {
+	width: 1240px;
+}
+.container {
+	margin: 0px auto; width: 1240px;
+}
+.page-content {
+	background: rgb(247, 247, 247); padding: 30px 0px; font-size: 14px; position: relative; min-height: 622px;
+}
+.pop {
+	border-radius: 3px; border: 1px solid rgb(200, 200, 200); border-image: none; width: 438px; -ms-word-wrap: break-word; background-color: rgb(247, 247, 247);
+}
+.pop-hd {
+	padding: 0px 15px; border-radius: 3px 3px 0px 0px; height: 44px; color: rgb(97, 96, 122); line-height: 44px; background-color: rgb(240, 240, 240);
+}
+.pop-title {
+	font-size: 16px; font-weight: 600;
+}
+.pop-close {
+	background: url("ui-alert.png") no-repeat -150px -80px; width: 16px; height: 16px; margin-top: 14px; float: right; cursor: pointer;
+}
+.pop-close:hover {
+	background-position: -150px -60px;
+}
+.pop-bd {
+	padding: 20px; border-radius: 0px 0px 3px 3px; text-align: center; background-color: rgb(247, 247, 247);
+}
+.pop-bd .ico-success {
+	background: url("ui-alert.png") no-repeat; width: 40px; height: 40px; margin-right: 10px; vertical-align: middle; display: none;
+}
+.pop-bd .ico-error {
+	background: url("ui-alert.png") no-repeat; width: 40px; height: 40px; margin-right: 10px; vertical-align: middle; display: none;
+}
+.pop-bd .ico-waring {
+	background: url("ui-alert.png") no-repeat; width: 40px; height: 40px; margin-right: 10px; vertical-align: middle; display: none;
+}
+.pop-bd .ico-success {
+	background-position: 0px -60px;
+}
+.pop-bd .ico-error {
+	background-position: -50px -60px;
+}
+.pop-bd .ico-waring {
+	background-position: -100px -60px;
+}
+.pop-content {
+	padding-top: 10px;
+}
+.pop-text {
+	text-align: left; color: rgb(95, 96, 103); line-height: 24px; overflow: hidden; font-size: 14px; font-weight: 700; vertical-align: middle; display: inline-block;
+}
+.pop-btn {
+	padding: 15px; text-align: center;
+}
+.pop-btn .btn {
+	padding: 0px 20px; height: 34px; line-height: 32px; font-size: 14px; box-shadow: 0px 1px 3px rgba(0,0,0,0.1); background-color: rgb(124, 125, 147);
+}
+.pop-btn .btn:hover {
+	background-color: rgb(166, 156, 123);
+}
+.pop-btn .btn-normal {
+	background-color: rgb(255, 255, 255);
+}
+.pop-btn .btn-normal:hover {
+	background-color: rgb(255, 255, 255);
+}
+.pop-control {
+	text-align: center; padding-bottom: 20px;
+}
+.ui-miniwindow-tip {
+	display: none;
+}
+.ui-miniwindow-tip .inner {
+	padding: 20px 40px; font-size: 14px; font-weight: 700;
+}
+.list-download li {
+	margin: 0px 5px; padding: 15px; border: 1px solid rgb(255, 255, 255); border-image: none; width: 120px; display: inline-block;
+}
+.list-download li:hover {
+	background: rgb(255, 255, 225); border: 1px solid rgb(238, 238, 238); border-image: none;
+}
+.list-download li p {
+	padding: 3px 0px; text-align: center;
+}
+.list-download li a.btn {
+	padding: 1px 15px; border-radius: 2px; border: currentColor; border-image: none; text-align: center; color: rgb(255, 255, 255); display: inline-block; position: relative; background-color: rgb(242, 100, 50);
+}
+.list-download li a.btn:hover {
+	background-color: rgb(246, 76, 16);
+}
+.pop-control .btn {
+	padding: 4px 29px; border-radius: 2px; border: currentColor; border-image: none; text-align: center; color: rgb(255, 255, 255); font-size: 14px; margin-left: 0px; display: inline-block; position: relative; background-color: rgb(123, 124, 146);
+}
+.pop-control .btn:hover {
+	background: rgb(94, 96, 130); color: rgb(255, 255, 255);
+}
+.ui-miniwindow-tip {
+	background: rgb(255, 255, 255); border-radius: 5px; border: 5px solid rgb(153, 153, 153); border-image: none; left: 50%; top: 50%; text-align: center; display: none; position: fixed; z-index: 800;
+}
+.ui-miniwindow-tip .inner {
+	padding: 20px 40px; font-size: 14px; font-weight: bold;
+}
+.ui-miniwindow-tip .inner .row {
+	padding: 5px 0px;
+}
+.global-top {
+	background: rgb(255, 255, 255); padding: 10px 0px; border-bottom-color: rgb(255, 86, 86); border-bottom-width: 2px; border-bottom-style: solid; position: relative; z-index: 200;
+}
+.global-top .logo {
+	background: url("logo.png") no-repeat 0% 0% / contain; width: 53px; height: 57px; text-indent: -100000px; float: left;
+}
+.global-top .logo-lab {
+	width: 95px; color: rgb(69, 69, 69); float: left;
+}
+.global-top .logo-lab .platform-name-canvas {
+	width: 95px; height: 25px; margin-top: 3px; display: inline-block; position: relative;
+}
+.global-top .logo-lab .platform-name-canvas .platform-name {
+	background: url("/assets/images/global-v3/platform-name.png") no-repeat; top: 0px; width: 100%; height: 100%; display: inline-block; position: absolute;
+}
+.global-top .logo-lab .platform-name-canvas .platform-name:hover {
+	background: url("/assets/images/global-v3/platform-name-hover.png") no-repeat;
+}
+.global-top .logo-lab .domain-name-canvas {
+	width: 95px; height: 14px; display: inline-block; position: relative;
+}
+.global-top .logo-lab .domain-name-canvas .domain-name {
+	background: url("/assets/images/global-v3/domain.png") no-repeat; top: 0px; width: 100%; height: 100%; display: inline-block; position: absolute;
+}
+.global-top .logo-lab .domain-name-canvas .domain-name:hover {
+	background: url("/assets/images/global-v3/domain-hover.png") no-repeat;
+}
+.global-top .logo-text {
+	color: rgb(191, 187, 161); font-size: 16px; margin-top: 20px; float: left;
+}
+.global-top .menu-games {
+	padding: 20px 20px 0px; height: 37px; color: rgb(163, 163, 165); font-size: 14px; float: left; display: block; position: relative; cursor: pointer;
+}
+.global-top .menu-games-text {
+	transition:color 0.2s ease-in; -webkit-transition: color .2s ease-in; -moz-transition: color .2s ease-in; -o-transition: color .2s ease-in;
+}
+.global-top .menu-games:hover .menu-games-text {
+	color: rgb(255, 255, 255);
+}
+.global-top .menu-games-hover .menu-games-text {
+	color: rgb(255, 255, 255);
+}
+.global-top .menu-games-bg {
+	background: url("menu-games-bg.png") no-repeat 5px 3px; transition:0.3s ease-in; width: 16px; height: 10px; overflow: hidden; font-size: 0px; display: inline-block;
+}
+.global-top .menu-games:hover .menu-games-bg {
+	transform: rotate(180deg); -webkit-transform: rotate(180deg);
+}
+.global-top .menu-games-panel {
+	background: url("menu-games-panel-bg.gif") no-repeat; left: 0px; top: -10000px; width: 310px; height: 291px; position: absolute; opacity: 0; box-shadow: 1px 1px 5px rgba(0,0,0,0.7); _top: 62px; _display: none;
+}
+.global-top .menu-games:hover .menu-games-panel {
+	transition:opacity 0.2s ease-in; top: 52px; opacity: 1; -webkit-transition: opacity .2s ease-in; -moz-transition: opacity .2s ease-in; -o-transition: opacity .2s ease-in; _display: block;
+}
+.global-top .menu-games-hover .menu-games-panel {
+	transition:opacity 0.2s ease-in; top: 52px; opacity: 1; -webkit-transition: opacity .2s ease-in; -moz-transition: opacity .2s ease-in; -o-transition: opacity .2s ease-in; _display: block;
+}
+.global-top .menu-games-panel .cell {
+	width: 103px; float: left;
+}
+.global-top .menu-games-panel .cell-1 {
+	width: 104px;
+}
+.global-top .menu-games-panel .cell ul {
+	background: rgb(255, 255, 255); height: 246px; border-right-color: rgb(220, 220, 220); border-right-width: 1px; border-right-style: solid;
+}
+.global-top .menu-games-panel .title {
+	padding: 0px 0px 0px 20px; height: 46px; color: rgb(255, 255, 255); line-height: 50px; overflow: hidden; text-shadow: 0px 2px 0px #463c2c;
+}
+.global-top .menu-games-panel .cell ul li {
+	height: 40px; line-height: 40px; border-bottom-color: rgb(220, 220, 220); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.global-top .menu-games-panel .cell ul li:last-child {
+	
+}
+.global-top .menu-games-panel .cell ul:hover {
+	background: rgb(245, 245, 245);
+}
+.global-top .menu-games-panel .cell ul li a {
+	padding: 0px 0px 0px 20px; transition:background 0.4s ease-in; height: 40px; color: rgb(102, 102, 102); font-size: 12px; display: block; -webkit-transition: background .4s ease-in; -moz-transition: background .4s ease-in; -o-transition: background .4s ease-in;
+}
+.global-top .menu-games-panel .cell ul li a:hover {
+	background: rgb(177, 153, 87); color: rgb(255, 255, 255); text-decoration: none;
+}
+.global-top .menu-games-panel .cell ul li a:active {
+	background: rgb(177, 153, 87); color: rgb(255, 255, 255);
+}
+.menu-user-link {
+	padding: 23px 0px 0px 20px; height: 43px; color: rgb(163, 163, 165); font-size: 14px; float: left; display: block; position: relative; cursor: pointer;
+}
+.menu-user-link-text {
+	transition:color 0.2s ease-in; -webkit-transition: color .2s ease-in; -moz-transition: color .2s ease-in; -o-transition: color .2s ease-in;
+}
+.menu-user-link:hover .menu-user-link-text {
+	color: rgb(255, 255, 255);
+}
+.menu-user-link-hover .menu-user-link-text {
+	color: rgb(255, 255, 255);
+}
+.menu-user-link-bg {
+	background: url("menu-games-bg.png") no-repeat 5px 3px; transition:0.3s ease-in; width: 16px; height: 10px; overflow: hidden; font-size: 0px; display: inline-block;
+}
+.menu-user-link:hover .menu-user-link-bg {
+	transform: rotate(180deg); -webkit-transform: rotate(180deg);
+}
+.menu-user-link-hover .menu-user-link-bg {
+	transform: rotate(180deg); -webkit-transform: rotate(180deg);
+}
+.menu-user-link-panel {
+	background: rgb(52, 52, 60); position: relative; z-index: 10;
+}
+.menu-user-link-panel-current {
+	transition:opacity 0.2s ease-in; top: 0px; opacity: 1; -webkit-transition: opacity .2s ease-in; -moz-transition: opacity .2s ease-in; -o-transition: opacity .2s ease-in; _display: block;
+}
+.menu-user-link:hover .menu-user-link-panel {
+	transition:opacity 0.2s ease-in; top: 66px; opacity: 1; -webkit-transition: opacity .2s ease-in; -moz-transition: opacity .2s ease-in; -o-transition: opacity .2s ease-in; _display: block;
+}
+.menu-user-link-hover .menu-user-link-panel {
+	transition:opacity 0.2s ease-in; top: 66px; opacity: 1; -webkit-transition: opacity .2s ease-in; -moz-transition: opacity .2s ease-in; -o-transition: opacity .2s ease-in; _display: block;
+}
+.menu-user-link-panel .list {
+	padding-left: 286px;
+}
+.menu-user-link-panel .list li {
+	float: left; position: relative;
+}
+.menu-user-link-panel .list li a {
+	padding: 10px 15px; width: 82px; text-align: center; color: rgb(255, 255, 255); display: block;
+}
+.menu-user-link-panel .list li:hover > a {
+	background: rgba(21, 21, 21, 0.6);
+}
+.menu-user-link-panel .list li > a.active {
+	background: rgba(21, 21, 21, 0.6);
+}
+.menu-user-link-panel .list li:first-child a:hover {
+	border-bottom-left-radius: 0px;
+}
+.menu-user-link-panel .list li:last-child a:hover {
+	border-bottom-right-radius: 0px;
+}
+.menu-user-link-panel .list li a .sj {
+	background: url("menu-sj.png") no-repeat 10px 0px; width: 15px; height: 7px; display: inline-block;
+}
+.menu-user-link-panel .list li .child {
+	background: rgba(21, 21, 21, 0.7); left: 0px; width: 100%; display: none; position: absolute; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;
+}
+.menu-user-link-panel .list li:hover .sj {
+	background-image: url("menu-sj-up.png");
+}
+.menu-user-link-panel .list li:hover .child {
+	display: block;
+}
+.menu-user-link-panel .list li:hover .child li.last:hover {
+	border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;
+}
+.menu-user-link-panel .list li:hover .child li a {
+	color: rgb(255, 255, 255);
+}
+.menu-user-link-panel .list li:hover .child li:hover {
+	background: rgba(81, 79, 94, 0.49);
+}
+.menu-user-link-panel .list li .child li {
+	text-align: left;
+}
+.menu-user-link-panel .list li:hover .child li a:first-child {
+	border-radius: 0px;
+}
+.global-top .menu {
+	margin-left: 1px; float: left; display: block;
+}
+.global-top .menu li {
+	height: 60px; text-align: center; line-height: 60px; font-size: 14px; display: block;
+}
+.global-top .chat {
+	height: 60px; text-align: center; line-height: 60px; font-size: 14px; display: block;
+}
+.global-top .menu li {
+	width: 110px; float: left; position: relative;
+}
+.global-top .menu li .msg-num {
+	background: rgb(206, 36, 0); padding: 3px 5px; border-radius: 10px; top: 2px; right: 17px; color: rgb(255, 255, 255); line-height: 10px; font-size: 11px; position: absolute;
+}
+.global-top .menu li:hover a {
+	background: rgba(255, 255, 255, 0.13); color: rgb(255, 255, 255);
+}
+.global-top .menu li a .sj {
+	background: url("menu-sj.png") no-repeat 8px 0px; width: 15px; height: 7px; display: inline-block; opacity: 0.5;
+}
+.global-top .menu a {
+	color: rgb(163, 163, 165); padding-left: 10px; display: block;
+}
+.global-top .menu a:link {
+	color: rgb(163, 163, 165); padding-left: 10px; display: block;
+}
+.global-top .menu a:visited {
+	color: rgb(163, 163, 165); padding-left: 10px; display: block;
+}
+.global-top .menu a:hover {
+	
+}
+.global-top .menu .child {
+	border-bottom-color: rgb(138, 138, 138); border-bottom-width: 1px; border-bottom-style: solid; display: none; box-shadow: 1px 1px 10px #6d6d6d;
+}
+.global-top .menu li:hover {
+	
+}
+.global-top .menu li:hover .child {
+	width: 180px; display: block;
+}
+.global-top .menu .child li {
+	background: none; width: 180px; height: auto; text-align: left; line-height: 170%;
+}
+.global-top .menu .child li a {
+	background: rgb(255, 255, 255); padding: 10px 0px 10px 20px; font-size: 12px; border-bottom-color: rgb(228, 228, 228); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.global-top .menu li:hover .child li:hover {
+	
+}
+.global-top .menu li:hover .child a {
+	color: rgb(51, 51, 51);
+}
+.global-top .menu li:hover .child a:hover {
+	background: rgb(238, 238, 238); color: rgb(51, 51, 51);
+}
+.global-top .menu li:hover .child a {
+	box-shadow: none;
+}
+.global-top .chat {
+	width: auto; height: 60px; float: right;
+}
+.global-top .chat .login-link {
+	width: 400px;
+}
+.global-top .chat .login-link a {
+	margin: 0px; padding: 0px 5px; width: 110px; color: rgb(182, 182, 182);
+}
+.global-top .chat .login-link a:hover {
+	color: rgb(69, 69, 69);
+}
+.global-top .chat .online-server {
+	vertical-align: middle; display: inline-block;
+}
+.global-top .chat .online-server-lab {
+	color: rgb(182, 182, 182); font-size: 14px;
+}
+.global-top .chat .online-server-lab:hover {
+	color: rgb(69, 69, 69);
+}
+.global-top .menu-user {
+	padding: 24px 10px 0px 0px; color: rgb(255, 255, 255); float: right;
+}
+.global-top .menu-user a {
+	color: rgb(205, 205, 208); text-decoration: underline;
+}
+.global-top .menu-user a:hover {
+	color: rgb(255, 255, 255);
+}
+.global-top .menu-user:hover {
+	height: auto;
+}
+.global-top .user-ico-img {
+	background: url("user-ico-img.png") no-repeat; width: 34px; height: 34px; margin-top: -10px; margin-right: 10px; float: left;
+}
+.global-top .menu-user .ico {
+	width: 50px; float: left;
+}
+.global-top .menu-user .ico img {
+	width: 60px; height: 50px; vertical-align: middle;
+}
+.global-top .menu-user .left {
+	padding: 5px 10px 0px 0px; width: 130px; text-align: center; float: left;
+}
+.global-top .menu-user .left .row-uname {
+	color: rgb(255, 255, 255);
+}
+.global-top .menu-user .left .row-amount {
+	color: rgb(255, 255, 255); display: none;
+}
+.global-top .menu-user .left .row-amount .num {
+	color: rgb(80, 227, 194);
+}
+.global-top .menu-user:hover .left .row-amount {
+	display: block;
+}
+.global-top .menu-user .left a {
+	padding: 0px 2px; color: rgb(240, 225, 179); display: inline-block;
+}
+.global-top .menu-user .menu-games-bg {
+	right: 10px; margin-top: 20px; margin-left: 10px; position: absolute;
+}
+.global-top .menu-user:hover .menu-games-bg {
+	transform: rotate(180deg); -webkit-transform: rotate(180deg);
+}
+.global-top .menu-user .user-links {
+	background: rgb(38, 38, 44); padding-top: 15px; clear: both; margin-top: 60px; display: none; position: absolute;
+}
+.global-top .menu-user:hover .user-links {
+	display: block;
+}
+.global-top .menu-user .user-links a {
+	background: rgb(148, 143, 115); width: 95px; height: 32px; text-align: center; color: rgb(255, 255, 255); line-height: 32px; border-bottom-color: rgb(165, 161, 143); border-bottom-width: 1px; border-bottom-style: solid; float: left; display: block;
+}
+.global-top .menu-user .user-links a.bor {
+	border-right-color: rgb(165, 161, 143); border-right-width: 1px; border-right-style: solid;
+}
+.global-top .menu-user .user-links a:hover {
+	background: rgb(255, 255, 255); color: rgb(102, 102, 102);
+}
+.global-top .float-menu {
+	padding: 0px 11px; height: 70px; color: rgb(255, 255, 255); margin-left: 15px; float: right; position: relative; background-image: linear-gradient(-180deg, rgb(255, 245, 200) 0%, rgb(198, 185, 150) 2%, rgb(125, 115, 86) 64%, rgb(151, 141, 114) 99%, rgb(69, 65, 52) 100%); background-color: rgb(169, 157, 124);
+}
+.global-top .float-menu .title-text {
+	background: url("float-menu-ico.png") no-repeat center; width: 24px; height: 65px; color: rgb(238, 238, 238); font-size: 14px; display: inline-block; cursor: pointer;
+}
+.global-top .float-menu-active {
+	background: rgb(80, 74, 95);
+}
+.global-top .float-menu-active .title-text {
+	color: rgb(255, 255, 255); background-image: url("float-menu-ico-close.png");
+}
+.global-top .float-menu .panel {
+	background: rgb(80, 74, 95); top: -10000px; width: 650px; right: 0px; position: absolute; z-index: 0; opacity: 0;
+}
+.global-top .float-menu-active .panel {
+	top: 66px; opacity: 1;
+}
+.global-top .float-menu .panel .games {
+	font-size: 14px;
+}
+.global-top .float-menu .panel .games .inner {
+	padding: 15px 0px 20px;
+}
+.global-top .float-menu .panel .games .title {
+	padding: 0px 0px 10px 30px; height: 20px;
+}
+.global-top .float-menu .panel .cell {
+	border-right-color: rgb(107, 104, 115); border-right-width: 1px; border-right-style: solid; float: left; min-height: 210px;
+}
+.global-top .float-menu .panel :last-child.cell {
+	border-right-color: currentColor; border-right-width: medium; border-right-style: none;
+}
+.global-top .float-menu .panel .cell-2 {
+	border-right-color: currentColor; border-right-width: medium; border-right-style: none;
+}
+.global-top .float-menu .panel .cell a {
+	padding: 0px 30px; height: 30px; color: rgb(224, 218, 183); line-height: 30px; font-size: 12px; display: block;
+}
+.global-top .float-menu .panel .cell a:hover {
+	background: rgb(69, 64, 79);
+}
+.global-top .float-menu .panel .login-download {
+	background: url("login-download.png") no-repeat; margin: 10px 35px 0px 0px; width: 199px; height: 166px; float: right; opacity: 0.8;
+}
+.global-top .float-menu .panel .login-download:hover {
+	opacity: 1;
+}
+.global-top .float-menu .panel .cell li {
+	width: 138px; position: relative;
+}
+.global-top .float-menu .panel .cell li .ico {
+	background: url("ico-hot.png") no-repeat; border-radius: 4px; top: 6px; width: 16px; height: 17px; text-align: center; right: 5px; line-height: 17px; position: absolute;
+}
+.global-top .float-menu .panel .cell li .ico-new {
+	background-image: url("ico-new.png");
+}
+.global-top .float-menu .panel .link-list {
+	background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.25) 24%);
+}
+.global-top .float-menu .panel .link-list a {
+	background: url("game-logo-ssc-bomao.png"); width: 215px; height: 146px; border-right-color: rgb(76, 76, 76); border-right-width: 1px; border-right-style: solid; float: left; opacity: 0.7;
+}
+.global-top .float-menu .panel .link-list a:hover {
+	opacity: 1;
+}
+.global-top .float-menu .panel .link-list a:last-child {
+	border-right-color: currentColor; border-right-width: medium; border-right-style: none;
+}
+.global-top .float-menu .panel .link-list a.n115-bomao {
+	background-image: url("game-logo-115-bomao.png");
+}
+.global-top .float-menu .panel .link-list a.ssc-cq {
+	background-image: url("game-logo-ssc-cq.png");
+}
+.menu-user-control {
+	padding: 15px 10px 0px 0px; color: rgb(255, 255, 255); font-size: 12px; float: right;
+}
+.menu-user-control span {
+	color: rgb(180, 172, 143);
+}
+.menu-user-control .button {
+	padding: 0px 15px; border-radius: 2px; height: 32px; text-align: center; color: rgb(255, 255, 255); line-height: 32px; display: inline-block;
+}
+.menu-user-control .button:hover {
+	border-color: rgb(139, 139, 142); color: rgb(235, 235, 236);
+}
+.menu-user-control .button.button-control-hidden {
+	margin: 0px 10px 0px 0px; width: 30px; height: 25px; line-height: 25px; text-decoration: underline;
+}
+.menu-user-control .button.button-control-rechange {
+	border-radius: 2px; background-image: linear-gradient(-180deg, rgb(255, 245, 200) 2%, rgb(198, 185, 150) 3%, rgb(125, 115, 86) 65%, rgb(151, 141, 114) 100%);
+}
+.menu-user-control a.button-control-rechange:hover {
+	background-image: linear-gradient(-180deg, rgb(255, 245, 200) 2%, rgb(220, 202, 152) 3%, rgb(156, 144, 109) 65%, rgb(151, 141, 114) 100%);
+}
+.menu-user-control a.button-control-rechange:active {
+	background-image: linear-gradient(-180deg, rgb(255, 245, 200) 2%, rgb(198, 185, 150) 3%, rgb(125, 115, 86) 65%, rgb(151, 141, 114) 100%);
+}
+.menu-user-control a.button-control-withdrawals {
+	border-radius: 2px; background-image: linear-gradient(-180deg, rgb(255, 245, 200) 2%, rgb(198, 185, 150) 3%, rgb(125, 115, 86) 65%, rgb(151, 141, 114) 100%);
+}
+.menu-user-control a.button-control-withdrawals:hover {
+	background-image: linear-gradient(-180deg, rgb(255, 245, 200) 2%, rgb(220, 202, 152) 3%, rgb(156, 144, 109) 65%, rgb(151, 141, 114) 100%);
+}
+.menu-user-control a.button-control-withdrawals:active {
+	background-image: linear-gradient(-180deg, rgb(255, 245, 200) 2%, rgb(198, 185, 150) 3%, rgb(125, 115, 86) 65%, rgb(151, 141, 114) 100%);
+}
+.menu-user-control .button-control-msg {
+	padding: 0px 15px; border-radius: 2px; height: 32px; text-align: center; color: rgb(255, 255, 255); line-height: 32px; display: inline-block; position: relative; background-image: linear-gradient(-180deg, rgb(255, 245, 200) 2%, rgb(198, 185, 150) 3%, rgb(125, 115, 86) 65%, rgb(151, 141, 114) 100%);
+}
+.menu-user-control .button-control-msg:hover {
+	background-image: linear-gradient(-180deg, rgb(255, 245, 200) 2%, rgb(220, 202, 152) 3%, rgb(156, 144, 109) 65%, rgb(151, 141, 114) 100%);
+}
+.menu-user-control .button-control-msg:active {
+	background-image: linear-gradient(-180deg, rgb(255, 245, 200) 2%, rgb(198, 185, 150) 3%, rgb(125, 115, 86) 65%, rgb(151, 141, 114) 100%);
+}
+.menu-user-control .button-control-msg .ico-msg {
+	background: url("btn-msg-ico.png") no-repeat 0px; width: 15px; height: 30px; margin-right: 10px; float: left; display: inline-block;
+}
+.menu-user-control .button-control-msg .ico-user {
+	background: url("btn-user-ico.png") no-repeat 0px; width: 21px; height: 30px; margin-left: 10px; float: right; display: inline-block; cursor: pointer;
+}
+.menu-user-control .button-control-msg .split {
+	width: 1px; height: 22px; vertical-align: middle; border-left-color: rgb(0, 0, 0); border-left-width: 1px; border-left-style: solid; display: inline-block;
+}
+.menu-user-control .button-control-msg .ico-user .user-info {
+	background: rgb(238, 238, 238); padding: 10px 0px; top: 32px; width: 100px; right: 0px; display: none; position: absolute;
+}
+.menu-user-control .button-control-msg .ico-user .user-info {
+	background: rgb(255, 255, 255); padding: 10px; border-radius: 3px; top: 32px; width: 160px; text-align: center; right: -61px; color: rgb(27, 27, 27); display: none; position: absolute; box-shadow: 1px 1px 4px rgba(0,0,0,0.52);
+}
+.menu-user-control .button-control-msg .ico-user .user-info .row {
+	padding: 5px 0px; font-size: 14px;
+}
+.menu-user-control .button-control-msg .ico-user .user-info .row-group {
+	
+}
+.menu-user-control .button-control-msg .ico-user .user-info .row-group .num {
+	font-size: 24px;
+}
+.menu-user-control .button-control-msg .ico-user .user-info .row-gray {
+	font-size: 12px;
+}
+.menu-user-control .button-control-msg .ico-user .user-info .btn {
+	width: 133px; color: rgb(255, 255, 255); background-color: rgb(173, 159, 118);
+}
+.menu-user-control .button-control-msg .ico-user .user-info .btn:hover {
+	background: rgb(197, 183, 139);
+}
+.menu-user-control .button-control-msg .ico-user .user-info .btn:active {
+	background-image: linear-gradient(-180deg, rgb(231, 229, 229) 0%, rgb(201, 199, 205) 98%);
+}
+.menu-user-control .button-control-msg .ico-user .user-info .sj {
+	background: url("user-panel-sj.png") no-repeat; left: 50%; top: -9px; width: 18px; height: 10px; margin-left: -9px; position: absolute;
+}
+.menu-user-control .button-control-msg .ico-user:hover .user-info {
+	display: block;
+}
+.menu-user-control .balance-money-num {
+	font-size: 14px;
+}
+.menu-user-control .balance-money-num-hidden {
+	display: none;
+}
+.menu-user-control-hidden .balance-money-num {
+	display: none;
+}
+.menu-user-control-hidden .balance-money-num-hidden {
+	display: inline-block;
+}
+.common-user-menu {
+	background: url("menu-bg.png") repeat-x 0px -59px; position: relative; z-index: 100;
+}
+.common-user-menu .inner {
+	margin: 0px auto; width: 1240px; height: 45px;
+}
+.common-user-menu .list {
+	padding-left: 140px;
+}
+.common-user-menu .list .mu {
+	width: 100px; text-align: center; float: left; position: relative;
+}
+.common-user-menu .list :first-child.mu {
+	border-left-color: currentColor; border-left-width: medium; border-left-style: none;
+}
+.common-user-menu .list .mu a {
+	height: 45px; color: rgb(255, 255, 255); line-height: 45px; display: block;
+}
+.common-user-menu .list .mu:hover a {
+	background: rgb(255, 255, 255); color: rgb(51, 51, 51);
+}
+.common-user-menu .list .active a {
+	background: rgb(255, 255, 255); color: rgb(51, 51, 51);
+}
+.common-user-menu .list .mu .panel {
+	background: rgb(255, 255, 255); top: 45px; width: 180px; text-align: left; display: none; position: absolute;
+}
+.common-user-menu .list .mu .panel ul {
+	
+}
+.common-user-menu .list .mu .panel a {
+	margin: 0px; top: 0px; height: 52px; color: rgb(51, 51, 51); line-height: 54px; padding-left: 25px; border-bottom-color: rgb(216, 216, 216); border-bottom-width: 1px; border-bottom-style: solid; display: block; position: relative;
+}
+.common-user-menu .list .mu .panel a:hover {
+	background: rgb(153, 153, 153); border-radius: 0px; color: rgb(255, 255, 255);
+}
+.common-user-menu .list .mu:hover .panel {
+	display: block;
+}
+.common-chat {
+	background: url("help.png") no-repeat center; left: 0px; top: 190px; width: 78px; height: 127px; position: fixed; z-index: 100;
+}
+.header {
+	background: rgb(25, 25, 25); position: relative; z-index: 100;
+}
+.header .container {
+	height: 75px; position: relative;
+}
+.header .logo {
+	background: url("logo.png") no-repeat 0px 5px; width: 240px; height: 55px; margin-top: 10px; float: left;
+}
+.header .menu {
+	left: 272px; margin-left: 20px; float: left;
+}
+.header .special-item a {
+	background: url("all-games.png") no-repeat center; width: 82px; height: 36px; text-align: center; color: rgb(225, 192, 156); line-height: 36px; font-family: "Microsoft YaHei"; font-size: 14px; text-decoration: none; margin-top: 16px; display: inline-block;
+}
+.header .special-item a:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.header .menu-item {
+	width: 100px; float: left; position: relative;
+}
+.header .main-item a {
+	width: 100%; height: 29px; text-align: center; color: rgb(132, 132, 132); padding-top: 25px; font-family: "Microsoft YaHei"; font-size: 14px; text-decoration: none; display: inline-block;
+}
+.header .child a {
+	background: rgb(255, 255, 255); padding: 10px 0px 10px 25px; font-size: 12px; border-bottom-color: rgb(228, 228, 228); border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+.header .child a .fa {
+	margin-right: 5px;
+}
+.header .menu-item:hover .main-item {
+	background: rgba(255, 255, 255, 0.09);
+}
+.header .menu-item:hover .main-item a {
+	color: rgb(255, 255, 255);
+}
+.header .menu-item .child {
+	display: none; position: absolute; box-shadow: 1px 1px 4px rgba(0,0,0,0.45);
+}
+.header .menu-item .child li {
+	background: none; width: 180px; height: auto; text-align: left; line-height: 170%;
+}
+.header .menu-item:hover .child {
+	display: block;
+}
+.header .child li a:hover {
+	color: rgb(145, 112, 77); background-color: rgb(238, 238, 238);
+}
+.header .menu-seperator {
+	background: url("menu-seperator.png") no-repeat top; width: 1px; height: 46px; float: left;
+}
+.header .user-info-cont {
+	top: 15px; right: 0px; display: inline-block; position: absolute; cursor: pointer;
+}
+.header .user-info-cont .kf {
+	background: url("kf-1.png") no-repeat; margin: 4px 0px 0px 20px; width: 91px; height: 26px; float: right;
+}
+.header .user-info-cont .kf:hover {
+	background-image: url("kf-1-hover.png");
+}
+.header .user-info-cont .kf:active {
+	background-image: url("kf-1.png");
+}
+.header .user-info-cont .user-info {
+	padding: 10px; border-radius: 5px; border: 1px solid rgb(179, 152, 108); border-image: none; top: 42px; width: 120px; color: rgb(255, 255, 255); line-height: 200%; margin-left: -60px; display: none; position: absolute; background-color: rgba(0, 0, 0, 0.79);
+}
+.header .user-info-cont .user-info .row .btn {
+	border: 1px solid rgb(105, 87, 56); border-image: none; color: rgb(255, 255, 255); background-color: rgb(145, 112, 77);
+}
+.header .user-info-cont .user-info .row .btn:hover {
+	background-color: rgb(199, 167, 111);
+}
+.header .user-info-cont .user-info .row .btn:active {
+	background-color: rgb(145, 112, 77);
+}
+.header .user-info-cont .info {
+	cursor: pointer;
+}
+.header .user-info-cont .info .row-group .num {
+	font-size: 20px;
+}
+.header .user-info-cont .info:hover .user-info {
+	display: block; cursor: default;
+}
+.header .user-info-cont .info .sj {
+	background: url("user-panel-sj.png") no-repeat; left: 50%; top: -10px; width: 18px; height: 10px; margin-left: -9px; position: absolute;
+}
+.header .money {
+	height: 34.32px; color: rgb(217, 217, 217); line-height: 34.32px; padding-right: 10px; font-size: 12px; float: right;
+}
+.header .money font {
+	color: rgb(145, 112, 77); font-size: 17px;
+}
+.header .draw {
+	background: url("draw-border.png") no-repeat center; width: 44px; height: 34.32px; text-align: center; color: rgb(225, 192, 156); line-height: 34.32px; font-size: 12px; text-decoration: none; float: right;
+}
+.header .recharge {
+	background: url("draw-border.png") no-repeat center; width: 44px; height: 34.32px; text-align: center; color: rgb(225, 192, 156); line-height: 34.32px; font-size: 12px; text-decoration: none; float: right;
+}
+.header .message-info:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.header .draw:hover {
+	color: rgb(255, 255, 255); background-color: rgba(255, 255, 255, 0.1);
+}
+.header .recharge:hover {
+	color: rgb(255, 255, 255); background-color: rgba(255, 255, 255, 0.1);
+}
+.header .message-info {
+	background: url("message-info-border.png") no-repeat center; width: 54px; height: 34.32px; text-align: center; color: rgb(225, 192, 156); line-height: 34.32px; font-size: 12px; float: right; position: relative;
+}
+.header .message {
+	background: url("message.png") no-repeat center; width: 15px; height: 10px; margin-top: 11px; margin-left: 5px; float: left;
+}
+.header .message-info-seperator {
+	background: url("message-info-seperator.png") no-repeat center; width: 2px; height: 34.32px; margin-top: 1px; margin-left: 4px; float: left;
+}
+.header .info {
+	background: url("info.png") no-repeat center; width: 18px; height: 17px; padding-top: 15px; padding-left: 1px; float: left;
+}
+.header .triangle {
+	background: url("triangle.png") no-repeat center; top: 15px; width: 5px; height: 3px; right: 4px; float: left; position: absolute;
+}
+.header .info-seperator {
+	width: 5px; height: 5px; float: right;
+}
+.header .menu-games {
+	background: url("all-games.png") no-repeat center; width: 82px; height: 36px; text-align: center; color: rgb(225, 192, 156); line-height: 36px; font-family: "Microsoft YaHei"; font-size: 14px; text-decoration: none; margin-top: 16px; float: left; display: inline-block; position: relative; cursor: pointer;
+}
+.header .menu-games-text {
+	transition:color 0.2s ease-in; -webkit-transition: color .2s ease-in; -moz-transition: color .2s ease-in; -o-transition: color .2s ease-in;
+}
+.header .menu-games:hover .menu-games-text {
+	color: rgb(255, 255, 255);
+}
+.header .menu-games-hover .menu-games-text {
+	color: rgb(255, 255, 255);
+}
+.header .menu-games-bg {
+	background: url("menu-games-bg.png") no-repeat 5px 3px; transition:0.3s ease-in; width: 16px; height: 10px; overflow: hidden; font-size: 0px; display: inline-block;
+}
+.header .menu-games:hover .menu-games-bg {
+	transform: rotate(180deg); -webkit-transform: rotate(180deg);
+}
+.header .menu-games-panel {
+	background: url("menu-games-panel-bg.gif") no-repeat; left: 0px; top: -10000px; width: 413px; height: 374px; position: absolute; opacity: 0; box-shadow: 1px 1px 5px rgba(0,0,0,0.7); _top: 62px; _display: none;
+}
+.header .menu-games:hover .menu-games-panel {
+	transition:opacity 0.2s ease-in; left: -15px; top: 36px; opacity: 1; -webkit-transition: opacity .2s ease-in; -moz-transition: opacity .2s ease-in; -o-transition: opacity .2s ease-in; _display: block;
+}
+.header .menu-games-hover .menu-games-panel {
+	transition:opacity 0.2s ease-in; left: -15px; top: 36px; opacity: 1; -webkit-transition: opacity .2s ease-in; -moz-transition: opacity .2s ease-in; -o-transition: opacity .2s ease-in; _display: block;
+}
+.header .menu-games-panel .cell {
+	width: 103px; float: left;
+}
+.header .menu-games-panel .cell-1 {
+	width: 104px;
+}
+.header .menu-games-panel .cell ul {
+	background: rgb(255, 255, 255); height: 328px; border-right-color: rgb(220, 220, 220); border-right-width: 1px; border-right-style: solid;
+}
+.header .menu-games-panel .title {
+	padding: 0px 0px 0px 20px; height: 46px; color: rgb(255, 255, 255); line-height: 50px; overflow: hidden; text-shadow: 0px 2px 0px #463c2c;
+}
+.header .menu-games-panel .cell ul li {
+	height: 40px; line-height: 40px; border-bottom-color: rgb(220, 220, 220); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.header .menu-games-panel .cell ul li:last-child {
+	
+}
+.header .menu-games-panel .cell ul:hover {
+	background: rgb(245, 245, 245);
+}
+.header .menu-games-panel .cell ul li a {
+	padding: 0px 0px 0px 10px; height: 40px; color: rgb(102, 102, 102); font-size: 12px; display: block;
+}
+.header .menu-games-panel .cell ul li a:hover {
+	background: rgb(177, 153, 87); transition:background 0.15s ease-in; color: rgb(255, 255, 255); text-decoration: none; box-shadow: inset 1px 1px 1px #94804b; -webkit-transition: background .15s ease-in; -moz-transition: background .15s ease-in; -o-transition: background .15s ease-in;
+}
+.header .menu-games-panel .cell ul li a:active {
+	background: rgb(177, 153, 87); color: rgb(255, 255, 255);
+}
+.header .menuitem-patch {
+	left: 0px; top: -2px; width: 80px; height: 4px; position: absolute; background-color: rgb(25, 25, 25);
+}
+.header .lottery-items {
+	width: 100%; height: 189px; background-color: rgb(25, 25, 25);
+}
+.header .lottery-title {
+	text-align: left; color: rgb(255, 255, 255); text-indent: 25px;
+}
+.header .lottery-items .lottery-ssc {
+	height: 36px;
+}
+.header .lottery-items .lottery-11x5 {
+	height: 36px;
+}
+.header .lottery-items .lottery-kuai3 {
+	height: 36px;
+}
+.header .lottery-items .lottery-ssc span {
+	width: 103px; text-align: left; text-indent: 25px; font-size: 12px; float: left;
+}
+.header .lottery-items .lottery-11x5 span {
+	width: 103px; text-align: left; text-indent: 25px; font-size: 12px; float: left;
+}
+.header .lottery-items .lottery-kuai3 span {
+	width: 103px; text-align: left; text-indent: 25px; font-size: 12px; float: left;
+}
+.header .lottery-items .lottery-ssc span a {
+	color: rgb(232, 203, 172);
+}
+.header .lottery-items .lottery-11x5 span a {
+	color: rgb(232, 203, 172);
+}
+.header .lottery-items .lottery-kuai3 span a {
+	color: rgb(232, 203, 172);
+}
+.header .lottery-items .lottery-ssc span a:hover {
+	color: rgb(255, 255, 255);
+}
+.header .lottery-items .lottery-11x5 span a:hover {
+	color: rgb(255, 255, 255);
+}
+.header .lottery-items .lottery-kuai3 span a:hover {
+	color: rgb(255, 255, 255);
+}
+.header .lottery-items .dy-ffc {
+	width: 100%; height: 36px; margin-top: 36px;
+}
+.header .lottery-items .dy-11x5 {
+	width: 100%; height: 36px; float: left;
+}
+.header .lottery-items .dy-kuai3 {
+	width: 100%; height: 36px; float: left;
+}
+.header .lottery-items .dy-ffc span {
+	width: 85px; text-align: left; text-indent: 25px; font-size: 13px; float: left;
+}
+.header .lottery-items .dy-11x5 span {
+	text-align: left; text-indent: 25px; float: left;
+}
+.header .lottery-items .dy-kuai3 span {
+	text-align: left; text-indent: 25px; float: left;
+}
+.header .lottery-items .dy-ffc span a {
+	color: rgb(232, 203, 172); font-size: 12px;
+}
+.header .lottery-items .dy-11x5 span a {
+	color: rgb(232, 203, 172); font-size: 12px;
+}
+.header .lottery-items .dy-kuai3 span a {
+	color: rgb(232, 203, 172); font-size: 12px;
+}
+.header .lottery-items .dy-ffc span a:hover {
+	color: rgb(255, 255, 255); font-size: 12px;
+}
+.header .lottery-items .dy-11x5 span a:hover {
+	color: rgb(255, 255, 255); font-size: 12px;
+}
+.header .lottery-items .dy-kuai3 span a:hover {
+	color: rgb(255, 255, 255); font-size: 12px;
+}
+.header .lottery-left {
+	width: 612px; height: 100%; float: left;
+}
+.header .lottery-center {
+	width: 1px; height: 120px; margin-top: 36px; float: left; background-color: rgba(255, 255, 255, 0.15);
+}
+.header .lottery-right {
+	width: 279px; height: 100%; float: left;
+}
+.header .dice-itmes {
+	width: 100%; height: 144px; background-color: rgb(42, 42, 42);
+}
+.header .dice-left {
+	width: 333px; height: 100%; float: left;
+}
+.header .dice-title {
+	width: 54px; height: 100%; text-align: right; color: rgb(255, 255, 255); line-height: 144px; float: left;
+}
+.header .dice-left-logo {
+	width: 162px; height: 100%; float: left;
+}
+.header .dice-center-logo {
+	width: 162px; height: 100%; float: left;
+}
+.header .dice-right-logo {
+	width: 162px; height: 100%; float: left;
+}
+.header .dice-left-icon {
+	background: url("dice-left-icon.png") no-repeat right; top: 53px; width: 65px; height: 46px; position: relative;
+}
+.header .dice-center-icon {
+	background: url("dice-center-icon.png") no-repeat right; top: 53px; width: 65px; height: 46px; position: relative;
+}
+.header .dice-right-icon {
+	background: url("dice-right-icon.png") no-repeat right; top: 53px; width: 65px; height: 46px; position: relative;
+}
+.header .panle-lhd .dice-left-icon {
+	background-image: url("hd-menu-ico-dice-a.png");
+}
+.header .panle-lhd .dice-center-icon {
+	background-image: url("hd-menu-ico-dice-b.png");
+}
+.header .panle-lhd .dice-right-icon {
+	background-image: url("hd-menu-ico-dice-c.png");
+}
+.header .dice-left-title {
+	left: 58px; top: 0px; width: 110px; height: 37px; color: rgb(225, 192, 156); font-size: 16px; position: relative;
+}
+.header .dice-center-title {
+	left: 58px; top: 0px; width: 110px; height: 37px; color: rgb(225, 192, 156); font-size: 16px; position: relative;
+}
+.header .dice-right-title {
+	left: 58px; top: 0px; width: 110px; height: 37px; color: rgb(225, 192, 156); font-size: 16px; position: relative;
+}
+.header .dice-left-explainer {
+	left: 57px; top: -19px; width: 110px; height: 27px; color: rgb(156, 156, 156); font-size: 12px; position: relative;
+}
+.header .dice-center-explainer {
+	left: 60px; top: -19px; width: 110px; height: 27px; color: rgb(156, 156, 156); font-size: 12px; position: relative;
+}
+.header .dice-right-explainer {
+	left: 60px; top: -19px; width: 110px; height: 27px; color: rgb(156, 156, 156); font-size: 12px; position: relative;
+}
+.header .dice-link-45 {
+	background: url("menu-item-border.png"); top: 20px; width: 119px; height: 26px; right: 3px; line-height: 28px; font-size: 13px; display: inline-block; position: relative;
+}
+.header .dice-link-60 {
+	background: url("menu-item-border.png"); top: 20px; width: 119px; height: 26px; right: 3px; line-height: 28px; font-size: 13px; display: inline-block; position: relative;
+}
+.header .dice-link-75 {
+	background: url("menu-item-border.png"); top: 20px; width: 119px; height: 26px; right: 3px; line-height: 28px; font-size: 13px; display: inline-block; position: relative;
+}
+.header .dice-left-link-45:hover {
+	background: url("menu-item-border-hover.png");
+}
+.header .dice-left-link-60:hover {
+	background: url("menu-item-border-hover.png");
+}
+.header .dice-left-link-75:hover {
+	background: url("menu-item-border-hover.png");
+}
+.header .dice-left-link-45:active {
+	background: url("menu-item-border.png");
+}
+.header .dice-left-link-60:active {
+	background: url("menu-item-border.png");
+}
+.header .dice-left-link-75:active {
+	background: url("menu-item-border.png");
+}
+.header .dice-left-links {
+	width: 86px; height: 100%; float: left;
+}
+.header .dice-center-links {
+	width: 86px; height: 100%; float: left;
+}
+.header .dice-right-links {
+	width: 86px; height: 100%; float: left;
+}
+.header .dice-left-links a {
+	color: rgb(232, 203, 172); font-weight: 400;
+}
+.header .dice-center-links a {
+	color: rgb(232, 203, 172); font-weight: 400;
+}
+.header .dice-right-links a {
+	color: rgb(232, 203, 172); font-weight: 400;
+}
+.header .dice-left-links a:hover {
+	color: rgb(255, 255, 255);
+}
+.header .dice-center-links a:hover {
+	color: rgb(255, 255, 255);
+}
+.header .dice-right-links a:hover {
+	color: rgb(255, 255, 255);
+}
+.header .dice-seperator {
+	width: 1px; height: 100px; margin-top: 25px; float: left; background-color: rgb(58, 48, 48);
+}
+.header .dice-center {
+	width: 279px; height: 100%; float: left;
+}
+.header .dice-right {
+	width: 278px; height: 100%; float: left;
+}
+.header .menuitem-horizional-seperator {
+	width: 100%; height: 1px; background-color: rgb(58, 52, 52);
+}
+.header .lhd-itmes {
+	width: 100%; height: 144px; background-color: rgb(42, 42, 42);
+}
+.header .lhd-left {
+	width: 333px; height: 100%; float: left;
+}
+.header .lhd-title {
+	width: 54px; height: 100%; text-align: right; line-height: 144px; float: left;
+}
+.header .lhd-left-logo {
+	width: 193px; height: 100%; float: left;
+}
+.header .lhd-center-logo {
+	width: 193px; height: 100%; float: left;
+}
+.header .lhd-right-logo {
+	width: 192px; height: 100%; float: left;
+}
+.header .lhd-left-icon {
+	background: url("lhd-left-icon.png") no-repeat right; top: 53px; width: 65px; height: 46px; position: relative;
+}
+.header .lhd-center-icon {
+	background: url("lhd-center-icon.png") no-repeat right; top: 53px; width: 65px; height: 46px; position: relative;
+}
+.header .lhd-right-icon {
+	background: url("lhd-right-icon.png") no-repeat right; top: 53px; width: 65px; height: 46px; position: relative;
+}
+.header .lhd-left-title {
+	left: 58px; top: 0px; width: 110px; height: 37px; color: rgb(225, 192, 156); font-size: 16px; position: relative;
+}
+.header .lhd-center-title {
+	left: 58px; top: 0px; width: 110px; height: 37px; color: rgb(225, 192, 156); font-size: 16px; position: relative;
+}
+.header .lhd-right-title {
+	left: 58px; top: 0px; width: 110px; height: 37px; color: rgb(225, 192, 156); font-size: 16px; position: relative;
+}
+.header .lhd-left-explainer {
+	left: 41px; top: -19px; width: 110px; height: 27px; color: rgb(156, 156, 156); font-size: 12px; position: relative;
+}
+.header .lhd-center-explainer {
+	left: 41px; top: -19px; width: 110px; height: 27px; color: rgb(156, 156, 156); font-size: 12px; position: relative;
+}
+.header .lhd-right-explainer {
+	left: 41px; top: -19px; width: 110px; height: 27px; color: rgb(156, 156, 156); font-size: 12px; position: relative;
+}
+.header .lhd-link-45 {
+	background: url("menu-item-border.png"); top: 20px; width: 77px; height: 26px; right: 8px; line-height: 28px; font-size: 13px; display: inline-block; position: relative;
+}
+.header .lhd-link-60 {
+	background: url("menu-item-border.png"); top: 20px; width: 77px; height: 26px; right: 8px; line-height: 28px; font-size: 13px; display: inline-block; position: relative;
+}
+.header .lhd-link-75 {
+	background: url("menu-item-border.png"); top: 20px; width: 77px; height: 26px; right: 8px; line-height: 28px; font-size: 13px; display: inline-block; position: relative;
+}
+.header .lhd-left-link-45:hover {
+	background: url("menu-item-border-hover.png");
+}
+.header .lhd-left-link-60:hover {
+	background: url("menu-item-border-hover.png");
+}
+.header .lhd-left-link-75:hover {
+	background: url("menu-item-border-hover.png");
+}
+.header .lhd-left-link-45:active {
+	background: url("menu-item-border.png");
+}
+.header .lhd-left-link-60:active {
+	background: url("menu-item-border.png");
+}
+.header .lhd-left-link-75:active {
+	background: url("menu-item-border.png");
+}
+.header .lhd-left-links {
+	width: 86px; height: 100%; float: left;
+}
+.header .lhd-center-links {
+	width: 86px; height: 100%; float: left;
+}
+.header .lhd-right-links {
+	width: 86px; height: 100%; float: left;
+}
+.header .lhd-seperator {
+	width: 1px; height: 100%; float: left;
+}
+.header .lhd-center {
+	width: 279px; height: 100%; float: left;
+}
+.header .lhd-right {
+	width: 278px; height: 100%; float: left;
+}
+.w-1 {
+	width: 50px !important;
+}
+.w-2 {
+	width: 100px !important;
+}
+.w-3 {
+	width: 150px !important;
+}
+.w-4 {
+	width: 200px !important;
+}
+.w-5 {
+	width: 250px !important;
+}
+.w-6 {
+	width: 270px !important;
+}
+.w-7 {
+	width: 280px !important;
+}
+.w-8 {
+	width: 400px !important;
+}
+.w-9 {
+	width: 450px !important;
+}
+.w-10 {
+	width: 500px !important;
+}
+.w-11 {
+	width: 550px !important;
+}
+.w-12 {
+	width: 600px !important;
+}
+.w-13 {
+	width: 650px !important;
+}
+.w-auto {
+	width: auto !important;
+}
+.j-ui-tip {
+	background: rgb(255, 255, 255); padding: 5px 10px; border-radius: 3px; border: 1px solid rgb(204, 204, 204); border-image: none; z-index: 500; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.j-ui-tip .sj {
+	background: url("j-ui-tip-yellow.gif") no-repeat 0px -31px; width: 8px; height: 15px; overflow: hidden; margin-top: -8px; display: none; position: absolute;
+}
+.j-ui-tip .sj-t {
+	background-position: 0px 0px; left: 50%; top: 0px; width: 15px; height: 8px; margin-left: -8px;
+}
+.j-ui-tip .sj-b {
+	background-position: 0px -23px; left: 50%; width: 15px; height: 8px; bottom: -8px; margin-left: -8px;
+}
+.j-ui-tip .sj-l {
+	left: -8px; top: 50%;
+}
+.j-ui-tip .sj-r {
+	background-position: 0px -8px; top: 50%; right: -8px;
+}
+.j-ui-tip-t .sj-t {
+	display: block;
+}
+.j-ui-tip-r .sj-r {
+	display: block;
+}
+.j-ui-tip-b .sj-b {
+	display: block;
+}
+.j-ui-tip-l .sj-l {
+	display: block;
+}
+.j-ui-tip .error {
+	background-position: -60px -100px; width: 14px; height: 14px; overflow: hidden; margin-right: 4px; vertical-align: -2px; display: inline-block; background-image: url("../login/ui-login.png");
+}
+.j-ui-tip-input-floattip {
+	text-align: center; color: rgb(255, 102, 0); font-size: 24px; font-weight: bold;
+}
+.j-ui-mask {
+	width: 100% !important; height: 100% !important; position: fixed !important; z-index: 600;
+}
+.j-ui-datepicker {
+	background: rgb(247, 247, 247); border-radius: 3px; left: 150px; top: 200px; color: rgb(90, 90, 90); margin-top: 2px; border-left-color: currentColor; border-left-width: 0px; border-left-style:; position: absolute; z-index: 590; box-shadow: 2px 2px 3px rgba(0,0,0,0.3); -moz-border-radius: 3px; -webkit-border-radius: 3px; -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, .3); -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, .3); -moz-user-select: none;
+}
+.j-ui-datepicker .control {
+	border-radius: 5px 5px 0px 0px; text-align: center; background-color: rgb(68, 68, 68); -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px 5px 0 0;
+}
+.j-ui-datepicker .control select {
+	background: rgb(101, 101, 101); padding: 4px; border-radius: 3px; border: 1px solid rgb(138, 138, 138); border-image: none; color: rgb(255, 255, 255); -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.j-ui-datepicker .control .choose-model {
+	background: rgb(101, 101, 101); padding: 4px; border-radius: 3px; border: 1px solid rgb(138, 138, 138); border-image: none; color: rgb(255, 255, 255); -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.j-ui-datepicker .control .choose-model {
+	margin: 10px 2px;
+}
+.j-ui-datepicker .control .choose-model .choose-input {
+	color: rgb(255, 255, 255);
+}
+.j-ui-datepicker .control .select-monty .choose-input {
+	padding-left: 7px;
+}
+.j-ui-datepicker .control select option {
+	height: 24px;
+}
+.j-ui-datepicker .control .choose-model .info {
+	padding-left: 4px;
+}
+.j-ui-datepicker .control .choose-model i {
+	transition:0.3s ease-in; background-image: url("j-ui-datepicker-select-sj.gif");
+}
+.j-ui-datepicker .control .choose-model i.open {
+	transform: rotate(180deg); -webkit-transform: rotate(180deg);
+}
+.j-ui-datepicker .choose-list {
+	border-radius: 3px; top: 30px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.j-ui-datepicker .choose-list a {
+	height: 22px; line-height: 22px;
+}
+.j-ui-datepicker .control .pre {
+	background: url("j-ui-button-left.gif") no-repeat; padding: 0px; top: 14px; width: 8px; height: 15px; text-indent: -10000px; overflow: hidden; font-size: 0px; display: block; position: absolute; cursor: pointer;
+}
+.j-ui-datepicker .control .next {
+	background: url("j-ui-button-left.gif") no-repeat; padding: 0px; top: 14px; width: 8px; height: 15px; text-indent: -10000px; overflow: hidden; font-size: 0px; display: block; position: absolute; cursor: pointer;
+}
+.j-ui-datepicker .control .pre {
+	left: 10px;
+}
+.j-ui-datepicker .control .next {
+	right: 10px; background-image: url("j-ui-button-right.gif");
+}
+.j-ui-datepicker .tb {
+	
+}
+.j-ui-datepicker .tb td {
+	border-width: 1px 0px 0px 1px; border-style: solid none none solid; border-color: rgb(227, 227, 227) currentColor currentColor rgb(227, 227, 227); padding: 4px 8px; border-image: none; width: 18px; height: 20px; text-align: center; font-family: Arial; font-size: 14px;
+}
+.j-ui-datepicker .tb th {
+	border-width: 1px 0px 0px 1px; border-style: solid none none solid; border-color: rgb(227, 227, 227) currentColor currentColor rgb(227, 227, 227); padding: 4px 8px; border-image: none; width: 18px; height: 20px; text-align: center; font-family: Arial; font-size: 14px;
+}
+.j-ui-datepicker .tb th {
+	background: rgb(35, 35, 35); color: rgb(255, 255, 255); font-family: microsoft yahei; font-size: 14px; border-top-color: currentColor; border-left-color: rgb(134, 122, 105); border-top-width: 0px; border-top-style: none;
+}
+.j-ui-datepicker .tb td {
+	cursor: pointer;
+}
+.j-ui-datepicker .tb td:hover {
+	background: rgb(130, 130, 130); color: rgb(255, 255, 255);
+}
+.j-ui-datepicker .tb td:active {
+	background: rgb(238, 238, 238); border-color: rgb(219, 219, 219);
+}
+.j-ui-datepicker .day-preMonth {
+	color: rgb(153, 153, 153);
+}
+.j-ui-datepicker .day-nextMonth {
+	color: rgb(153, 153, 153);
+}
+.j-ui-datepicker .day-today {
+	color: rgb(255, 102, 0); font-weight: bold;
+}
+.j-ui-datepicker .tb .day-curr {
+	background: rgb(33, 33, 33); color: rgb(255, 255, 255);
+}
+.j-ui-datepicker td.day-disabled {
+	background: rgb(255, 255, 255); color: rgb(255, 255, 255); cursor: default;
+}
+.j-ui-datepicker td.day-disabled:hover {
+	background: rgb(255, 255, 255);
+}
+.j-ui-datepicker td.day-disabled:active {
+	background: none; border-color: rgb(227, 227, 227);
+}
+.j-ui-datepicker .content-time {
+	border-width: 1px 0px 0px 1px; border-style: solid none none solid; border-color: rgb(227, 227, 227) currentColor currentColor rgb(227, 227, 227); padding: 10px; border-image: none; text-align: center; color: rgb(51, 51, 51);
+}
+.j-ui-datepicker .content-time .input {
+	padding: 2px 4px; width: 24px; text-align: center; color: rgb(153, 153, 153);
+}
+.j-ui-datepicker .content-time .button-confirm {
+	cursor: pointer;
+}
+.j-ui-datepicker .content-time .button-confirm:hover {
+	color: rgb(255, 255, 255); background-color: rgb(255, 86, 86);
+}
+.choose-model {
+	padding: 4px; border-radius: 2px; border: 1px solid rgb(186, 185, 193); border-image: none; vertical-align: middle; display: inline-block; position: relative; z-index: 10; background-color: rgb(245, 245, 245);
+}
+.choose-model:hover {
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+}
+.choose-model .info {
+	height: 18px; color: rgb(85, 85, 85); line-height: 18px; overflow: hidden; padding-right: 16px; padding-left: 5px; font-size: 12px; font-weight: 700; display: block;
+}
+.choose-model i {
+	background: url("ico-arrow-down.png") no-repeat center; top: -1px; width: 26px; height: 26px; right: -1px; position: absolute; cursor: pointer;
+}
+.choose-model .choose-input {
+	background: none; border: currentColor; border-image: none; width: 100%; height: 18px; color: rgb(85, 85, 85); line-height: 18px; display: block;
+}
+.choose-model .choose-input-disabled {
+	color: rgb(85, 85, 85);
+}
+.choose-model .choose-list {
+	border-radius: 0px 0px 2px 2px; border: 1px solid rgb(186, 185, 193); border-image: none; left: -1px; top: 26px; width: 100%; overflow: auto !important; font-size: 12px; display: none; position: absolute; box-shadow: 0px 1px 2px rgba(0,0,0,0.5); background-color: rgb(255, 255, 255);
+}
+.choose-model .choose-list-cont a {
+	padding: 0px 10px; height: 30px; text-align: left; color: rgb(85, 85, 85); line-height: 30px; border-bottom-color: rgb(186, 185, 193); border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+.choose-model .choose-list-cont a:hover {
+	text-decoration: none; background-color: rgb(237, 237, 237);
+}
+.choose-model .choose-list-cont a:last-child {
+	border-radius: 0px 0px 2px 2px; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.choose-model .choose-list-cont .choose-item-current {
+	background-color: rgb(237, 237, 237);
+}
+.choose-model .choose-list-cont .choose-item-current:hover {
+	background-color: rgb(255, 255, 225);
+}
+.choose-model .choose-scroll {
+	background: rgb(0, 0, 0); border-radius: 5px; border: 1px solid rgb(0, 0, 0); border-image: none; top: 2px; width: 6px; height: 60px; right: 2px; overflow: hidden; font-size: 0px; margin-top: 28px; display: none !important; position: absolute; cursor: pointer; opacity: 0.5; -ms-user-select: none; -moz-border-radius: 5px; -webkit-border-radius: 5px; -moz-user-select: none; -webkit-user-select: none; -moz-opacity: 0.5;
+}
+.input {
+	padding: 4px; border-radius: 2px; border: 1px solid rgb(198, 198, 204); transition:0.2s; border-image: none; width: 268px; height: 18px; color: rgb(83, 84, 113); line-height: 18px; font-size: 12px; vertical-align: middle; display: inline-block; -webkit-transition: all .2s; -moz-transition: all .2s; -o-transition: all .2s; -moz-box-sizing: inherit; -webkit-box-sizing: inherit;
+}
+.input:hover {
+	border-color: rgb(190, 191, 158); box-shadow: 0px 0px 3px #bebf9e;
+}
+.input-focus {
+	border-color: rgb(169, 169, 184); color: rgb(85, 85, 85); box-shadow: inset 0px 1px 3px rgba(120,198,116,0.2);
+}
+.input-focus:hover {
+	border-color: rgb(169, 169, 184); color: rgb(85, 85, 85); box-shadow: inset 0px 1px 3px rgba(120,198,116,0.2);
+}
+.input-detect {
+	border-color: rgb(237, 199, 174); color: rgb(85, 85, 85); box-shadow: inset 0px 1px 3px rgba(237,199,174,0.2);
+}
+.input-detect:hover {
+	border-color: rgb(237, 199, 174); color: rgb(85, 85, 85); box-shadow: inset 0px 1px 3px rgba(237,199,174,0.2);
+}
+.input-error {
+	border-color: rgb(255, 129, 156); box-shadow: inset 0px 1px 3px rgba(255,129,156,0.2); background-color: rgb(255, 247, 249);
+}
+.input-error:hover {
+	border-color: rgb(255, 129, 156); box-shadow: inset 0px 1px 3px rgba(255,129,156,0.2); background-color: rgb(255, 247, 249);
+}
+.input-success {
+	color: rgb(85, 85, 85); box-shadow: inset 0px 1px 3px rgba(206,206,206,0.2); background-color: rgb(251, 251, 251);
+}
+.input-success:hover {
+	color: rgb(85, 85, 85); box-shadow: inset 0px 1px 3px rgba(206,206,206,0.2); background-color: rgb(251, 251, 251);
+}
+.input:focus {
+	border-color: rgb(169, 169, 184); color: rgb(85, 85, 85); box-shadow: inset 0px 1px 3px rgba(169,169,184,0.5);
+}
+.input-detect:focus {
+	border-color: rgb(169, 169, 184); color: rgb(85, 85, 85); box-shadow: inset 0px 1px 3px rgba(169,169,184,0.5);
+}
+.input-error:focus {
+	border-color: rgb(169, 169, 184); color: rgb(85, 85, 85); box-shadow: inset 0px 1px 3px rgba(169,169,184,0.5);
+}
+.input-success:focus {
+	border-color: rgb(169, 169, 184); color: rgb(85, 85, 85); box-shadow: inset 0px 1px 3px rgba(169,169,184,0.5);
+}
+.input-disable {
+	border-color: rgb(206, 206, 206); color: rgb(189, 189, 189); cursor: default; background-color: rgb(235, 235, 235);
+}
+.input-disable:focus {
+	border-color: rgb(206, 206, 206); color: rgb(189, 189, 189); cursor: default; background-color: rgb(235, 235, 235);
+}
+.input-disable:hover {
+	border-color: rgb(206, 206, 206); color: rgb(189, 189, 189); cursor: default; background-color: rgb(235, 235, 235);
+}
+.page-wrapper {
+	padding: 20px;
+}
+.page {
+	text-align: center;
+}
+.page a {
+	margin: 0px 2px; padding: 1px 6px; border-radius: 12px; border: 1px solid rgb(218, 218, 228); border-image: none; text-align: center; color: rgb(120, 122, 144); font-family: verdana; vertical-align: middle; display: inline-block;
+}
+.page a.prev {
+	padding: 1px 10px; font-style: inherit;
+}
+.page a.next {
+	padding: 1px 10px; font-style: inherit;
+}
+.page a.prev {
+	padding-left: 8px;
+}
+.page a.next {
+	padding-right: 8px;
+}
+.page a:hover {
+	border-color: rgb(75, 77, 103); color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(75, 77, 103);
+}
+.page a.current {
+	border-color: rgb(75, 77, 103); color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(75, 77, 103);
+}
+.page-few {
+	padding: 0px 0px 0px 10px; color: rgb(102, 102, 102); vertical-align: middle; display: inline-block;
+}
+.page .input {
+	padding: 0px 4px; width: 24px; height: 23px;
+}
+.page-btn {
+	border: 1px solid rgb(226, 226, 226); border-image: none; width: 48px; height: 25px; color: rgb(153, 153, 153); line-height: 24px; padding-bottom: 3px; vertical-align: middle; display: inline-block; cursor: pointer; background-color: rgb(250, 250, 250);
+}
+.page-btn:hover {
+	border-color: rgb(196, 196, 196); background-color: rgb(245, 245, 245);
+}
+.page-short {
+	color: rgb(153, 153, 153); line-height: 18px; font-size: 14px; font-weight: 700;
+}
+.page-short a {
+	color: rgb(153, 153, 153); vertical-align: middle; display: inline-block;
+}
+.page-short a:hover {
+	color: rgb(0, 154, 135); text-decoration: underline;
+}
+.page-short span {
+	vertical-align: middle; display: inline-block;
+}
+.page-short .prev {
+	margin: 0px 2px; width: 9px; overflow: hidden; padding-top: 17px; vertical-align: bottom; display: inline-block; background-image: url("ui-page.png"); background-repeat: no-repeat; background-color: transparent;
+}
+.page-short .next {
+	margin: 0px 2px; width: 9px; overflow: hidden; padding-top: 17px; vertical-align: bottom; display: inline-block; background-image: url("ui-page.png"); background-repeat: no-repeat; background-color: transparent;
+}
+.page-short .prev {
+	background-position: -80px 0px;
+}
+.page-short .prev:hover {
+	background-position: -80px 0px;
+}
+.page-short .next {
+	background-position: -90px 0px;
+}
+.page-short .next:hover {
+	background-position: -90px 0px;
+}
+.page-short span {
+	padding: 0px 10px;
+}
+.page-right {
+	float: right;
+}
+.table {
+	border-width: 0px 0px 0px; border-style: none solid solid; border-color: currentColor rgb(204, 204, 204) rgb(204, 204, 204); border-image: none; width: 80%; margin-bottom: -1px; border-collapse: separate; box-shadow: 1px 1px 10px rgba(102,102,102,0.1);
+}
+.table a {
+	color: rgb(150, 150, 150); text-decoration: underline;
+}
+.table a:hover {
+	color: rgb(255, 102, 0);
+}
+.table a + a {
+	margin-left: 5px;
+}
+.table td {
+	background: rgb(247, 247, 247); padding: 9px 7px; text-align: center; color: rgb(83, 84, 113); font-size: 12px; border-top-color: rgb(230, 230, 230); border-top-width: 1px; border-top-style: solid; white-space: nowrap;
+}
+.table th {
+	background: rgb(247, 247, 247); padding: 9px 7px; text-align: center; color: rgb(83, 84, 113); font-size: 12px; border-top-color: rgb(230, 230, 230); border-top-width: 1px; border-top-style: solid; white-space: nowrap;
+}
+.table th {
+	border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-top-width: 1px; border-right-width: 1px; border-top-style: solid; border-right-style: solid;
+}
+.table td .tb-inner-btn {
+	background: rgb(238, 238, 238); padding: 2px 5px; border-radius: 4px; border: 1px solid rgb(204, 204, 204); border-image: none; text-decoration: none; vertical-align: middle; display: inline-block; cursor: pointer;
+}
+.table td .tb-inner-btn-highlight {
+	border: 0px currentColor; border-image: none; color: rgb(255, 255, 255); background-color: rgb(255, 102, 0);
+}
+.table td .tb-inner-btn-highlight:hover {
+	background-color: rgb(255, 141, 65);
+}
+.table td .tb-inner-btn-highlight:active {
+	background-color: rgb(255, 102, 0);
+}
+.table td .tb-inner-online {
+	background: rgb(204, 204, 204); width: 10px; height: 10px; display: inline-block;
+}
+.table td .tb-inner-offline {
+	background: rgb(204, 204, 204); width: 10px; height: 10px; display: inline-block;
+}
+.table td .tb-inner-online {
+	background: rgb(117, 176, 31);
+}
+.table td .text-left {
+	text-align: left;
+}
+.table td .text-left a {
+	text-decoration: none;
+}
+.table td .ico {
+	margin: 0px 10px; width: 5px; height: 8px; overflow: hidden; vertical-align: middle; display: inline-block; background-image: url("ui-table-toggle.png"); background-repeat: no-repeat;
+}
+.table td .ico-up-down {
+	background-position: 0px 0px;
+}
+.table td .ico-mail {
+	background-position: 0px -30px; width: 16px; height: 12px;
+}
+.table td .ico-mail-read {
+	background-position: -20px -30px; width: 16px; height: 16px;
+}
+.table td.alignLeft {
+	text-align: left; padding-left: 20px;
+}
+.table th {
+	background: -ms-linear-gradient(rgb(254, 254, 254), rgb(231, 231, 231)); padding: 10px; color: rgb(0, 0, 0); font-size: 14px; border-right-color: rgb(204, 204, 204); border-right-width: 1px; border-right-style: solid;
+}
+.table thead td {
+	font-size: 14px; background-image: linear-gradient(-180deg, rgb(234, 234, 234) 19%, rgb(245, 245, 245) 92%);
+}
+.table th a.control-sort {
+	background: url("menu-sj-black-none.png") no-repeat right 6px; padding: 0px 15px 0px 0px; color: rgb(0, 0, 0); text-decoration: none; display: inline-block; cursor: pointer;
+}
+.table th a.control-sort-up {
+	background-position: right 8px; background-image: url("menu-sj-black-up.png");
+}
+.table th a.control-sort-down {
+	background-position: right 8px; background-image: url("menu-sj-black.png");
+}
+.table th a.control-sort:hover {
+	color: rgb(83, 84, 113);
+}
+.table td:last-child {
+	border-right-color: currentColor; border-right-width: medium; border-right-style: none;
+}
+.table th:last-child {
+	border-right-color: currentColor; border-right-width: medium; border-right-style: none;
+}
+.table td {
+	color: rgb(102, 102, 102);
+}
+.table tfoot td {
+	padding: 10px 7px; color: rgb(51, 51, 51); border-top-color: currentColor; border-top-width: medium; border-top-style: none; background-color: rgb(233, 233, 233);
+}
+.table tbody tr:hover td {
+	background-color: rgb(241, 241, 241);
+}
+.table tbody tr.tr-selected td {
+	background: rgb(255, 255, 225);
+}
+.table-toggle i {
+	margin: 0px 5px; width: 5px; height: 8px; overflow: hidden; vertical-align: middle; display: inline-block; background-image: url("ui-table-toggle.png"); background-repeat: no-repeat;
+}
+.table-toggle .ico-up-down {
+	background-position: 0px 0px;
+}
+.table-toggle .ico-up-current {
+	background-position: -10px 0px;
+}
+.table-toggle .ico-down-current {
+	background-position: -20px 0px;
+}
+.table-toggle .ico-fold {
+	width: 14px; height: 14px;
+}
+.table-toggle .ico-unfold {
+	width: 14px; height: 14px;
+}
+.table-toggle .ico-fold {
+	background-position: 0px -10px;
+}
+.table-toggle .ico-unfold {
+	background-position: -20px -10px;
+}
+.table-toggle .ico-mail {
+	background-position: 0px -30px; width: 16px; height: 12px;
+}
+.table-toggle .ico-mail-read {
+	background-position: -20px -30px; width: 16px; height: 16px;
+}
+.table-field {
+	margin: 20px 0px; line-height: 28px;
+}
+.table-field td {
+	padding: 7px 5px;
+}
+.table-info td {
+	padding: 6px; text-align: center; color: rgb(83, 84, 113); border-bottom-color: rgb(219, 219, 219); border-bottom-width: 1px; border-bottom-style: dashed; background-color: rgb(255, 255, 255);
+}
+.table-info th {
+	padding: 6px; text-align: center; color: rgb(83, 84, 113); border-bottom-color: rgb(219, 219, 219); border-bottom-width: 1px; border-bottom-style: dashed; background-color: rgb(255, 255, 255);
+}
+.table-info th {
+	border-right-color: rgb(229, 224, 217); border-bottom-color: rgb(216, 211, 202); border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; background-color: rgb(242, 238, 232);
+}
+.table-info th:last-child {
+	border-right-color: currentColor; border-right-width: medium; border-right-style: none;
+}
+.table-info tbody tr:hover td {
+	background-color: rgb(252, 251, 250);
+}
+.table-info a + a {
+	margin-left: 10px;
+}
+.table-info .mail-read a {
+	color: rgb(123, 108, 61);
+}
+.title-field {
+	background: url("bg-line-title.gif") no-repeat 0px 100%; margin: 0px 56px; height: 46px; line-height: 46px;
+}
+.title-field .ico-title {
+	background: url("ico-title-lock.gif") no-repeat; width: 30px; height: 32px; margin-top: -4px; vertical-align: middle; display: inline-block;
+}
+.title-field .title-text {
+	padding: 0px 0px 0px 5px; font-size: 14px; font-weight: bold; display: inline-block;
+}
+.title-field .ico-title-lock {
+	background-image: url("ico-title-lock.gif");
+}
+.title-field .ico-title-safe {
+	background-image: url("ico-title-safe.gif");
+}
+.table-field .tip {
+	color: rgb(153, 153, 153); font-size: 12px;
+}
+.btn {
+	padding: 3px 20px; border-radius: 2px; border: currentColor; border-image: none; text-align: center; color: #FAFAFA; line-height: 24px; font-size: 17px; vertical-align: middle; display: inline-block; position: relative; cursor: pointer; box-shadow: 0px 1px 2px rgba(0,0,0,0.2); background-color: #9C27B0;
+}
+.btn + .btn {
+	margin-left: 10px;
+}
+.btn:hover {
+	background-color: #009688;
+}
+a.btn {
+	padding: 1px 10px; line-height: 26px;
+}
+a.btn-normal {
+	padding: 0px 15px;
+}
+a.btn:hover {
+	color: rgb(0, 0, 0);
+}
+a.btn-normal:hover {
+	color: rgb(86, 87, 119);
+}
+.btn:active {
+	background-color: rgb(232, 232, 232);
+}
+.btn-normal {
+	border: 1px solid rgb(202, 202, 210); border-image: none; color: rgb(86, 87, 119); box-shadow: none; background-color: rgb(255, 255, 255);
+}
+.btn-normal:hover {
+	border-color: rgb(157, 158, 173); background-color: rgb(255, 255, 255);
+}
+.btn-small {
+	padding: 0px 10px; height: 24px; line-height: 22px; font-size: 12px; font-weight: normal;
+}
+a.btn-small {
+	line-height: 23px;
+}
+.btn-disabled {
+	background: rgb(204, 204, 204); color: rgb(153, 153, 153);
+}
+.btn-disabled:hover {
+	background: rgb(204, 204, 204); color: rgb(153, 153, 153); cursor: default;
+}
+a.btn-disabled:hover {
+	background: rgb(204, 204, 204); color: rgb(153, 153, 153); cursor: default;
+}
+.btn-search {
+	border-radius: 3px; border: 1px solid rgb(198, 198, 198); border-image: none; height: 36px; color: rgb(47, 47, 47); font-size: 14px; box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2); background-image: linear-gradient(-180deg, rgb(248, 248, 248) 0%, rgb(243, 243, 243) 58%, rgb(234, 233, 233) 100%);
+}
+.btn-search:active {
+	background-image: linear-gradient(-180deg, rgb(222, 222, 222) 0%, rgb(243, 243, 243) 58%, rgb(248, 248, 248) 100%);
+}
+.page-wrapper {
+	padding: 20px;
+}
+.page {
+	text-align: center;
+}
+.page a {
+	margin: 0px 2px; padding: 1px 6px; border-radius: 4px; border: 1px solid rgb(218, 218, 228); border-image: none; text-align: center; color: rgb(120, 122, 144); font-family: verdana; vertical-align: middle; display: inline-block;
+}
+.page a.prev {
+	padding: 1px 10px; font-style: inherit;
+}
+.page a.next {
+	padding: 1px 10px; font-style: inherit;
+}
+.page a.prev {
+	padding-left: 8px;
+}
+.page a.next {
+	padding-right: 8px;
+}
+.page a:hover {
+	border-color: rgb(255, 86, 86); color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(255, 86, 86);
+}
+.page a.current {
+	border-color: rgb(255, 86, 86); color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(255, 86, 86);
+}
+.page-few {
+	padding: 0px 0px 0px 10px; color: rgb(102, 102, 102); vertical-align: middle; display: inline-block;
+}
+.page .input {
+	padding: 0px 4px; width: 24px; height: 23px;
+}
+.page-btn {
+	border: 1px solid rgb(226, 226, 226); border-image: none; width: 48px; height: 25px; color: rgb(153, 153, 153); line-height: 24px; padding-bottom: 3px; vertical-align: middle; display: inline-block; cursor: pointer; background-color: rgb(250, 250, 250);
+}
+.page-btn:hover {
+	border-color: rgb(196, 196, 196); background-color: rgb(245, 245, 245);
+}
+.page-short {
+	color: rgb(153, 153, 153); line-height: 18px; font-size: 14px; font-weight: 700;
+}
+.page-short a {
+	color: rgb(153, 153, 153); vertical-align: middle; display: inline-block;
+}
+.page-short a:hover {
+	color: rgb(0, 154, 135); text-decoration: underline;
+}
+.page-short span {
+	vertical-align: middle; display: inline-block;
+}
+.page-short .prev {
+	margin: 0px 2px; width: 9px; overflow: hidden; padding-top: 17px; vertical-align: bottom; display: inline-block; background-image: url("ui-page.png"); background-repeat: no-repeat; background-color: transparent;
+}
+.page-short .next {
+	margin: 0px 2px; width: 9px; overflow: hidden; padding-top: 17px; vertical-align: bottom; display: inline-block; background-image: url("ui-page.png"); background-repeat: no-repeat; background-color: transparent;
+}
+.page-short .prev {
+	background-position: -80px 0px;
+}
+.page-short .prev:hover {
+	background-position: -80px 0px;
+}
+.page-short .next {
+	background-position: -90px 0px;
+}
+.page-short .next:hover {
+	background-position: -90px 0px;
+}
+.page-short span {
+	padding: 0px 10px;
+}
+.page-right {
+	float: right;
+}
+.panel-sidetip {
+	background: rgb(102, 103, 121); border-radius: 2px; border: 1px solid rgb(102, 103, 121); border-image: none; width: 240px; right: 10px; bottom: 20px; display: none; position: fixed; z-index: 60; box-shadow: 2px 2px 2px #ccc;
+}
+.panel-sidetip {
+	_position: absolute; _right: 10px; _bottom: 10px;
+}
+.panel-sidetip .sidetip-title {
+	background: url("v2/sidetip-title-bg.png") no-repeat center 0px; padding: 0px 10px; height: 34px; text-align: center; color: rgb(255, 255, 255); line-height: 32px; position: relative;
+}
+.panel-sidetip .sidetip-title .sidetip-title-text {
+	font-size: 16px;
+}
+.panel-sidetip .sidetip-title .sidetip-close {
+	background: url("v2/sidetip-title-close.png") no-repeat; top: 8px; width: 16px; height: 16px; right: 10px; overflow: hidden; font-size: 0px; position: absolute;
+}
+.panel-sidetip .sidetip-title .sidetip-close:hover {
+	background-image: url("v2/sidetip-title-close-hover.png");
+}
+.panel-sidetip .sidetip-content {
+	background: rgb(255, 255, 255); margin: 0px 5px 5px; padding: 15px; min-height: 60px;
+}
+.panel-sidetip .sidetip-content .row {
+	padding: 10px 0px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.panel-sidetip .sidetip-content .row .num {
+	padding: 0px 5px; color: rgb(255, 102, 0); font-weight: bold;
+}
+.panel-sidetip .sidetip-content :last-child.row {
+	border: currentColor; border-image: none;
+}
+.global-footer {
+	background: url("bg-foot-rpt.gif") repeat-x rgb(0, 0, 0); color: rgb(109, 109, 109); font-family: microsoft yahei; font-size: 12px;
+}
+.global-footer .container {
+	background: url("bg-foot.gif?v=1") no-repeat 0px -10px; height: 115px; position: relative; z-index: 1;
+}
+.global-footer .cell {
+	width: 167px; padding-top: 12px; float: left;
+}
+.global-footer .cell-a {
+	padding-left: 67px;
+}
+.global-footer .cell-b {
+	padding-left: 60px;
+}
+.global-footer .cell-c {
+	padding-left: 48px;
+}
+.global-footer .cell-d {
+	padding-left: 23px;
+}
+.global-footer .cell .title {
+	color: rgb(66, 66, 66); font-family: microsoft yahei; font-size: 16px;
+}
+.global-footer .cell-d p {
+	color: rgb(66, 66, 66); font-family: microsoft yahei; font-size: 16px;
+}
+.global-footer .cell .title .text {
+	padding: 2px 0px 0px; color: rgb(153, 153, 153); font-size: 12px;
+}
+.global-footer .cell ul {
+	padding: 12px 0px 0px;
+}
+.global-footer .cell li {
+	height: 29px;
+}
+.global-footer .cell li a {
+	color: rgb(102, 102, 102);
+}
+.global-footer .cell li a:hover {
+	color: rgb(162, 152, 118);
+}
+.global-footer .cell-d .row-b {
+	padding: 60px 0px 0px;
+}
+.global-footer .foot-link {
+	height: 20px; color: rgb(202, 184, 134); line-height: 20px;
+}
+.global-footer .foot-link a {
+	color: rgb(202, 184, 134);
+}
+.global-footer .copy {
+	height: 30px; line-height: 30px;
+}
+.global-footer .copy font {
+	font-size: 12px;
+}
+.global-footer .foot-warning {
+	color: rgb(109, 109, 109);
+}
+.global-footer .cont {
+	height: 100px; text-align: right; line-height: 180%; padding-top: 12px; float: right;
+}
+.global-footer .cont .cell {
+	padding: 25px 0px 0px 73px;
+}
+.global-footer .weichat {
+	background: url("weichat.png") no-repeat; margin: 13px 0px 0px 30px; width: 182px; height: 70px; float: right; cursor: pointer;
+}
+.global-footer .panel-weichat {
+	padding: 10px; width: 156px; text-align: center; right: 10px; bottom: 115px; display: none; position: absolute; box-shadow: 0px 2px 5px rgba(0,0,0,0.3); background-color: rgb(244, 244, 244);
+}
+.global-footer .panel-weichat-hover {
+	display: block;
+}
+.global-gototop {
+	background: url("global-gototop.gif") no-repeat center rgb(0, 0, 0); border-radius: 3px; left: 0px; width: 60px; height: 50px; bottom: 20px; text-indent: -10000px; display: none; position: fixed; z-index: 590; opacity: 0.5;
+}
+.global-gototop:hover {
+	background-color: rgb(51, 51, 51);
+}
+.global-panel-feedback {
+	background: linear-gradient(-180deg, rgb(255, 147, 75) 0%, rgb(255, 102, 0) 100%) rgb(255, 102, 0); padding: 10px 5px; border-radius: 4px; top: 226px; width: 20px; text-align: center; right: 10px; color: rgb(255, 255, 255); position: fixed; cursor: pointer; _position: absolute;
+}
+.global-panel-feedback:hover {
+	background-image: linear-gradient(-180deg, rgb(255, 102, 0) 0%, rgb(255, 147, 75) 100%);
+}
+.global-panel-feedback:active {
+	background-image: linear-gradient(-180deg, rgb(255, 147, 75) 0%, rgb(255, 102, 0) 100%);
+}
+.global-feedback-window-cont .title-text {
+	padding: 0px 0px 5px; text-align: left; font-size: 12px;
+}
+.global-feedback-window-cont textarea {
+	padding: 10px; border: 1px solid rgb(204, 204, 204); border-image: none; width: 380px; height: 100px; color: rgb(102, 102, 102); line-height: 150%; font-size: 14px;
+}
+.global-feedback-window-cont .gray {
+	color: rgb(153, 153, 153); font-size: 12px;
+}
+.global-feedback-window-cont .tip-text-length {
+	text-align: right; color: rgb(153, 153, 153);
+}
+.footer-v4 {
+	background: url("footer-v4.jpg") no-repeat center 0px rgb(25, 25, 25); height: 82px; position: relative;
+}
+.footer-v4 .footer-right {
+	left: 50%; top: 3px; width: 1250px; height: 80px; margin-left: -625px; position: absolute;
+}
+.footer-v4 .footer-links {
+	float: right;
+}
+.footer-v4 .footer-link {
+	height: 12px; color: rgb(210, 210, 210); padding-top: 16px; font-size: 12px; float: right;
+}
+.footer-v4 .footer-link a {
+	color: rgb(210, 210, 210);
+}
+.footer-v4 .footer-link a:hover {
+	color: rgb(170, 135, 97);
+}
+.footer-v4 .footer-link-seperator {
+	background: url("footer-link-seperator.png") no-repeat center; width: 20px; height: 28px; margin-top: 5px; float: right;
+}
+.footer-v4 .cpright {
+	right: 12px; bottom: 10px; color: rgb(106, 106, 106); line-height: 24px; font-size: 12px; position: absolute;
+}
+.openball-result {
+	padding: 10px 0px 30px; text-align: center;
+}
+.openball-result .item {
+	background: rgb(255, 86, 86); margin: 0px 2px; border-radius: 50%; width: 45px; height: 45px; text-align: center; color: rgb(255, 249, 233); line-height: 45px; font-size: 26px; display: inline-block; box-shadow: 1px 2px 5px rgba(0,0,0,0.47);
+}
+.openball-result .item-dice {
+	margin: 0px 7px; border-radius: 0px; width: 73px; height: 72px; text-indent: -10000px; box-shadow: none;
+}
+.openball-result .item-dice-1 {
+	background: url("../game/k3/dice-1.png") no-repeat;
+}
+.openball-result .item-dice-2 {
+	background: url("../game/k3/dice-2.png") no-repeat;
+}
+.openball-result .item-dice-3 {
+	background: url("../game/k3/dice-3.png") no-repeat;
+}
+.openball-result .item-dice-4 {
+	background: url("../game/k3/dice-4.png") no-repeat;
+}
+.openball-result .item-dice-5 {
+	background: url("../game/k3/dice-5.png") no-repeat;
+}
+.openball-result .item-dice-6 {
+	background: url("../game/k3/dice-6.png") no-repeat;
+}
+.openball-result .item-lhd {
+	background: url("../game/table/poker/wd.png") no-repeat 0% 0% / cover; margin: 0px 20px; border-radius: 0px; width: 135px; height: 190px; text-indent: -10000px;
+}
+.openball-result .item-lhd-1 {
+	background-image: url("../game/table/poker/1.png");
+}
+.openball-result .item-lhd-2 {
+	background-image: url("../game/table/poker/2.png");
+}
+.openball-result .item-lhd-3 {
+	background-image: url("../game/table/poker/3.png");
+}
+.openball-result .item-lhd-4 {
+	background-image: url("../game/table/poker/4.png");
+}
+.openball-result .item-lhd-5 {
+	background-image: url("../game/table/poker/5.png");
+}
+.openball-result .item-lhd-6 {
+	background-image: url("../game/table/poker/6.png");
+}
+.openball-result .item-lhd-7 {
+	background-image: url("../game/table/poker/7.png");
+}
+.openball-result .item-lhd-8 {
+	background-image: url("../game/table/poker/8.png");
+}
+.openball-result .item-lhd-9 {
+	background-image: url("../game/table/poker/9.png");
+}
+.openball-result .item-lhd-10 {
+	background-image: url("../game/table/poker/10.png");
+}
+.openball-result .item-lhd-11 {
+	background-image: url("../game/table/poker/11.png");
+}
+.openball-result .item-lhd-12 {
+	background-image: url("../game/table/poker/12.png");
+}
+.openball-result .item-lhd-13 {
+	background-image: url("../game/table/poker/13.png");
+}
+.openball-result .item-lhd-14 {
+	background-image: url("../game/table/poker/14.png");
+}
+.openball-result .item-lhd-15 {
+	background-image: url("../game/table/poker/15.png");
+}
+.openball-result .item-lhd-16 {
+	background-image: url("../game/table/poker/16.png");
+}
+.openball-result .item-lhd-17 {
+	background-image: url("../game/table/poker/17.png");
+}
+.openball-result .item-lhd-18 {
+	background-image: url("../game/table/poker/18.png");
+}
+.openball-result .item-lhd-19 {
+	background-image: url("../game/table/poker/19.png");
+}
+.openball-result .item-lhd-20 {
+	background-image: url("../game/table/poker/20.png");
+}
+.openball-result .item-lhd-21 {
+	background-image: url("../game/table/poker/21.png");
+}
+.openball-result .item-lhd-22 {
+	background-image: url("../game/table/poker/22.png");
+}
+.openball-result .item-lhd-23 {
+	background-image: url("../game/table/poker/23.png");
+}
+.openball-result .item-lhd-24 {
+	background-image: url("../game/table/poker/24.png");
+}
+.openball-result .item-lhd-25 {
+	background-image: url("../game/table/poker/25.png");
+}
+.openball-result .item-lhd-26 {
+	background-image: url("../game/table/poker/26.png");
+}
+.openball-result .item-lhd-27 {
+	background-image: url("../game/table/poker/27.png");
+}
+.openball-result .item-lhd-28 {
+	background-image: url("../game/table/poker/28.png");
+}
+.openball-result .item-lhd-29 {
+	background-image: url("../game/table/poker/29.png");
+}
+.openball-result .item-lhd-30 {
+	background-image: url("../game/table/poker/30.png");
+}
+.openball-result .item-lhd-31 {
+	background-image: url("../game/table/poker/31.png");
+}
+.openball-result .item-lhd-32 {
+	background-image: url("../game/table/poker/32.png");
+}
+.openball-result .item-lhd-33 {
+	background-image: url("../game/table/poker/33.png");
+}
+.openball-result .item-lhd-34 {
+	background-image: url("../game/table/poker/34.png");
+}
+.openball-result .item-lhd-35 {
+	background-image: url("../game/table/poker/35.png");
+}
+.openball-result .item-lhd-36 {
+	background-image: url("../game/table/poker/36.png");
+}
+.openball-result .item-lhd-37 {
+	background-image: url("../game/table/poker/37.png");
+}
+.openball-result .item-lhd-38 {
+	background-image: url("../game/table/poker/38.png");
+}
+.openball-result .item-lhd-39 {
+	background-image: url("../game/table/poker/39.png");
+}
+.openball-result .item-lhd-40 {
+	background-image: url("../game/table/poker/40.png");
+}
+.openball-result .item-lhd-41 {
+	background-image: url("../game/table/poker/41.png");
+}
+.openball-result .item-lhd-42 {
+	background-image: url("../game/table/poker/42.png");
+}
+.openball-result .item-lhd-43 {
+	background-image: url("../game/table/poker/43.png");
+}
+.openball-result .item-lhd-44 {
+	background-image: url("../game/table/poker/44.png");
+}
+.openball-result .item-lhd-45 {
+	background-image: url("../game/table/poker/45.png");
+}
+.openball-result .item-lhd-46 {
+	background-image: url("../game/table/poker/46.png");
+}
+.openball-result .item-lhd-47 {
+	background-image: url("../game/table/poker/47.png");
+}
+.openball-result .item-lhd-48 {
+	background-image: url("../game/table/poker/48.png");
+}
+.openball-result .item-lhd-49 {
+	background-image: url("../game/table/poker/49.png");
+}
+.openball-result .item-lhd-50 {
+	background-image: url("../game/table/poker/50.png");
+}
+.openball-result .item-lhd-51 {
+	background-image: url("../game/table/poker/51.png");
+}
+.openball-result .item-lhd-52 {
+	background-image: url("../game/table/poker/52.png");
+}
+#divHJ5107SNcenter {
+	display: none !important;
+}
+.nav-bg {
+	background: rgb(49, 49, 49); margin-bottom: -1px; border-left-color: rgb(204, 204, 204); border-left-width: 1px; border-left-style: solid; position: relative;
+}
+.nav-inner {
+	background: rgb(49, 49, 49); margin-bottom: -1px; border-left-color: rgb(204, 204, 204); border-left-width: 1px; border-left-style: solid; position: relative;
+}
+.tab-title li {
+	float: left;
+}
+.nav-inner .list li {
+	float: left;
+}
+.tab-title li a {
+	padding: 0px 30px; transition:0.3s; color: rgb(255, 255, 255); line-height: 38px; font-size: 14px; display: inline-block; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s;
+}
+.nav-inner .list li a {
+	padding: 0px 30px; transition:0.3s; color: rgb(255, 255, 255); line-height: 38px; font-size: 14px; display: inline-block; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s;
+}
+.tab-title li a:hover {
+	background: rgb(255, 86, 86); color: rgb(255, 255, 255);
+}
+.nav-inner .list li:hover a {
+	background: rgb(255, 86, 86); color: rgb(255, 255, 255);
+}
+.tab-title li.current a {
+	background: -ms-linear-gradient(rgb(212, 212, 212), rgb(246, 246, 246)); color: rgb(55, 56, 75);
+}
+.tab-title li.current:hover a {
+	background: -ms-linear-gradient(rgb(212, 212, 212), rgb(246, 246, 246)); color: rgb(55, 56, 75);
+}
+.nav-inner .list li.active a {
+	background: -ms-linear-gradient(rgb(212, 212, 212), rgb(246, 246, 246)); color: rgb(55, 56, 75);
+}
+.nav-inner .list li.active a {
+	background: -ms-linear-gradient(rgb(212, 212, 212), rgb(246, 246, 246)); color: rgb(55, 56, 75);
+}
+.play-select-title li.current a {
+	background: -ms-linear-gradient(rgb(212, 212, 212), rgb(246, 246, 246)); color: rgb(55, 56, 75);
+}
+.play-select-title li.current:hover a {
+	background: -ms-linear-gradient(rgb(212, 212, 212), rgb(246, 246, 246)); color: rgb(55, 56, 75);
+}
+.area-search {
+	padding: 30px 20px 20px; color: rgb(136, 136, 136); font-size: 14px; border-right-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid;
+}
+.area-search .row {
+	padding-bottom: 10px;
+}
+.statistics {
+	padding: 0px 20px; margin-top: 15px;
+}
+.statistics-date {
+	color: rgb(102, 102, 102); float: left;
+}
+.statistics-text {
+	color: rgb(102, 102, 102); float: right;
+}
+.online-server {
+	cursor: pointer;
+}
+#dayPayModal .dayPayModal-canvas {
+	background: rgb(255, 255, 255); margin: 0px auto; width: 400px; height: 200px; position: relative;
+}
+#dividendModal .dividendModal-canvas {
+	background: rgb(255, 255, 255); margin: 0px auto; width: 400px; height: 200px; position: relative;
+}
+#dayPayModal .message-close {
+	background: url("message-close.png") no-repeat center / 16px 16px; transition:0.2s; top: 19px; width: 22px; height: 22px; right: 15px; position: absolute; cursor: pointer; transform: translateZ(0px); -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -o-transform: translateZ(0);
+}
+#dividendModal .message-close {
+	background: url("message-close.png") no-repeat center / 16px 16px; transition:0.2s; top: 19px; width: 22px; height: 22px; right: 15px; position: absolute; cursor: pointer; transform: translateZ(0px); -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -o-transform: translateZ(0);
+}
+#dayPayModal .message-close:hover {
+	transform: rotate(90deg); -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -o-transform: rotate(90deg);
+}
+#dividendModal .message-close:hover {
+	transform: rotate(90deg); -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -o-transform: rotate(90deg);
+}
+#dayPayModal .dayPayModal-canvas .dayPayModal-head {
+	background: rgb(24, 30, 41); width: 100%; height: 60px; text-align: center; color: rgb(255, 255, 255); line-height: 60px; font-family: "Microsoft YaHei"; font-size: 20px;
+}
+#dividendModal .dividendModal-canvas .dividendModal-head {
+	background: rgb(24, 30, 41); width: 100%; height: 60px; text-align: center; color: rgb(255, 255, 255); line-height: 60px; font-family: "Microsoft YaHei"; font-size: 20px;
+}
+#dayPayModal .dayPayModal-canvas .dayPayModal-content {
+	margin: 0px auto; width: 100%; height: 140px;
+}
+#dividendModal .dividendModal-canvas .dividendModal-content {
+	margin: 0px auto; width: 100%; height: 140px;
+}
+#dayPayModal .dayPayModal-content .set-canvas {
+	margin: 10px auto; width: 100%; height: 80px; text-align: center; line-height: 80px;
+}
+#dividendModal .dividendModal-canvas .set-canvas {
+	margin: 10px auto; width: 100%; height: 80px; text-align: center; line-height: 80px;
+}
+#dayPayModal .dayPayModal-content .set-canvas .content-lab {
+	padding: 0px 10px; height: 40px; line-height: 40px; font-size: 16px; display: inline-block;
+}
+#dividendModal .dividendModal-content .set-canvas .content-lab {
+	padding: 0px 10px; height: 40px; line-height: 40px; font-size: 16px; display: inline-block;
+}
+#dayPayModal .dayPayModal-content .set-canvas .content-input {
+	width: 100px; height: 40px; text-align: center; line-height: 40px;
+}
+#dividendModal .dividendModal-content .set-canvas .content-input {
+	width: 100px; height: 40px; text-align: center; line-height: 40px;
+}
+#dayPayModal .dayPayModal-content .confirm-btn {
+	background: rgb(255, 86, 86); margin: 0px auto; padding: 0px 10px; transition:0.3s; width: 80px; height: 30px; text-align: center; color: rgb(255, 255, 255); line-height: 30px; cursor: pointer;
+}
+#dividendModal .dividendModal-content .confirm-btn {
+	background: rgb(255, 86, 86); margin: 0px auto; padding: 0px 10px; transition:0.3s; width: 80px; height: 30px; text-align: center; color: rgb(255, 255, 255); line-height: 30px; cursor: pointer;
+}
+#dayPayModal .dayPayModal-content .confirm-btn:hover {
+	background: rgb(255, 51, 51); box-shadow: 2px 3px 3px #ccc;
+}
+#dividendModal .dividendModal-content .confirm-btn:hover {
+	background: rgb(255, 51, 51); box-shadow: 2px 3px 3px #ccc;
+}

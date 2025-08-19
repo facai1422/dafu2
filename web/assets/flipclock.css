@@ -1,0 +1,135 @@
+.flip-clock-wrapper * {
+	box-sizing: border-box; backface-visibility: hidden; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-backface-visibility: hidden; -ms-box-sizing: border-box; -o-box-sizing: border-box; -moz-backface-visibility: hidden; -o-backface-visibility: hidden;
+}
+.flip-clock-wrapper a {
+	color: rgb(204, 204, 204); text-decoration: none; cursor: pointer;
+}
+.flip-clock-wrapper a:hover {
+	color: rgb(255, 255, 255);
+}
+.flip-clock-wrapper ul {
+	list-style: none;
+}
+.flip-clock-wrapper.clearfix::before {
+	display: table; content: " ";
+}
+.flip-clock-wrapper.clearfix::after {
+	display: table; content: " ";
+}
+.flip-clock-wrapper.clearfix::after {
+	clear: both;
+}
+.flip-clock-wrapper {
+	-webkit-user-select: none;
+}
+.flip-clock-meridium {
+	background: none !important; font-size: 36px !important; box-shadow: 0px 0px 0px !important;
+}
+.flip-clock-meridium a {
+	color: rgb(49, 51, 51);
+}
+.flip-clock-wrapper {
+	text-align: center; line-height: 40px; font-size: 34px; vertical-align: middle; display: inline-block; position: relative;
+}
+.flip-clock-wrapper::before {
+	display: table; content: " ";
+}
+.flip-clock-wrapper::after {
+	display: table; content: " ";
+}
+.flip-clock-wrapper::after {
+	clear: both;
+}
+.flip-clock-wrapper ul {
+	width: 25px; height: 36px; text-align: center; line-height: 30px; margin-right: 5px; float: left; position: relative;
+}
+.flip-clock-wrapper ul:nth-of-type(2n) {
+	margin-right: 10px;
+}
+.flip-clock-wrapper ul li {
+	left: 0px; top: 0px; width: 100%; height: 100%; line-height: 34px; text-decoration: none !important; position: absolute; z-index: 1;
+}
+.deadline-number-mask {
+	border-radius: 3px 3px 0px 0px; left: 0px; top: 0px; width: 25px; height: 18px; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid; filter: none; position: absolute; z-index: 60; background-color: rgba(0, 0, 0, 0);
+}
+.flip-clock-wrapper ul li:first-child {
+	z-index: 2;
+}
+.flip-clock-wrapper ul li a {
+	margin: 0px !important; height: 100%; overflow: visible !important; display: block; cursor: default !important; perspective: 200px; -webkit-perspective: 200px; -moz-perspective: 200px;
+}
+.flip-clock-wrapper ul li a div {
+	outline: transparent solid 1px; left: 0px; width: 100%; height: 50%; overflow: hidden; font-size: 80px; position: absolute; z-index: 1;
+}
+.flip-clock-wrapper ul li a div .shadow {
+	width: 100%; height: 100%; position: absolute; z-index: 2;
+}
+.flip-clock-wrapper ul li a div.up {
+	transform-origin: 50% 100%; top: 0px; width: 25px; height: 18px; border-top-left-radius: 3px; border-top-right-radius: 3px; background-image: linear-gradient(-180deg, rgb(255, 86, 86) 0%, rgb(255, 86, 86) 100%); background-color: rgb(255, 86, 86); -webkit-transform-origin: 50% 100%; -moz-transform-origin: 50% 100%; -o-transform-origin: 50% 100%;
+}
+.flip-clock-wrapper ul li a div.up::after {
+	left: 0px; top: 40px; width: 100%; height: 3px; position: absolute; z-index: 5; content: ""; background-color: rgba(0, 0, 0, 0.4);
+}
+.flip-clock-wrapper ul li a div.down {
+	transform-origin: 50% 0%; margin-top: 18px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; background-color: rgb(133, 123, 93); -webkit-transform-origin: 50% 0; -moz-transform-origin: 50% 0; -o-transform-origin: 50% 0;
+}
+.flip-clock-wrapper ul li a div div.inn {
+	left: 0px; width: 100%; height: 200%; color: rgb(238, 238, 238); font-size: 26px; font-weight: normal; position: absolute; z-index: 1; text-shadow: 1px 1px 1px #353535;
+}
+.flip-clock-wrapper ul li a div.up div.inn {
+	top: 0px;
+}
+.flip-clock-wrapper ul li a div.down div.inn {
+	bottom: 0px;
+}
+.flip-clock-wrapper ul.play li.flip-clock-before {
+	z-index: 3;
+}
+.flip-clock-wrapper ul.play li.flip-clock-active {
+	animation:asd 0.5s linear 0.5s both; z-index: 5; -webkit-animation: asd 0.5s 0.5s linear both; -moz-animation: asd 0.5s 0.5s linear both;
+}
+.flip-clock-divider {
+	width: 5px; height: 36px; float: left; position: relative;
+}
+:first-child.flip-clock-divider {
+	width: 0px;
+}
+.flip-clock-dot {
+	background: rgb(85, 85, 85); border-radius: 50%; left: -3px; top: 10px; width: 3px !important; height: 3px !important; display: block; position: absolute;
+}
+.flip-clock-divider .flip-clock-label {
+	top: -1.5em; right: -86px; color: black; position: absolute; text-shadow: none;
+}
+.flip-clock-divider.minutes .flip-clock-label {
+	right: -88px;
+}
+.flip-clock-divider.seconds .flip-clock-label {
+	right: -91px;
+}
+.flip-clock-dot.top {
+	top: 23px;
+}
+.flip-clock-dot.bottom {
+	bottom: 30px;
+}
+.flip-clock-wrapper ul.play li.flip-clock-active .down {
+	animation:turn 0.5s linear 0.5s both; z-index: 2; -webkit-animation: turn 0.5s 0.5s linear both; -moz-animation: turn 0.5s 0.5s linear both;
+}
+.flip-clock-wrapper ul.play li.flip-clock-before .up {
+	animation:turn2 0.5s linear both; z-index: 2; -webkit-animation: turn2 0.5s linear both; -moz-animation: turn2 0.5s linear both;
+}
+.flip-clock-wrapper ul li.flip-clock-active {
+	z-index: 3;
+}
+.flip-clock-wrapper ul.play li.flip-clock-before .up .shadow {
+	background: -ms-linear-gradient(rgba(0, 0, 0, 0.1) 0%, black 100%); animation:show 0.5s linear both; -webkit-animation: show 0.5s linear both; -moz-animation: show 0.5s linear both;
+}
+.flip-clock-wrapper ul.play li.flip-clock-active .up .shadow {
+	background: -ms-linear-gradient(rgba(0, 0, 0, 0.1) 0%, black 100%); animation:hide 0.5s linear 0.3s both; -webkit-animation: hide 0.5s 0.3s linear both; -moz-animation: hide 0.5s 0.3s linear both;
+}
+.flip-clock-wrapper ul.play li.flip-clock-before .down .shadow {
+	background: -ms-linear-gradient(black 0%, rgba(0, 0, 0, 0.1) 100%); animation:show 0.5s linear both; -webkit-animation: show 0.5s linear both; -moz-animation: show 0.5s linear both;
+}
+.flip-clock-wrapper ul.play li.flip-clock-active .down .shadow {
+	background: -ms-linear-gradient(black 0%, rgba(0, 0, 0, 0.1) 100%); animation:hide 0.5s linear 0.2s both; -webkit-animation: hide 0.5s 0.3s linear both; -moz-animation: hide 0.5s 0.3s linear both;
+}

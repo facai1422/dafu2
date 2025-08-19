@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+/*
+CSS RESET
+http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License:  none (public domain)
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+{ margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; font-family:'Microsoft YaHei' }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+img{border:0;}
+table { border-collapse: collapse; border-spacing: 0; }
+.font-yahe {font-family: "Microsoft YaHei";  }
+
+#pt_background { margin-top:-2px; background:#000 url(/images/nsc/ptgames/pt2-bg.jpg) no-repeat center 0;font-family: "Microsoft YaHei"; }
+#bbin_background { margin-top:-2px; background:#000 url(/images/nsc/ptgames/bbin-bg.jpg) no-repeat center 0;font-family: "Microsoft YaHei"; }
+.header{}
+.mail-content { width: 980px; margin:0 auto; position:relative; }
+.mail-content:after, .pt-left-money:after, .pt-game-card:after{ content:' '; clear:both; display:block;}
+
+.pt2-banner { height:220px; text-align: center; padding:10px 0; position: relative; }
+.pt2-banner .pt-banner-left { float:left; width:195px; height:220px; background:#504274; }
+.pt-left-title{ margin-top:40px; height:17px; background:url(/images/nsc/ptgames/pt-balance.png) 10px top no-repeat;}
+.pt-left-money { margin:15px 0 25px 10px; width:185px; color:#fff; font-style: italic; font-weight: bold; text-align: left; }
+.pt-left-money i{float:left;}
+.pt-left-money .yuan-icon { background: url(/images/nsc/ptgames/yuan.png) no-repeat left top; display: inline-block; height: 28px; width: 16px; }
+.pt-left-money .yuan-zh { background: url(/images/nsc/ptgames/yuan.png) no-repeat right top; display: inline-block; height: 28px; width: 31px; }
+.pt-left-money .number { display:inline-block; max-width:127px; font-size:26px; line-height:26px; margin-left:3px; margin-right: 7px }
+.pt-changepass { display:block; height:28px; background:url(/images/nsc/ptgames/pt-changepass.png) center top no-repeat;}
+.pt-recharge { display:block; height:36px; margin:15px 0; background:url(/images/nsc/ptgames/pt-recharge.png) center top no-repeat; }
+.pt-changepass:hover { background-position: center bottom; }
+.pt-recharge:hover { background-position: center bottom; }
+
+.hot-games { height:130px; padding:15px 0; background-color: rgba(0, 0, 0, 0.5); border-top: 1px solid rgba(255, 255, 255, 0.3); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+.hot-game{ width:960px; height:130px; margin:0 10px; position:relative; overflow: hidden; z-index:90 }
+.pt-hot-list{ position:absolute; left:0; top:0; width:2000px;}
+.pt-hot-list li{ float:left; width:182px; height:128px; border:rgba(255,255,255,0.5) solid 1px; position:relative; margin-right:10px; background-color:#000 }
+.pt-hot-list li a{ display:block; height:100%; overflow:hidden;}
+.pt-hot-list li img{width:100%; transition:opacity 0.3s; min-height: 124px;}
+.pt-hot-list li .tag-text{ position:absolute; left:0; bottom:-1px; width:100%; height:29px; line-height:29px; font-size: 14px; color:#ccc; text-align:center; background:url(/images/nsc/ptgames/pr-right-game-tag.png) center no-repeat; transition:color 0.3s; }
+.pt-hot-list li:hover img{opacity:0.6; filter:alpha(opacity=60);}
+.pt-hot-list li:hover .tag-text{ color:#fff;}
+
+.pt-hot{ width:29px; height:31px; position:absolute; right:-1px; top:-1px; background:url(/images/nsc/ptgames/pt2-hot.png) left no-repeat; z-index:90}
+.pt-new{ width:29px; height:31px; position:absolute; left:-1px; top:-1px; background:url(/images/nsc/ptgames/pt2-new.png) left no-repeat; z-index:90}
+.bbin-game-card .pt-new{ left:9px; top:9px}
+
+.hot-btn {height:27px; width:18px; position: absolute; top:50px; background: url(/images/nsc/ptgames/pt2-arrow-l-r.png) no-repeat left; z-index:99; }
+.hot-btn.btn-left { background-position: left; left:0; }
+.hot-btn.btn-right { background-position: right; right:0; }
+.hot-btn.btn-left:hover { left:-1px; }
+.hot-btn.btn-right:hover { right:-1px; }
+
+.pt2-banner .pt-banner-right{ float:right; width:770px; position:relative;}
+.f770x220 { width: 770px; height: 220px; overflow: hidden; position:relative; }
+.f770x220 li, .f770x220 li img { width: 770px; height: 220px; }
+.rslides { width: 100%; position: relative; list-style: none; padding: 0 }
+.rslides_nav { width:60px; height:80px; position:absolute; left:5px; top: 37%; overflow:hidden; text-indent:-99em; background:url('/images/nsc/home/new_arrow.png') -28px -17px no-repeat; }
+.rslides_nav.next { left:auto; right:5px; background-position:-203px -14px; }
+.rslides_nav:hover,.prev.active { background-position:-29px -142px }
+.rslides_nav.next:hover,.next.active{ background-position:-204px -142px }
+.rslides_tabs { position: relative; margin: -25px auto 0; clear: both; text-align: center; z-index:11; }
+.rslides_tabs li { display: inline; float: none; *float: left; margin-right: 10px }
+.rslides_tabs a { width: 13px; height: 13px; display: inline-block; *display: block; border-radius: 50px; -webkit-border-radius:50px;-moz-border-radius:50px; background-color: #000; text-indent: 999px;opacity:0.5;filter:alpha(opacity=50);overflow: hidden; }
+.rslides_tabs .rslides_here a { background-color: #fff;opacity:1;filter:alpha(opacity=100);}
+
+.pt-body { width:100%; padding-bottom:70px; text-align: center; background:rgba(30, 22, 32, 0.8); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#C81e1620, endColorstr=#C81e1620); background-image: url(/images/nsc/ptgames/pt2-star.png); background-repeat: no-repeat; background-position: center bottom; position: relative; }
+.pt-body:after{content:url(/images/nsc/ptgames/pt-body-bottom.png); margin:0 auto; width:980px; height:33px;}
+.pt-body-content { width:980px; margin:0 auto; overflow: hidden; background: rgba(9, 1, 11, 0.8); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#C809010b, endColorstr=#C809010b); }
+
+/*列表选项*/
+.pt-menu-ul { position:relative; float: left; width:182px; min-height:600px; margin-top:20px; background: url(/images/nsc/ptgames/pt2-body-left-menu.png) left top no-repeat;  }
+.pt-menu-li { margin-left:5px; text-align:center; font-family:'Microsoft YaHei'; }
+.pt-menu-li dt{ width:170px; height:33px; line-height:33px; color:#fff; background:url(/images/nsc/ptgames/pt-list-title.png) center no-repeat;}
+.pt-menu-li dd{ width:170px; height:33px; margin-top: 10px; font-size:90%; opacity:0;}
+.pt-menu-li dd a{ display:block; width:168px; height:31px; line-height:33px; color:#acacac; border:#652e55 solid 1px; background-color:#271225; transition:all 0.3s;}
+.pt-menu-li dd.active a, .pt-menu-li dd a:hover{color:#eee; border-color:#dd60ae; background-color:#652e55;}
+
+/*游戏列表*/
+.pt-body .pt-list { float: right; width:795px; min-height:645px; overflow: hidden; }
+.pt-game-card { margin-top:20px; position:relative; }
+.pt-game-card .item-card { float:left; width:140px; height:212px; margin-left:15px; margin-bottom:50px;  position: relative; opacity:0.5}
+.pt-game-card .item-card a {display: block; height:210px; text-decoration: none; text-align: center; color:#ccc; font-size: 14px; border: 1px solid #652e55; transition:all 0.4s; }
+.pt-game-card .item-card img { width:100%; height:100%; transition:opacity 0.3s;}
+.pt-game-card .item-card a:hover { border-color:#f17eb2; color:#f17eb2; }
+.pt-game-card .item-card a:hover img{opacity:0.6}
+.pt-game-card .item-card:after{ content:url(/images/nsc/ptgames/pt2-pic_gaoguang.png) no-repeat; position:absolute; right:0px; top:0px; z-index: 999; }
+.pt-game-card .item-card-title { padding-top:6px; font-size: 14px; }
+
+.loading{ position:absolute; left:50%; top:30%; margin-left:-54px; background:#fff url(/images/nsc/loading.gif) 8px 5px no-repeat; padding:5px 10px 5px 28px; color:#000; border-radius:3px;}
+
+/*列表页码*/
+.pt-paging { font-style: italic;}
+.pt-paging a { width:28px; height:11px; line-height:0.9; display:inline-block; color:#031022; font-size:12px; margin-left:-4px; background:url(/images/nsc/ptgames/pt-paging-number-bg.png) no-repeat 2px 0px; text-align: center; }
+.pt-paging a.first, .pt-paging a.prev, .pt-paging a.next, .pt-paging a.last { width:auto; color:#bbb; background: none; text-decoration: none; margin:0 5px; font-size: 12px; font-weight: normal; }
+.pt-paging a.prev{ margin-right: 15px}
+.pt-paging a.first:hover, .pt-paging a.prev:hover, .pt-paging a.next:hover, .pt-paging a.last:hover{ color:#fff}
+.pt-paging a:hover { background-position:2px bottom; cursor: pointer; }
+.pt-paging a.active { background-position:2px bottom; cursor:default; }
+.pt-paging a.onone{color:#666!important; cursor:default;}
+
+/*BBIN大厅页重置*/
+.pt2-banner .bbin-banner-left{ background-color:#000}
+.bbin-recharge{ background-image:url(/images/nsc/ptgames/bbin-recharge.png);}
+.bbin-changepass{ background-image:url(/images/nsc/ptgames/bbin-changepass.png);}
+.bbin-title{ background-image:url(/images/nsc/ptgames/bbin-balance.png);}
+.bbin-hot-games{ height:153px; background:none; border-top:0; border-bottom:0; padding:0;}
+.bbin-hot-games .mail-content{ height:140px; padding-top:14px; background:rgba(255,255,255,0.9) url(/images/nsc/ptgames/bbin-hot-bg.png) center 5px no-repeat;}
+.bbin-hot-games .hot-game{ width: 880px; margin:0 auto}
+.bbin-hot-games .pt-hot-list li{ width:166px; height:124px; border-color:#fff }
+.bbin-hot-games .hot-btn.btn-left { left:31px; top:60px; }
+.bbin-hot-games .hot-btn.btn-right { right:31px; top:60px; }
+.bbin-hot-games .hot-btn.btn-left:hover { left:30px; }
+.bbin-hot-games .hot-btn.btn-right:hover { right:30px; }
+
+.bbin-body{background:none;}
+.bbin-body:after{ content:''; height:0;}
+.bbin-body-content{ background:rgba(255,255,255,0.9); margin-top: 1px; }
+
+.bbin-menu-ul{ min-height:660px; background: url(/images/nsc/ptgames/bbin-body-left-menu.png) right top repeat-y;}
+.bbin-menu-ul .pt-menu-li{ margin-left: 12px}
+.bbin-menu-ul .pt-menu-li dt{background:#a30100;}
+.bbin-menu-ul .pt-menu-li dd a{ border-color:#a30100; background:rgba(163,1,0,0.3); color:#000}
+.bbin-menu-ul .pt-menu-li dd.active a, .bbin-menu-ul .pt-menu-li dd a:hover{background:rgba(163,1,0,0.8); color:#fff}
+
+.bbin-game-card .item-card{ width:220px; height:auto; margin-right:4px; border:#ac2626 solid 1px; padding:10px; margin-bottom: 20px;}
+.bbin-game-card .item-card a{ position:relative; border:0; height:160px; overflow:hidden; background-color:#ddd}
+.bbin-game-card .item-card-title{ position:absolute; left:0; bottom:0; width:100%; height:30px; line-height:30px; opacity:0.8; text-align:center; padding:0; background-color:#ac2626; color:#fff; z-index:99}
+.bbin-game-card .zcingame{ width:100%; height:100%; position:absolute; left:0; top:0; background-color:rgba(0,0,0,0.7); opacity:0; z-index:88; transition:opacity 0.4s; }
+.bbin-game-card .bingame{ position:absolute; left:55px; top:45px; width:110px; height:35px; border:#eee solid 2px; border-radius:3px; background:url(/images/nsc/ptgames/bbin-ingame.png) center center no-repeat; transition:background-color 0.2s, border-color 0.2s;}
+.bbin-game-card .item-card img{ min-height:160px;  height:auto}
+
+.bbin-game-card .item-card a:hover img{opacity:1}
+.bbin-game-card .item-card a:hover .zcingame{opacity: 1}
+.bbin-game-card .bingame:hover{ border-color:#ac2626;  background-color:#ac2626}
+
+.bbin-paging a{ color:#fff; background-image:url(/images/nsc/ptgames/bbin-paging-number-bg.png);}
+.bbin-paging a.first, .bbin-paging a.prev, .bbin-paging a.next, .bbin-paging a.last{ color:#ac2626}
+.bbin-paging a.first:hover, .bbin-paging a.prev:hover, .bbin-paging a.next:hover, .bbin-paging a.last:hover{ color:#550004}
+
+/*重置下载区*/
+.login_main { height: 190px;	margin-top: -60px !important;	padding: 60px 0 0 !important;	position: relative;	background:url(/images/nsc/ptgames/pt-download-bg.png) no-repeat center top;
+	z-index: 0;}
+.same_box .left h3{}
+.airflash{ background-image: url(/images/nsc/ptgames/nsc_login_air-flashBg.png) !important;}
+.download-line dd a{ color:#d48dad !important }
+.adobe_download{ display:inline-block !important  }
+.adobe_download:hover{ color:#694d85 }
+
+.zryx_enter .recharge2 { width:65px; height:30px; font-size:14px; line-height:30px; color:#fff!important; background-color:#DB60AE; border: none; text-align: center; color: black; text-decoration: none; display: inline-block; margin-left: 20px; vertical-align: middle; margin-bottom: 30px; border-radius:5px; }
+.zryx_enter .recharge2:hover { background-color:#FF7ACE  }
+
+/*真人娱乐首页*/
+.zryx_banner, .dzyx_banner{ width:100%; height:650px; margin-top:10px; background:url('/images/nsc/ptgames/pt-bg-zryx1.jpg') center top no-repeat;}
+.dzyx_banner{ background-image:url('/images/nsc/ptgames/pt-bg-dzyx.jpg') }
+.zryx_enter{    float: right;
+    width: 285px;
+    margin: 170px 5px 60px 30px;
+    position: relative;
+    /* margin-top: 200px; */
+    border: 5px solid rgba(0,0,0,.6);
+    margin-left: 5px;
+    border-radius: 6px;
+}
+.zryx_enter .zryx_img{ width:100%; height:298px; position:relative; overflow:hidden; }
+.zryx_enter .zryx_img img{width:100%; position:absolute; left:0; top:0; }
+.zryx_enter .zryx_img span{ display:none; width:100px; height:35px; line-height:34px; font-size:16px; color:#fff; background-color:#DB60AE; border-radius:5px; cursor:pointer; position:absolute; left:90px; top:40%; text-align:center; }
+.zryx_enter .zryx_img span:hover{ background-color:#FF7ACE; }
+.zryx_enter .zryx_img a:hover img{ top:auto; bottom:0}
+.zryx_enter .zryx_img a:hover span{ display:inline-block;}
+.zryx_enter .money-div{ width:90%; padding:16px 5% 15px; background-color:#f0f0f0; border-radius:0 0 10px 10px; position:relative; overflow:hidden; }
+.zryx_enter .money-div p{ line-height:25px; color:#000; font-size: 14px;}
+.zryx_enter .money-div .recharge2{ position:absolute; right:15px; top:25px;}
+.zryx_enter .bg-img-yy{ position:absolute; left:0; bottom:-55px;}
+
+.dzyx_banner .zryx_enter{ margin-top:200px; border:solid 5px rgba(0,0,0,0.6); margin-left:20px}
+.dzyx_banner .zryx_img{ height:298px; background-color:#000; }
+.dzyx_banner .money-div{  border-radius:0; }
+.dzyx_banner .zryx_img a:hover img{ opacity:0.4; filter:alpha(opacity=40);}
+
+/*首页弹出层*/
+.bg_tanchu{ display:none; width:100%; height:100%; position:fixed; left:0; top:0; background-color:#000; opacity:0.6; filter:alpha(opacity=60); z-index:999}
+.charge_cont, .change_cont{ display:none; width:400px; height:auto; position:fixed; left:50%; top:30%; padding:10px 0; margin-left:-200px; background-color:#fff; border-radius:10px; overflow:hidden; z-index:1999}
+.charge_cont h2{ background-color:#8C5DA1; color:#fff; text-align:center; font-size:16px; line-height:40px; display:block; clear:both;}
+.close-icon, .close-icon2{ float:right; width:18px; height:18px; margin-bottom:6px; margin-right:10px; background:url('/images/nsc/ptgames/pt2-alert-close-icon.png') left top no-repeat; background-size:36px}
+.close-icon:hover, .close-icon2:hover{ background-position:right top; }
+.charge_input{ width:80%; margin:30px auto 20px; text-align:right;}
+.charge_input p{ font-size:14px; margin-bottom:20px; text-align:left; padding-left:15px;}
+.charge_input p input[type=text],.charge_input p input[type=password]{ width:150px; height:25px; line-height:25px; padding-left:5px; border:#ccc solid 1px; font-size:12px;}
+.charge_input p input[type=radio]{ width:0; height:0; visibility: hidden; display:none;}
+.charge_input span{ font-size:12px; color:#aaa;}
+.charge_input .charge_btn{ display:inline-block; width:90px; height:40px; background:url('/images/nsc/ptgames/ic-submit.png') left top no-repeat; background-size:100%; border:0; color:#fff; cursor:pointer;}
+.charge_input .charge_btn:hover{ opacity:0.8; filter:alpha(opacity=80);}
+
+/*修改密码弹出*/
+.change_cont{ width:470px; border-radius:0; padding-top:0; padding-bottom: 25px; text-align: center;}
+.change_cont h2{ padding:15px 0 15px 15px; border-bottom:#000 solid 1px; font-size:18px; text-align:left;}
+.change_cont h2 span{ font-size:14px;}
+.change_cont .tips{ font-size:12px; margin:20px 0;}
+.change_cont .tips span{ color:#ba3f8d}
+.change_cont .charge_input{ width:100%; padding-bottom:10px; text-align:left; background:url(/images/nsc/ptgames/bg_passline.png) center bottom no-repeat; }
+.change_cont .charge_input p{ width:60%; padding-left:25%; }
+.change_cont .charge_input p span{ color:#ba3f8d; font-size: 16px; }
+.change_cont .change_btn{ display:inline-block; width:90px; height:40px; border:0; border-radius:5px; background-color:#DB60AE; color:#fff; cursor:pointer;}
+.change_cont .change_btn:hover{background-color:#ca59bd}
+.change_cont .nchange_btn{ background-color:#ccc!important; cursor:default;}
+
+.login_footer{background:#000!important}
+
+
+/*弹出层*/
+.layer { width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 999; }
+.layer iframe { border: none; }
+.layer .mask { width: 100%; height: 100%; position: fixed; left: 0; top: 0; background: #000; opacity: 0.6; filter: alpha(opacity=90); z-index: 99; }
+.layer .layer-container { background: #fff; position: absolute; z-index: 100; transition: all .3s; -webkit-transition: all .3s; -moz-transition: all .3s; }
+.layer .layer-close { position: absolute; width: 26px; height: 26px; right: -8px; top: -8px; background: url(/images/nsc/skin/blue_skin/main/sc_ggtz_bg.png) no-repeat; cursor: pointer; }
+.layer .layer-closeie { position: absolute; width: 26px; height: 26px; right: 2px; top: 2px; background: url(/images/nsc/skin/blue_skin/main/sc_ggtz_bg.png) no-repeat; cursor: pointer; }
+
+@keyframes layer {
+	0% { transform: scale(0); opacity: 0; }
+	100% { transform: scale(1); opacity: 1; }
+}
+@-webkit-keyframes {
+	0% { transform: scale(0); opacity: 0; }
+	100% { transform: scale(1); opacity: 1; }
+}
+@-moz-keyframes {
+	0% { transform: scale(0); opacity: 0; }
+	100% { transform: scale(1); opacity: 1; }
+}
