@@ -112,6 +112,9 @@ var lotteryopencodes = function(lotteryname){
 			}, 5000);
 		}
 	},'json');
+	
+	// 同时调用新的时时彩开奖API更新显示
+	loadLatestPCSSCDataFromNewAPI(lotteryname);
 }
 
 //获取最后开奖期号
@@ -686,4 +689,59 @@ function getUserBetsListToday(_lotteryname) {
 		emptyData: function() {}
 	});
 	pagination.init();
+}
+
+// 新增：PC端时时彩调用新的开奖数据API
+function loadLatestPCSSCDataFromNewAPI(lotteryType) {
+	$.ajax({
+		url: '/Api/Kaijiang/getLatest',
+		type: 'GET',
+		data: {
+			type: lotteryType,
+			count: 1
+		},
+		dataType: 'json',
+		success: function(res) {
+			if (res.code === 200 && res.data && res.data.length > 0) {
+				var latest = res.data[0];
+				updatePCSSCDisplayFromMainAPI(latest);
+			}
+		},
+		error: function(xhr, status, error) {
+			console.log('PC端时时彩新API获取开奖数据失败:', error);
+		}
+	});
+}
+
+// 新增：PC端时时彩更新页面显示（使用新API数据）
+function updatePCSSCDisplayFromMainAPI(data) {
+	if (!data) return;
+	
+	// 更新期号显示
+	if (data.expect) {
+		$('#f_lottery_info_lastnumber').text(data.expect);
+		way.set("showExpected.lastFullExpected", data.expect);
+	}
+	
+	// 更新PC端时时彩开奖号码显示
+	if (data.opencode_array && data.opencode_array.length >= 5) {
+		var $sscList = $('#ssc_winning_sum li');
+		for (var i = 0; i < Math.min(5, data.opencode_array.length); i++) {
+			if ($sscList.eq(i).length > 0) {
+				$sscList.eq(i).removeClass('ssc_winning_sum_gif').text(data.opencode_array[i]);
+				// 更新开奖球的样式类
+				setLotterNumber(i, data.opencode_array[i]);
+			}
+		}
+		
+		// 更新PC端时时彩展示区域
+		var numbersHtml = '';
+		data.opencode_array.forEach(function(num, index) {
+			var colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57'];
+			var color = colors[index % colors.length];
+			numbersHtml += '<span style="display:inline-block; width:45px; height:45px; line-height:45px; text-align:center; background:linear-gradient(45deg, ' + color + ', rgba(255,255,255,0.3)); color:white; border-radius:50%; margin:5px; font-weight:bold; font-size:20px; box-shadow: 0 3px 6px rgba(0,0,0,0.3); border: 2px solid #fff;">' + num + '</span>';
+		});
+		$('#pc-latest-ssc-display .pc-ssc-lottery-numbers').html(numbersHtml);
+		$('#pc-latest-ssc-display').show();
+	}
 }

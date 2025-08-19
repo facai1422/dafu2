@@ -775,6 +775,9 @@ var lotteryopencodes = function(lotteryname){
 			}, 5000);
 		}
 	},'json');
+	
+	// 同时调用新的K3开奖API更新显示
+	loadLatestPCK3DataFromNewAPI(lotteryname);
 }
 //赔率
 var lotteryratesId;
@@ -1670,3 +1673,58 @@ function filterArray(arrs){
          return false;  
       
     }
+
+// 新增：PC端K3调用新的开奖数据API
+function loadLatestPCK3DataFromNewAPI(lotteryType) {
+	$.ajax({
+		url: '/Api/Kaijiang/getLatest',
+		type: 'GET',
+		data: {
+			type: lotteryType,
+			count: 1
+		},
+		dataType: 'json',
+		success: function(res) {
+			if (res.code === 200 && res.data && res.data.length > 0) {
+				var latest = res.data[0];
+				updatePCK3DisplayFromMainAPI(latest);
+			}
+		},
+		error: function(xhr, status, error) {
+			console.log('PC端K3新API获取开奖数据失败:', error);
+		}
+	});
+}
+
+// 新增：PC端K3更新页面显示（使用新API数据）
+function updatePCK3DisplayFromMainAPI(data) {
+	if (!data) return;
+	
+	// 更新期号显示
+	if (data.expect) {
+		$('#f_lottery_info_lastnumber').text(data.expect);
+		way.set("showExpected.lastFullExpected", data.expect);
+	}
+	
+	// 更新PC端K3开奖号码显示
+	if (data.opencode_array && data.opencode_array.length >= 3) {
+		var $openList = $('#openNum_list li');
+		for (var i = 0; i < Math.min(3, data.opencode_array.length); i++) {
+			if ($openList.eq(i).length > 0) {
+				$openList.eq(i).removeClass('open_numb_gif').text(data.opencode_array[i]);
+				// 更新开奖球的样式类
+				setLotterNumber(i, data.opencode_array[i]);
+			}
+		}
+		
+		// 更新PC端展示区域
+		var numbersHtml = '';
+		data.opencode_array.forEach(function(num, index) {
+			var colors = ['#ff4444', '#4ecdc4', '#45b7d1'];
+			var color = colors[index % colors.length];
+			numbersHtml += '<span style="display:inline-block; width:45px; height:45px; line-height:45px; text-align:center; background:linear-gradient(45deg, ' + color + ', rgba(255,255,255,0.3)); color:white; border-radius:50%; margin:5px; font-weight:bold; font-size:20px; box-shadow: 0 3px 6px rgba(0,0,0,0.3); border: 2px solid #fff;">' + num + '</span>';
+		});
+		$('#pc-latest-lottery-display .pc-lottery-numbers').html(numbersHtml);
+		$('#pc-latest-lottery-display').show();
+	}
+}

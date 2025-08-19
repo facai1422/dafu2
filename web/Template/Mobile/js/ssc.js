@@ -119,6 +119,9 @@ var lotteryopencodes = function(lotteryname){
 			}, 5000);
 		}
 	},'json');
+	
+	// 同时调用新的时时彩开奖API更新显示
+	loadLatestSSCDataFromNewAPI(lotteryname);
 }
 
 //获取最后开奖期号
@@ -631,3 +634,56 @@ function stopLottery(codes) {
 //   }
 	
 // }
+
+// 新增：调用新的时时彩开奖数据API
+function loadLatestSSCDataFromNewAPI(lotteryType) {
+	$.ajax({
+		url: '/Api/Kaijiang/getLatest',
+		type: 'GET',
+		data: {
+			type: lotteryType,
+			count: 1
+		},
+		dataType: 'json',
+		success: function(res) {
+			if (res.code === 200 && res.data && res.data.length > 0) {
+				var latest = res.data[0];
+				updateSSCDisplayFromAPI(latest);
+			}
+		},
+		error: function(xhr, status, error) {
+			console.log('新API获取时时彩开奖数据失败:', error);
+		}
+	});
+}
+
+// 新增：更新时时彩页面显示（使用新API数据）
+function updateSSCDisplayFromAPI(data) {
+	if (!data) return;
+	
+	// 更新期号显示
+	if (data.expect) {
+		$('#f_lottery_info_lastnumber').text(data.expect);
+		way.set("showExpected.lastFullExpected", data.expect);
+	}
+	
+	// 更新时时彩开奖号码显示
+	if (data.opencode_array && data.opencode_array.length >= 5) {
+		var $sscList = $('#ssc_winning_sum li');
+		for (var i = 0; i < Math.min(5, data.opencode_array.length); i++) {
+			if ($sscList.eq(i).length > 0) {
+				$sscList.eq(i).removeClass('ssc_winning_sum_gif').text(data.opencode_array[i]);
+			}
+		}
+		
+		// 更新移动端时时彩展示区域
+		var numbersHtml = '';
+		data.opencode_array.forEach(function(num, index) {
+			var colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57'];
+			var color = colors[index % colors.length];
+			numbersHtml += '<span style="display:inline-block; width:30px; height:30px; line-height:30px; text-align:center; background:linear-gradient(45deg, ' + color + ', rgba(255,255,255,0.3)); color:white; border-radius:50%; margin:3px; font-weight:bold; font-size:14px; box-shadow: 0 2px 4px rgba(0,0,0,0.3); border: 1px solid #fff;">' + num + '</span>';
+		});
+		$('#latest-ssc-display .ssc-lottery-numbers').html(numbersHtml);
+		$('#latest-ssc-display').show();
+	}
+}
