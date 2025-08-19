@@ -1,1 +1,0 @@
-https://kclm.site/api/trial/drawResult?code=shk3&format=json&rows=1
