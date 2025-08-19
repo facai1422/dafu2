@@ -126,4 +126,36 @@ class CaijiController extends Controller {
 		$INT = M('kaijiang')->where(['addtime'=>['elt',$deletetime]])->delete();
 		return $INT;
 	}
+	
+	/**
+	 * 统一采集入口
+	 */
+	public function unifiedCollect() {
+		_title("统一采集开始");
+		
+		$collector = new \Common\Lib\LotteryCollector();
+		$caijisets = unserialize(GetVar('caijiset'));
+		
+		// 需要采集的彩种列表
+		$lottery_types = [
+			'cqssc', 'tjssc', 'xjssc', 'bjpk10', 'xyft',
+			'jsk3', 'ahk3', 'gxk3', 'hebk3', 'hubk3',
+			'gd11x5', 'jx11x5', 'sd11x5', 'sh11x5',
+			'fc3d', 'pl3'
+		];
+		
+		foreach ($lottery_types as $type) {
+			if (isset($caijisets[$type]) && $caijisets[$type]) {
+				$result = $collector->collect($type);
+				$status = $result ? "成功" : "失败";
+				echo auto_charset("{$type} 采集{$status}\n", 'utf-8', 'gbk');
+			}
+		}
+		
+		echo auto_charset("休眠5秒\n", 'utf-8', 'gbk');
+		sleep(5);
+		
+		// 继续循环采集
+		self::unifiedCollect();
+	}
 }
