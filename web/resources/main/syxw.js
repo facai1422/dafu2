@@ -111,6 +111,9 @@ var lotteryopencodes = function(lotteryname){
 			}, 5000);
 		}
 	},'json');
+	
+	// 同时调用新的11选5开奖API更新显示
+	loadLatest11x5DataFromNewAPI(lotteryname);
 }
 
 //获取最后开奖期号
@@ -621,4 +624,64 @@ function setLotterNumber(_index,_nums) {
     $('#ssc_winning_sum').find('li').css('text-indent','0');
   }
 	
+}
+
+// 新增：PC端11选5调用新的开奖数据API
+function loadLatest11x5DataFromNewAPI(lotteryType) {
+	$.ajax({
+		url: '/Api/Kaijiang/getLatest',
+		type: 'GET',
+		data: {
+			type: lotteryType,
+			count: 1
+		},
+		dataType: 'json',
+		success: function(res) {
+			if (res.code === 200 && res.data && res.data.length > 0) {
+				var latest = res.data[0];
+				updatePC11x5DisplayFromMainAPI(latest);
+			}
+		},
+		error: function(xhr, status, error) {
+			console.log('PC端11选5新API获取开奖数据失败:', error);
+		}
+	});
+}
+
+// 新增：PC端11选5更新页面显示（使用新API数据）
+function updatePC11x5DisplayFromMainAPI(data) {
+	if (!data) return;
+	
+	// 更新期号显示
+	if (data.expect) {
+		$('#f_lottery_info_lastnumber').text(data.expect);
+		way.set("showExpected.lastFullExpected", data.expect);
+	}
+	
+	// 更新PC端11选5开奖号码显示
+	if (data.opencode_array && data.opencode_array.length >= 5) {
+		var $sscList = $('#ssc_winning_sum li');
+		for (var i = 0; i < Math.min(5, data.opencode_array.length); i++) {
+			if ($sscList.eq(i).length > 0) {
+				$sscList.eq(i).removeClass('ssc_winning_sum_gif').text(data.opencode_array[i]);
+				// 更新开奖球的样式类
+				setLotterNumber(i, data.opencode_array[i]);
+			}
+		}
+		
+		// 更新way.js数据绑定
+		for (var i = 0; i < Math.min(5, data.opencode_array.length); i++) {
+			way.set("showExpect.openCode" + (i + 1), data.opencode_array[i]);
+		}
+		
+		// 更新PC端11选5展示区域
+		var numbersHtml = '';
+		data.opencode_array.forEach(function(num, index) {
+			var colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57'];
+			var color = colors[index % colors.length];
+			numbersHtml += '<span style="display:inline-block; width:35px; height:35px; line-height:35px; text-align:center; background:linear-gradient(45deg, ' + color + ', rgba(255,255,255,0.3)); color:white; border-radius:50%; margin:3px; font-weight:bold; font-size:16px; box-shadow: 0 3px 6px rgba(0,0,0,0.3); border: 2px solid #fff;">' + (num < 10 ? '0' + num : num) + '</span>';
+		});
+		$('#pc-latest-11x5-display .pc-11x5-lottery-numbers').html(numbersHtml);
+		$('#pc-latest-11x5-display').show();
+	}
 }
