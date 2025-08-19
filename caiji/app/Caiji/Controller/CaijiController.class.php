@@ -138,10 +138,9 @@ class CaijiController extends Controller {
 		
 		// 需要采集的彩种列表
 		$lottery_types = [
-			'cqssc', 'tjssc', 'xjssc', 'bjpk10', 'xyft',
-			'jsk3', 'ahk3', 'gxk3', 'hebk3', 'hubk3',
-			'gd11x5', 'jx11x5', 'sd11x5', 'sh11x5',
-			'fc3d', 'pl3'
+			'bjk3', 'f1k3', 'f5k3', 'dfssc', 'cqssc', 'bjpk10',
+			'amssc', 'hgssc', 'lyk3', 'amk3', 'twk3', 'hnk3',
+			'azk3', 'xyk3', 'hgk3', 'jndk3', 'jspk10', 'amkeno'
 		];
 		
 		foreach ($lottery_types as $type) {
