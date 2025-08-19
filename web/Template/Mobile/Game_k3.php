@@ -131,6 +131,10 @@ background-position: center0;">
 								<li class="open_numb_gif"></li>
 								<span class="icon icon-caret" style="color:rgb(240, 201, 48)"></span>
 				   </ul>
+				   <!-- 最新开奖数据显示区域 -->
+				   <div id="latest-lottery-display" style="display:none; margin-top:10px;">
+				   	<div class="lottery-numbers"></div>
+				   </div>
 							   </dd>
 </dl>
    <dl class="col-50" style="color: rgb(51, 51, 51);">
@@ -561,8 +565,68 @@ background-position: center0;">
 		  $(this).attr('data-class' , 'show');
 		  $(this).html('看直播');
 	  }
-  })
+  });
+  
+  // 获取当前彩票类型
+  var currentLotteryType = lotteryinfo ? lotteryinfo.name : 'cqssc';
+  
+  // 加载最新开奖数据
+  loadLatestLotteryData(currentLotteryType);
 });
+
+// 获取最新开奖数据
+function loadLatestLotteryData(type) {
+    var apiUrl = '/Api/Kaijiang/getLatest';
+    
+    $.ajax({
+        url: apiUrl,
+        type: 'GET',
+        data: {
+            type: type,
+            count: 1
+        },
+        dataType: 'json',
+        success: function(res) {
+            if (res.code === 200 && res.data && res.data.length > 0) {
+                var latest = res.data[0];
+                updateLatestDisplay(latest);
+            }
+        },
+        error: function(xhr, status, error) {
+            console.log('获取开奖数据失败:', error);
+        }
+    });
+}
+
+// 更新最新开奖显示
+function updateLatestDisplay(data) {
+    if (!data) return;
+    
+    // 更新期号
+    $('#f_lottery_info_lastnumber').text(data.expect || '--');
+    
+    // 更新开奖号码
+    if (data.opencode_array && data.opencode_array.length >= 3) {
+        var $openList = $('#openNum_list li');
+        for (var i = 0; i < Math.min(3, data.opencode_array.length); i++) {
+            $openList.eq(i).removeClass('open_numb_gif').text(data.opencode_array[i]);
+        }
+        
+        // 显示详细开奖信息
+        var numbersHtml = '';
+        data.opencode_array.forEach(function(num) {
+            numbersHtml += '<span style="display:inline-block; width:30px; height:30px; line-height:30px; text-align:center; background:#ff4444; color:white; border-radius:50%; margin:2px; font-weight:bold;">' + num + '</span>';
+        });
+        $('#latest-lottery-display .lottery-numbers').html(numbersHtml);
+        $('#latest-lottery-display').show();
+    }
+}
+
+// 定时刷新开奖数据（每30秒）
+setInterval(function() {
+    var currentType = lotteryinfo ? lotteryinfo.name : 'cqssc';
+    loadLatestLotteryData(currentType);
+}, 30000);
 	</script>
 	
 </body>

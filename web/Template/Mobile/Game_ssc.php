@@ -270,6 +270,10 @@ vertical-align: midd;
                     <li class="ssc_winning_sum_gif" way-data="showExpect.openCode4"></li>
                     <li class="ssc_winning_sum_gif" way-data="showExpect.openCode5"></li>
 				</ol>
+				<!-- 最新开奖数据显示区域 -->
+				<div id="latest-ssc-display" style="display:none; margin-top:10px; text-align:center;">
+					<div class="ssc-lottery-numbers"></div>
+				</div>
 				<div class="sliderConter">
 					<table  style="height: 100%; border: 0px;">
 						<tr>
@@ -650,6 +654,68 @@ var n = "color:red;text-shadow:5px 5px 2px #fff, 5px 5px 2px #373E40, 5px 5px 5p
 var r = "color:#495A80;text-shadow: 0 1px 0 #ccc,0 2px 0 #c9c9c9,0 1px 0 #bbb;font-size:20px";
 
 console.info(e + "版权所有：mitaobo.com", n);
+
+// 时时彩开奖数据API调用
+$(document).ready(function(){
+    // 获取当前彩票类型
+    var currentLotteryType = lotteryinfo ? lotteryinfo.name : 'cqssc';
+    
+    // 加载最新开奖数据
+    loadLatestSSCData(currentLotteryType);
+    
+    // 定时刷新开奖数据（每30秒）
+    setInterval(function() {
+        loadLatestSSCData(currentLotteryType);
+    }, 30000);
+});
+
+// 获取最新时时彩开奖数据
+function loadLatestSSCData(type) {
+    var apiUrl = '/Api/Kaijiang/getLatest';
+    
+    $.ajax({
+        url: apiUrl,
+        type: 'GET',
+        data: {
+            type: type,
+            count: 1
+        },
+        dataType: 'json',
+        success: function(res) {
+            if (res.code === 200 && res.data && res.data.length > 0) {
+                var latest = res.data[0];
+                updateSSCDisplay(latest);
+            }
+        },
+        error: function(xhr, status, error) {
+            console.log('获取时时彩开奖数据失败:', error);
+        }
+    });
+}
+
+// 更新时时彩开奖显示
+function updateSSCDisplay(data) {
+    if (!data) return;
+    
+    // 更新期号
+    $('#f_lottery_info_lastnumber').text(data.expect || '---');
+    
+    // 更新开奖号码
+    if (data.opencode_array && data.opencode_array.length >= 5) {
+        var $sscList = $('#ssc_winning_sum li');
+        for (var i = 0; i < Math.min(5, data.opencode_array.length); i++) {
+            $sscList.eq(i).removeClass('ssc_winning_sum_gif').text(data.opencode_array[i]);
+        }
+        
+        // 显示详细开奖信息（彩球效果）
+        var numbersHtml = '';
+        data.opencode_array.forEach(function(num) {
+            numbersHtml += '<span style="display:inline-block; width:35px; height:35px; line-height:35px; text-align:center; background:linear-gradient(45deg, #ff6b6b, #ff8e8e); color:white; border-radius:50%; margin:2px; font-weight:bold; font-size:16px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">' + num + '</span>';
+        });
+        $('#latest-ssc-display .ssc-lottery-numbers').html(numbersHtml);
+        $('#latest-ssc-display').show();
+    }
+}
 
 </script>
 </body>

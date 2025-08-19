@@ -87,6 +87,14 @@ return false;
 <div class="slider-pagination"></div>
  </div>
 
+ <!-- 最新开奖数据显示区域 -->
+ <div class="latest-lottery-section" style="margin: 10px; background: white; border-radius: 8px; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+     <h3 style="margin: 0 0 10px 0; color: #333; font-size: 16px; text-align: center;">🎲 最新开奖</h3>
+     <div id="home-lottery-display">
+         <div style="text-align: center; color: #999; padding: 20px;">正在加载开奖数据...</div>
+     </div>
+ </div>
+
  <div class="aui-palace">
 <a href="{:U('Account/rechargeList')}" class="aui-palace-grid">
     <div class="aui-palace-grid-icon">
@@ -1112,7 +1120,89 @@ var n = "color:red;text-shadow:5px 5px 2px #fff, 5px 5px 2px #373E40, 5px 5px 5p
 
 var r = "color:#495A80;text-shadow: 0 1px 0 #ccc,0 2px 0 #c9c9c9,0 1px 0 #bbb;font-size:20px";
 
+// 主页开奖数据加载
+$(document).ready(function(){
+    loadHomeLotteryData();
+    
+    // 定时刷新开奖数据（每60秒）
+    setInterval(function() {
+        loadHomeLotteryData();
+    }, 60000);
+});
 
+// 加载主页开奖数据
+function loadHomeLotteryData() {
+    // 热门彩票类型
+    var popularLotteries = ['cqssc', 'bjk3', 'bjpk10', 'dfssc'];
+    var results = [];
+    var completed = 0;
+    
+    popularLotteries.forEach(function(type) {
+        $.ajax({
+            url: '/Api/Kaijiang/getLatest',
+            type: 'GET',
+            data: {
+                type: type,
+                count: 1
+            },
+            dataType: 'json',
+            success: function(res) {
+                if (res.code === 200 && res.data && res.data.length > 0) {
+                    results.push({
+                        lottery: res.lottery_info,
+                        data: res.data[0]
+                    });
+                }
+            },
+            complete: function() {
+                completed++;
+                if (completed === popularLotteries.length) {
+                    displayHomeLotteryData(results);
+                }
+            }
+        });
+    });
+}
+
+// 显示主页开奖数据
+function displayHomeLotteryData(results) {
+    var container = $('#home-lottery-display');
+    
+    if (!results || results.length === 0) {
+        container.html('<div style="text-align: center; color: #999; padding: 20px;">暂无开奖数据</div>');
+        return;
+    }
+    
+    var html = '';
+    results.forEach(function(item) {
+        if (item.lottery && item.data) {
+            html += '<div style="border-bottom: 1px solid #eee; padding: 10px 0; margin-bottom: 10px;">';
+            html += '  <div style="display: flex; justify-content: space-between; align-items: center;">';
+            html += '    <div>';
+            html += '      <strong style="color: #333; font-size: 14px;">' + item.lottery.title + '</strong>';
+            html += '      <div style="font-size: 12px; color: #666;">第' + item.data.expect + '期</div>';
+            html += '    </div>';
+            html += '    <div style="text-align: right;">';
+            html += '      <div class="lottery-balls">';
+            
+            if (item.data.opencode_array) {
+                item.data.opencode_array.forEach(function(num, index) {
+                    var colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57'];
+                    var color = colors[index % colors.length];
+                    html += '<span style="display:inline-block; width:24px; height:24px; line-height:24px; text-align:center; background:' + color + '; color:white; border-radius:50%; margin:1px; font-size:12px; font-weight:bold;">' + num + '</span>';
+                });
+            }
+            
+            html += '      </div>';
+            html += '      <div style="font-size: 11px; color: #999; margin-top: 3px;">' + item.data.opentime + '</div>';
+            html += '    </div>';
+            html += '  </div>';
+            html += '</div>';
+        }
+    });
+    
+    container.html(html);
+}
 
 </script>
 </body>
