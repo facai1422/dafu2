@@ -442,6 +442,14 @@ body {background-image: url(assets/bg1.jpg);}
      
 </script><!--头部导航-->
         <div class="container">
+            <!-- PC端最新开奖数据显示区域 -->
+            <div class="pc-latest-lottery-section" style="margin: 20px 0; background: rgba(255,255,255,0.95); border-radius: 10px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <h3 style="margin: 0 0 15px 0; color: #333; font-size: 20px; text-align: center; border-bottom: 2px solid #4CAF50; padding-bottom: 10px;">🎲 最新开奖公告</h3>
+                <div id="pc-home-lottery-display">
+                    <div style="text-align: center; color: #666; padding: 30px; font-size: 16px;">正在加载开奖数据...</div>
+                </div>
+            </div>
+            
             <ul class="home-center">
                 <li class="center-activity">
                         <div class="home-ad">
@@ -1043,6 +1051,100 @@ function tcpay(){
 	  content:'/moneyChange.php?username={$userinfo.username}'
 	});
 	return false;
+}
+</script>
+
+<script>
+// PC端主页开奖数据加载
+$(document).ready(function(){
+    loadPCHomeLotteryData();
+    
+    // 定时刷新开奖数据（每60秒）
+    setInterval(function() {
+        loadPCHomeLotteryData();
+    }, 60000);
+});
+
+// 加载PC端主页开奖数据
+function loadPCHomeLotteryData() {
+    // 热门彩票类型
+    var popularLotteries = [
+        {type: 'cqssc', name: '重庆时时彩'},
+        {type: 'bjk3', name: '北京快3'},
+        {type: 'bjpk10', name: '北京PK10'},
+        {type: 'dfssc', name: '东方时时彩'},
+        {type: 'f1k3', name: '极速快3'},
+        {type: 'f5k3', name: '分分快3'}
+    ];
+    
+    var results = [];
+    var completed = 0;
+    
+    popularLotteries.forEach(function(lottery) {
+        $.ajax({
+            url: '/Api/Kaijiang/getLatest',
+            type: 'GET',
+            data: {
+                type: lottery.type,
+                count: 1
+            },
+            dataType: 'json',
+            success: function(res) {
+                if (res.code === 200 && res.data && res.data.length > 0) {
+                    results.push({
+                        lottery: lottery,
+                        data: res.data[0]
+                    });
+                }
+            },
+            complete: function() {
+                completed++;
+                if (completed === popularLotteries.length) {
+                    displayPCHomeLotteryData(results);
+                }
+            }
+        });
+    });
+}
+
+// 显示PC端主页开奖数据
+function displayPCHomeLotteryData(results) {
+    var container = $('#pc-home-lottery-display');
+    
+    if (!results || results.length === 0) {
+        container.html('<div style="text-align: center; color: #999; padding: 30px; font-size: 16px;">暂无开奖数据</div>');
+        return;
+    }
+    
+    var html = '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 15px;">';
+    
+    results.forEach(function(item) {
+        if (item.lottery && item.data) {
+            html += '<div style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">';
+            html += '  <div style="display: flex; justify-content: space-between; align-items: center;">';
+            html += '    <div>';
+            html += '      <h4 style="margin: 0 0 5px 0; font-size: 16px; font-weight: bold;">' + item.lottery.name + '</h4>';
+            html += '      <div style="font-size: 12px; opacity: 0.9;">第' + item.data.expect + '期</div>';
+            html += '    </div>';
+            html += '    <div style="text-align: right;">';
+            html += '      <div class="pc-lottery-balls" style="margin-bottom: 5px;">';
+            
+            if (item.data.opencode_array) {
+                item.data.opencode_array.forEach(function(num, index) {
+                    html += '<span style="display:inline-block; width:32px; height:32px; line-height:32px; text-align:center; background:rgba(255,255,255,0.9); color:#333; border-radius:50%; margin:1px; font-size:14px; font-weight:bold; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">' + num + '</span>';
+                });
+            }
+            
+            html += '      </div>';
+            html += '      <div style="font-size: 11px; opacity: 0.8;">' + item.data.opentime + '</div>';
+            html += '    </div>';
+            html += '  </div>';
+            html += '</div>';
+        }
+    });
+    
+    html += '</div>';
+    container.html(html);
 }
 </script>
 

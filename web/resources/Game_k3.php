@@ -120,6 +120,10 @@ body {background-image: url(assets/bg1.jpg);}
 					<li class="open_numb_gif"></li>
 				</ul>
             </div>
+            <!-- PC端最新开奖数据显示区域 -->
+            <div id="pc-latest-lottery-display" style="display:none; margin-top:15px; text-align:center;">
+            	<div class="pc-lottery-numbers"></div>
+            </div>
 
         </div>
         <!--彩种开奖号码-->
@@ -667,5 +671,70 @@ body {background-image: url(assets/bg1.jpg);}
 <style type="text/css">
 body {background-image: url(assets/bg3.jpg);}
 </style>
+
+<script>
+// PC端K3开奖数据API调用
+$(document).ready(function(){
+    // 获取当前彩票类型
+    var currentLotteryType = lotteryinfo ? lotteryinfo.name : 'bjk3';
+    
+    // 加载最新开奖数据
+    loadLatestPCK3Data(currentLotteryType);
+    
+    // 定时刷新开奖数据（每30秒）
+    setInterval(function() {
+        loadLatestPCK3Data(currentLotteryType);
+    }, 30000);
+});
+
+// 获取最新PC端K3开奖数据
+function loadLatestPCK3Data(type) {
+    $.ajax({
+        url: '/Api/Kaijiang/getLatest',
+        type: 'GET',
+        data: {
+            type: type,
+            count: 1
+        },
+        dataType: 'json',
+        success: function(res) {
+            if (res.code === 200 && res.data && res.data.length > 0) {
+                var latest = res.data[0];
+                updatePCK3Display(latest);
+            }
+        },
+        error: function(xhr, status, error) {
+            console.log('获取PC端K3开奖数据失败:', error);
+        }
+    });
+}
+
+// 更新PC端K3开奖显示
+function updatePCK3Display(data) {
+    if (!data) return;
+    
+    // 更新期号
+    $('#f_lottery_info_lastnumber').text(data.expect || '---');
+    
+    // 更新开奖号码
+    if (data.opencode_array && data.opencode_array.length >= 3) {
+        var $openList = $('#openNum_list li');
+        for (var i = 0; i < Math.min(3, data.opencode_array.length); i++) {
+            $openList.eq(i).removeClass('open_numb_gif').text(data.opencode_array[i]);
+        }
+        
+        // 显示详细开奖信息（PC端大号球效果）
+        var numbersHtml = '';
+        data.opencode_array.forEach(function(num, index) {
+            var colors = ['#ff4444', '#4ecdc4', '#45b7d1'];
+            var color = colors[index % colors.length];
+            numbersHtml += '<span style="display:inline-block; width:45px; height:45px; line-height:45px; text-align:center; background:linear-gradient(45deg, ' + color + ', rgba(255,255,255,0.3)); color:white; border-radius:50%; margin:5px; font-weight:bold; font-size:20px; box-shadow: 0 3px 6px rgba(0,0,0,0.3); border: 2px solid #fff;">' + num + '</span>';
+        });
+        $('#pc-latest-lottery-display .pc-lottery-numbers').html(numbersHtml);
+        $('#pc-latest-lottery-display').show();
+    }
+}
+</script>
+
 </body>
 </html>
