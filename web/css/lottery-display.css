@@ -1,0 +1,299 @@
+/**
+ * 彩票开奖数据显示样式
+ */
+
+/* 通用样式 */
+.lottery-latest, .lottery-history {
+    font-family: 'Arial', '微软雅黑', sans-serif;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* 最新开奖样式 */
+.lottery-latest {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.lottery-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.lottery-header h3 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.lottery-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lottery-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.lottery-item .label {
+    font-weight: bold;
+    color: #666;
+    width: 100px;
+    flex-shrink: 0;
+}
+
+.lottery-item .value {
+    flex: 1;
+    color: #333;
+    font-size: 16px;
+}
+
+/* 开奖号码球样式 */
+.lottery-numbers {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.number-ball {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.number-ball.small {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+}
+
+/* 不同号码的颜色 */
+.number-ball:nth-child(2n) {
+    background: linear-gradient(45deg, #4ecdc4, #6ed5ce);
+}
+
+.number-ball:nth-child(3n) {
+    background: linear-gradient(45deg, #45b7d1, #6bc5d8);
+}
+
+.number-ball:nth-child(4n) {
+    background: linear-gradient(45deg, #96ceb4, #a8d5c4);
+}
+
+.number-ball:nth-child(5n) {
+    background: linear-gradient(45deg, #feca57, #fed766);
+}
+
+/* 历史开奖表格样式 */
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.history-table thead th {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+}
+
+.history-table tbody td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.history-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.history-table tbody tr:hover {
+    background-color: #f0f8ff;
+    transition: background-color 0.3s;
+}
+
+.opencode-cell {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+/* 分页信息样式 */
+.pagination-info {
+    padding: 15px 20px;
+    background: #f8f9fa;
+    color: #666;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #eee;
+}
+
+/* 错误和空数据样式 */
+.no-data, .error-message {
+    padding: 40px 20px;
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+    background: #f9f9f9;
+}
+
+.error-message {
+    color: #e74c3c;
+    background: #fdf2f2;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .lottery-latest {
+        padding: 15px;
+    }
+    
+    .lottery-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .lottery-item .label {
+        width: auto;
+    }
+    
+    .lottery-numbers {
+        justify-content: flex-start;
+    }
+    
+    .history-table {
+        font-size: 14px;
+    }
+    
+    .history-table thead th,
+    .history-table tbody td {
+        padding: 8px 5px;
+    }
+    
+    .number-ball {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+    }
+    
+    .number-ball.small {
+        width: 24px;
+        height: 24px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lottery-header h3 {
+        font-size: 20px;
+    }
+    
+    .lottery-item .value {
+        font-size: 14px;
+    }
+    
+    .opencode-cell {
+        gap: 3px;
+    }
+    
+    .number-ball {
+        width: 28px;
+        height: 28px;
+        font-size: 11px;
+    }
+    
+    .number-ball.small {
+        width: 22px;
+        height: 22px;
+        font-size: 10px;
+    }
+}
+
+/* 加载动画 */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    color: #666;
+}
+
+.loading::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-top: 2px solid #666;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 刷新按钮样式 */
+.refresh-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 10px 0;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.refresh-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 数据更新提示 */
+.update-notice {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #52c41a;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.3s;
+}
+
+.update-notice.show {
+    opacity: 1;
+    transform: translateX(0);
+}

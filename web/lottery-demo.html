@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彩票开奖数据展示 - 演示页面</title>
+    
+    <!-- 引入jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- 引入样式文件 -->
+    <link rel="stylesheet" href="css/lottery-display.css">
+    
+    <style>
+        body {
+            font-family: 'Arial', '微软雅黑', sans-serif;
+            background: #f5f7fa;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .page-header h1 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        
+        .page-header p {
+            margin: 0;
+            color: #666;
+        }
+        
+        .demo-section {
+            margin-bottom: 30px;
+        }
+        
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .lottery-select {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: white;
+        }
+        
+        .code-example {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        
+        .code-example h4 {
+            margin: 0 0 10px 0;
+            color: #90cdf4;
+        }
+        
+        .code-example pre {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 页面头部 -->
+        <div class="page-header">
+            <h1>🎲 彩票开奖数据展示系统</h1>
+            <p>实时获取和显示各类彩票的开奖数据、历史记录和走势信息</p>
+        </div>
+
+        <!-- 最新开奖数据展示 -->
+        <div class="demo-section">
+            <div class="section-header">
+                <h2 class="section-title">📊 最新开奖数据</h2>
+                <div class="controls">
+                    <select id="lottery-type-select" class="lottery-select">
+                        <option value="cqssc">重庆时时彩</option>
+                        <option value="bjk3">北京快3</option>
+                        <option value="f1k3">分分快3</option>
+                        <option value="f5k3">五分快3</option>
+                        <option value="dfssc">东方时时彩</option>
+                        <option value="bjpk10">北京PK10</option>
+                        <option value="amssc">澳门时时彩</option>
+                        <option value="hgssc">韩国时时彩</option>
+                        <option value="lyk3">龙域快3</option>
+                        <option value="amk3">澳门快3</option>
+                        <option value="twk3">台湾快3</option>
+                        <option value="hnk3">河南快3</option>
+                        <option value="azk3">澳洲快3</option>
+                        <option value="xyk3">幸运快3</option>
+                        <option value="hgk3">韩国快3</option>
+                        <option value="jndk3">京东快3</option>
+                        <option value="jspk10">极速PK10</option>
+                        <option value="amkeno">澳门Keno</option>
+                    </select>
+                    <button class="refresh-btn" onclick="refreshLatest()">🔄 刷新</button>
+                </div>
+            </div>
+            
+            <!-- 最新开奖数据容器 -->
+            <div id="lottery-display">
+                <div class="loading">正在加载数据...</div>
+            </div>
+        </div>
+
+        <!-- 历史开奖数据展示 -->
+        <div class="demo-section">
+            <div class="section-header">
+                <h2 class="section-title">📋 历史开奖记录</h2>
+                <div class="controls">
+                    <input type="date" id="history-date" class="lottery-select" />
+                    <select id="page-size-select" class="lottery-select">
+                        <option value="10">每页10条</option>
+                        <option value="20" selected>每页20条</option>
+                        <option value="50">每页50条</option>
+                    </select>
+                    <button class="refresh-btn" onclick="refreshHistory()">🔄 刷新历史</button>
+                </div>
+            </div>
+            
+            <!-- 历史开奖数据容器 -->
+            <div id="lottery-history">
+                <div class="loading">正在加载历史数据...</div>
+            </div>
+        </div>
+
+        <!-- 使用示例代码 -->
+        <div class="demo-section">
+            <h2 class="section-title">💻 使用示例代码</h2>
+            
+            <div class="code-example">
+                <h4>1. 获取最新开奖数据</h4>
+                <pre><code>// 获取重庆时时彩最新开奖数据
+LotteryAPI.getLatest('cqssc', function(data, lotteryInfo) {
+    if (data && data.length > 0) {
+        var latest = data[0];
+        console.log('期号:', latest.expect);
+        console.log('开奖号码:', latest.opencode);
+        console.log('开奖时间:', latest.opentime);
+    }
+}, 10);
+
+// 或者使用便捷函数直接显示
+displayLatestLottery('cqssc', 'my-container');</code></pre>
+            </div>
+
+            <div class="code-example">
+                <h4>2. 获取历史开奖数据</h4>
+                <pre><code>// 获取北京快3的历史开奖（分页）
+LotteryAPI.getHistory('bjk3', function(data, pagination) {
+    if (data) {
+        data.forEach(function(item) {
+            console.log(item.expect + ': ' + item.opencode);
+        });
+        console.log('总页数:', pagination.totalPages);
+    }
+}, {
+    page: 1,
+    pageSize: 20,
+    date: '2024-01-15'  // 可选：指定日期
+});
+
+// 或者使用便捷函数
+displayHistoryLottery('bjk3', 'history-container', {
+    page: 1,
+    pageSize: 20
+});</code></pre>
+            </div>
+
+            <div class="code-example">
+                <h4>3. 获取走势数据</h4>
+                <pre><code>// 获取走势数据（用于绘制走势图）
+LotteryAPI.getTrend('cqssc', function(data) {
+    if (data) {
+        // data 是按时间正序排列的开奖数据
+        // 可以用于绘制走势图、分析等
+        console.log('获取到', data.length, '条走势数据');
+    }
+}, 30);</code></pre>
+            </div>
+
+            <div class="code-example">
+                <h4>4. HTML 结构示例</h4>
+                <pre><code>&lt;!-- 引入必要的文件 --&gt;
+&lt;link rel="stylesheet" href="css/lottery-display.css"&gt;
+&lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/lottery-api.js"&gt;&lt;/script&gt;
+
+&lt;!-- 最新开奖容器 --&gt;
+&lt;div id="lottery-display"&gt;&lt;/div&gt;
+
+&lt;!-- 历史开奖容器 --&gt;
+&lt;div id="lottery-history"&gt;&lt;/div&gt;
+
+&lt;script&gt;
+// 页面加载完成后获取数据
+$(document).ready(function() {
+    displayLatestLottery('cqssc', 'lottery-display');
+    displayHistoryLottery('cqssc', 'lottery-history');
+});
+&lt;/script&gt;</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入彩票API脚本 -->
+    <script src="js/lottery-api.js"></script>
+    
+    <script>
+        // 当前选中的彩票类型
+        var currentLotteryType = 'cqssc';
+        
+        // 页面加载完成后初始化
+        $(document).ready(function() {
+            // 加载默认数据
+            refreshLatest();
+            refreshHistory();
+            
+            // 绑定彩票类型选择事件
+            $('#lottery-type-select').change(function() {
+                currentLotteryType = $(this).val();
+                refreshLatest();
+                refreshHistory();
+            });
+        });
+        
+        // 刷新最新开奖数据
+        function refreshLatest() {
+            $('#lottery-display').html('<div class="loading">正在加载数据...</div>');
+            displayLatestLottery(currentLotteryType, 'lottery-display');
+        }
+        
+        // 刷新历史开奖数据
+        function refreshHistory() {
+            $('#lottery-history').html('<div class="loading">正在加载历史数据...</div>');
+            
+            var options = {
+                page: 1,
+                pageSize: parseInt($('#page-size-select').val())
+            };
+            
+            var selectedDate = $('#history-date').val();
+            if (selectedDate) {
+                options.date = selectedDate;
+            }
+            
+            displayHistoryLottery(currentLotteryType, 'lottery-history', options);
+        }
+        
+        // 显示更新提示
+        function showUpdateNotice(message) {
+            var notice = $('<div class="update-notice">' + message + '</div>');
+            $('body').append(notice);
+            
+            setTimeout(function() {
+                notice.addClass('show');
+            }, 100);
+            
+            setTimeout(function() {
+                notice.removeClass('show');
+                setTimeout(function() {
+                    notice.remove();
+                }, 300);
+            }, 2000);
+        }
+        
+        // 定时刷新（可选）
+        // setInterval(function() {
+        //     refreshLatest();
+        //     showUpdateNotice('数据已更新');
+        // }, 60000); // 每分钟刷新一次
+    </script>
+</body>
+</html>
